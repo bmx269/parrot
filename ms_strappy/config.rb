@@ -1,5 +1,5 @@
 # Require any additional compass plugins here.
-require 'susy'
+# require 'susy'
 # http://susy.oddbird.net/
 
 require 'zen-grids'
