@@ -5,9 +5,32 @@
 @import "zen"; // Zen Grids
 @import "breakpoint"; //@Media Query Mixins
 
+/* Susy commented out
 // ---------------------------------------------------------------------------
-// Basic Grid
+// Susy Grid
 
+
+//this is the default number of columns
+$total-columns: 4;
+//width of each column
+$column-width   : 5em;
+//space between columns
+$gutter-width   : 1.5em;
+//space on the right and left of the grid
+$grid-padding   : $gutter-width;
+
+$show-grid-backgrounds  : true;
+
+//alternative layout breakpoints for use with Susy
+$narrow:30em 6;
+$tablet:40em 8;
+$computer:52em 12;
+$wide: 65em 12;
+
+*/ //end Susy commented out
+
+// ---------------------------------------------------------------------------
+// Zen Grid
 
 //this is the default number of columns
 $zen-column-count: 4 !default;
@@ -27,7 +50,7 @@ $legacy-support-for-ie6: false !default;
 $zen-float-direction: left !default;
 
 // ---------------------------------------------------------------------------
-// Media Query Settins
+// Media Query Settings for use with Breakpoint
 
 $breakpoint-default-media: all;
 $breakpoint-default-pair: width;
@@ -53,7 +76,7 @@ $wide: 80em;
 // ---------------------------------------------------------------------------
 // first breakpoint
 
-@include breakpoint($narrow){
+@include breakpoint($narrow){  //use at-breakpoint($variable-name) if using susy
 
 $zen-column-count: 6;
 $zen-grid-width: 480px;
@@ -71,7 +94,7 @@ $zen-grid-width: 480px;
 // ---------------------------------------------------------------------------
 // second breakpoint
 
-@include breakpoint($tablet){
+@include breakpoint($tablet){  //use at-breakpoint($variable-name) if using susy
 
 $zen-column-count: 12;
 $zen-grid-width: 720px;
@@ -90,7 +113,7 @@ $zen-grid-width: 720px;
 // ---------------------------------------------------------------------------
 // third breakpoint
 
-@include breakpoint($computer){
+@include breakpoint($computer){  //use at-breakpoint($variable-name) if using susy
 
 $zen-column-count: 12;
 $zen-grid-width: 960px;
@@ -108,7 +131,7 @@ $zen-grid-width: 960px;
 // ---------------------------------------------------------------------------
 // fourth breakpoint
 
-@include breakpoint($wide){
+@include breakpoint($wide){   //use at-breakpoint($variable-name) if using susy
 
 $zen-column-count: 12;
 $zen-grid-width: 1200px;

@@ -217,7 +217,7 @@ a:hover {
   -moz-border-radius: 500px;
   border-radius: 500px; }
 
-/* line 44, sass/layout/_grid.scss */
+/* line 67, sass/layout/_grid.scss */
 .container {
   margin: 10px;
   width: 100%; }
@@ -230,7 +230,7 @@ a:hover {
     clear: both; }
 
 @media (min-width: 32em) {
-  /* line 61, sass/layout/_grid.scss */
+  /* line 84, sass/layout/_grid.scss */
   .container {
     margin: 0 auto;
     width: 480px; }
@@ -242,7 +242,7 @@ a:hover {
     .container:after {
       clear: both; } }
 @media (min-width: 48em) {
-  /* line 79, sass/layout/_grid.scss */
+  /* line 102, sass/layout/_grid.scss */
   .container {
     margin: 0 auto;
     width: 720px; }
@@ -254,7 +254,7 @@ a:hover {
     .container:after {
       clear: both; } }
 @media (min-width: 63em) {
-  /* line 98, sass/layout/_grid.scss */
+  /* line 121, sass/layout/_grid.scss */
   .container {
     margin: 0 auto;
     width: 960px; }
@@ -266,7 +266,7 @@ a:hover {
     .container:after {
       clear: both; } }
 @media (min-width: 80em) {
-  /* line 116, sass/layout/_grid.scss */
+  /* line 139, sass/layout/_grid.scss */
   .container {
     margin: 0 auto;
     width: 1200px; }
