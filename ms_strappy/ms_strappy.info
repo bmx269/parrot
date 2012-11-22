@@ -1,5 +1,5 @@
-name = Mothership SusyStrap
-description = Mothership SusyStrap is a theme based on Mothership, with Susy Grids and "some" Bootstrap mixed in.
+name = Mothership Strappy
+description = Mothership Strappy is a Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
 screenshot = screenshot.png
 engine = phptemplate
 core = 7.x
