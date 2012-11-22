@@ -1,0 +1,127 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+//@import "susy"; // Susy Grids
+@import "zen"; // Zen Grids
+@import "breakpoint"; //@Media Query Mixins
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+
+//this is the default number of columns
+$zen-column-count: 4 !default;
+//space between columns
+$zen-gutter-width: 20px !default;
+
+$zen-auto-include-item-base: true !default;
+$zen-auto-include-flow-item-base: true !default;
+
+$zen-grid-width: 100% !default;
+
+$zen-box-sizing: border-box !default;
+
+$legacy-support-for-ie7: false !default;
+$legacy-support-for-ie6: false !default;
+
+$zen-float-direction: left !default;
+
+// ---------------------------------------------------------------------------
+// Media Query Settins
+
+$breakpoint-default-media: all;
+$breakpoint-default-pair: width;
+
+$narrow: 32em;
+$tablet: 48em;
+$computer: 63em;
+$wide: 80em;
+
+
+// ---------------------------------------------------------------------------
+// mobile first, grid styles
+
+.container{
+  @include zen-grid-container; // Apply this mixin to the container.
+  margin: 10px;
+  width: $zen-grid-width;
+
+    // Block specific grid setting defaults (mobile) in here.
+
+}
+
+// ---------------------------------------------------------------------------
+// first breakpoint
+
+@include breakpoint($narrow){
+
+$zen-column-count: 6;
+$zen-grid-width: 480px;
+
+  .container{
+    @include zen-grid-container; // Apply this mixin to the container.
+    margin: 0 auto;
+    width: $zen-grid-width;
+
+    // Block specific grid setting overrides in here.
+
+  }
+}
+
+// ---------------------------------------------------------------------------
+// second breakpoint
+
+@include breakpoint($tablet){
+
+$zen-column-count: 12;
+$zen-grid-width: 720px;
+
+  .container{
+    @include zen-grid-container; // Apply this mixin to the container.
+    margin: 0 auto;
+    width: $zen-grid-width;
+
+    // Block specific grid setting overrides in here.
+
+  }
+}
+
+
+// ---------------------------------------------------------------------------
+// third breakpoint
+
+@include breakpoint($computer){
+
+$zen-column-count: 12;
+$zen-grid-width: 960px;
+
+  .container{
+    @include zen-grid-container; // Apply this mixin to the container.
+    margin: 0 auto;
+    width: $zen-grid-width;
+
+    // Block specific grid setting overrides in here.
+
+  }
+}
+
+// ---------------------------------------------------------------------------
+// fourth breakpoint
+
+@include breakpoint($wide){
+
+$zen-column-count: 12;
+$zen-grid-width: 1200px;
+
+  .container{
+    @include zen-grid-container; // Apply this mixin to the container.
+    margin: 0 auto;
+    width: $zen-grid-width;
+
+    // Block specific grid setting overrides in here.
+
+  }
+}
+
+
+

@@ -1,0 +1,1962 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: Lead Product Designer @ http://kyruus.com
+
+    */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+@mixin Awesome{
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+@mixin icon-large{
+  &:before {
+    vertical-align: middle;
+    font-size: 4/3em;
+  }
+}
+
+
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+@mixin icon-glass{
+  &:before {
+    content: "\f000";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-music{
+  &:before {
+    content: "\f001";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-search{
+  &:before {
+    content: "\f002";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-envelope{
+  &:before {
+    content: "\f003";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-heart{
+  &:before {
+    content: "\f004";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-star{
+  &:before {
+    content: "\f005";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-star-empty{
+  &:before {
+    content: "\f006";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-user{
+  &:before {
+    content: "\f007";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-film{
+  &:before {
+    content: "\f008";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-th-large{
+  &:before {
+    content: "\f009";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-th{
+  &:before {
+    content: "\f00a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-th-list{
+  &:before {
+    content: "\f00b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-ok{
+  &:before {
+    content: "\f00c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-remove{
+  &:before {
+    content: "\f00d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-zoom-in{
+  &:before {
+    content: "\f00e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-zoom-out{
+  &:before {
+    content: "\f010";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-off{
+  &:before {
+    content: "\f011";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-signal{
+  &:before {
+    content: "\f012";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-cog{
+  &:before {
+    content: "\f013";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-trash{
+  &:before {
+    content: "\f014";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-home{
+  &:before {
+    content: "\f015";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-file{
+  &:before {
+    content: "\f016";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-time{
+  &:before {
+    content: "\f017";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-road{
+  &:before {
+    content: "\f018";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-download-alt{
+  &:before {
+    content: "\f019";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-download{
+  &:before {
+    content: "\f01a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-upload{
+  &:before {
+    content: "\f01b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-inbox{
+  &:before {
+    content: "\f01c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-play-circle{
+  &:before {
+    content: "\f01d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-repeat{
+  &:before {
+    content: "\f01e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+/* \f020 doesn't work in Safari. all shifted one down */
+@mixin icon-refresh{
+  &:before {
+    content: "\f021";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-list-alt{
+  &:before {
+    content: "\f022";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-lock{
+  &:before {
+    content: "\f023";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-flag{
+  &:before {
+    content: "\f024";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-headphones{
+  &:before {
+    content: "\f025";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-volume-off{
+  &:before {
+    content: "\f026";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-volume-down{
+  &:before {
+    content: "\f027";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-volume-up{
+  &:before {
+    content: "\f028";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-qrcode{
+  &:before {
+    content: "\f029";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-barcode{
+  &:before {
+    content: "\f02a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-tag{
+  &:before {
+    content: "\f02b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-tags{
+  &:before {
+    content: "\f02c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-book{
+  &:before {
+    content: "\f02d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-bookmark{
+  &:before {
+    content: "\f02e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-print{
+  &:before {
+    content: "\f02f";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-camera{
+  &:before {
+    content: "\f030";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-font{
+  &:before {
+    content: "\f031";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-bold{
+  &:before {
+    content: "\f032";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-italic{
+  &:before {
+    content: "\f033";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-text-height{
+  &:before {
+    content: "\f034";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-text-width{
+  &:before {
+    content: "\f035";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-align-left{
+  &:before {
+    content: "\f036";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-align-center{
+  &:before {
+    content: "\f037";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-align-right{
+  &:before {
+    content: "\f038";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-align-justify{
+  &:before {
+    content: "\f039";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-list{
+  &:before {
+    content: "\f03a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-indent-left{
+  &:before {
+    content: "\f03b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-indent-right{
+  &:before {
+    content: "\f03c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-facetime-video{
+  &:before {
+    content: "\f03d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-picture{
+  &:before {
+    content: "\f03e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-pencil{
+  &:before {
+    content: "\f040";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-map-marker{
+  &:before {
+    content: "\f041";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-adjust{
+  &:before {
+    content: "\f042";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-tint{
+  &:before {
+    content: "\f043";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-edit{
+  &:before {
+    content: "\f044";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-share{
+  &:before {
+    content: "\f045";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-check{
+  &:before {
+    content: "\f046";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-move{
+  &:before {
+    content: "\f047";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-step-backward{
+  &:before {
+    content: "\f048";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-fast-backward{
+  &:before {
+    content: "\f049";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-backward{
+  &:before {
+    content: "\f04a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-play{
+  &:before {
+    content: "\f04b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-pause{
+  &:before {
+    content: "\f04c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-stop{
+  &:before {
+    content: "\f04d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-forward{
+  &:before {
+    content: "\f04e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-fast-forward{
+  &:before {
+    content: "\f050";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-step-forward{
+  &:before {
+    content: "\f051";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-eject{
+  &:before {
+    content: "\f052";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-chevron-left{
+  &:before {
+    content: "\f053";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-chevron-right{
+  &:before {
+    content: "\f054";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-plus-sign{
+  &:before {
+    content: "\f055";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-minus-sign{
+  &:before {
+    content: "\f056";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-remove-sign{
+  &:before {
+    content: "\f057";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-ok-sign{
+  &:before {
+    content: "\f058";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-question-sign{
+  &:before {
+    content: "\f059";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-info-sign{
+  &:before {
+    content: "\f05a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-screenshot{
+  &:before {
+    content: "\f05b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-remove-circle{
+  &:before {
+    content: "\f05c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-ok-circle{
+  &:before {
+    content: "\f05d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-ban-circle{
+  &:before {
+    content: "\f05e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-arrow-left{
+  &:before {
+    content: "\f060";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-arrow-right{
+  &:before {
+    content: "\f061";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-arrow-up{
+  &:before {
+    content: "\f062";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-arrow-down{
+  &:before {
+    content: "\f063";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-share-alt{
+  &:before {
+    content: "\f064";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-resize-full{
+  &:before {
+    content: "\f065";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-resize-small{
+  &:before {
+    content: "\f066";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-plus{
+  &:before {
+    content: "\f067";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-minus{
+  &:before {
+    content: "\f068";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-asterisk{
+  &:before {
+    content: "\f069";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-exclamation-sign{
+  &:before {
+    content: "\f06a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-gift{
+  &:before {
+    content: "\f06b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-leaf{
+  &:before {
+    content: "\f06c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-fire{
+  &:before {
+    content: "\f06d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-eye-open{
+  &:before {
+    content: "\f06e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-eye-close{
+  &:before {
+    content: "\f070";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-warning-sign{
+  &:before {
+    content: "\f071";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-plane{
+  &:before {
+    content: "\f072";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-calendar{
+  &:before {
+    content: "\f073";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-random{
+  &:before {
+    content: "\f074";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-comment{
+  &:before {
+    content: "\f075";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-magnet{
+  &:before {
+    content: "\f076";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-chevron-up{
+  &:before {
+    content: "\f077";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-chevron-down{
+  &:before {
+    content: "\f078";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-retweet{
+  &:before {
+    content: "\f079";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-shopping-cart{
+  &:before {
+    content: "\f07a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-folder-close{
+  &:before {
+    content: "\f07b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-folder-open{
+  &:before {
+    content: "\f07c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-resize-vertical{
+  &:before {
+    content: "\f07d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-resize-horizontal{
+  &:before {
+    content: "\f07e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-bar-chart{
+  &:before {
+    content: "\f080";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-twitter-sign{
+  &:before {
+    content: "\f081";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-facebook-sign{
+  &:before {
+    content: "\f082";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-camera-retro{
+  &:before {
+    content: "\f083";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-key{
+  &:before {
+    content: "\f084";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-cogs{
+  &:before {
+    content: "\f085";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-comments{
+  &:before {
+    content: "\f086";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-thumbs-up{
+  &:before {
+    content: "\f087";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-thumbs-down{
+  &:before {
+    content: "\f088";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-star-half{
+  &:before {
+    content: "\f089";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-heart-empty{
+  &:before {
+    content: "\f08a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-signout{
+  &:before {
+    content: "\f08b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-linkedin-sign{
+  &:before {
+    content: "\f08c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-pushpin{
+  &:before {
+    content: "\f08d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-external-link{
+  &:before {
+    content: "\f08e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-signin{
+  &:before {
+    content: "\f090";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-trophy{
+  &:before {
+    content: "\f091";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-github-sign{
+  &:before {
+    content: "\f092";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-upload-alt{
+  &:before {
+    content: "\f093";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-lemon{
+  &:before {
+    content: "\f094";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-phone{
+  &:before {
+    content: "\f095";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-check-empty{
+  &:before {
+    content: "\f096";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-bookmark-empty{
+  &:before {
+    content: "\f097";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-phone-sign{
+  &:before {
+    content: "\f098";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-twitter{
+  &:before {
+    content: "\f099";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-facebook{
+  &:before {
+    content: "\f09a";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-github{
+  &:before {
+    content: "\f09b";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-unlock{
+  &:before {
+    content: "\f09c";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-credit-card{
+  &:before {
+    content: "\f09d";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-rss{
+  &:before {
+    content: "\f09e";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-hdd{
+  &:before {
+    content: "\f0a0";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-bullhorn{
+  &:before {
+    content: "\f0a1";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-bell{
+  &:before {
+    content: "\f0a2";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-certificate{
+  &:before {
+    content: "\f0a3";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-hand-right{
+  &:before {
+    content: "\f0a4";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-hand-left{
+  &:before {
+    content: "\f0a5";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-hand-up{
+  &:before {
+    content: "\f0a6";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-hand-down{
+  &:before {
+    content: "\f0a7";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-circle-arrow-left{
+  &:before {
+    content: "\f0a8";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-circle-arrow-right{
+  &:before {
+    content: "\f0a9";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-circle-arrow-up{
+  &:before {
+    content: "\f0aa";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-circle-arrow-down{
+  &:before {
+    content: "\f0ab";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-globe{
+  &:before {
+    content: "\f0ac";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-wrench{
+  &:before {
+    content: "\f0ad";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-tasks{
+  &:before {
+    content: "\f0ae";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-filter{
+  &:before {
+    content: "\f0b0";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-briefcase{
+  &:before {
+    content: "\f0b1";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-fullscreen{
+  &:before {
+    content: "\f0b2";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-group{
+  &:before {
+    content: "\f0c0";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-link{
+  &:before {
+    content: "\f0c1";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-cloud{
+  &:before {
+    content: "\f0c2";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-beaker{
+  &:before {
+    content: "\f0c3";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-cut{
+  &:before {
+    content: "\f0c4";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-copy{
+  &:before {
+    content: "\f0c5";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-paper-clip{
+  &:before {
+    content: "\f0c6";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-save{
+  &:before {
+    content: "\f0c7";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-sign-blank{
+  &:before {
+    content: "\f0c8";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-reorder{
+  &:before {
+    content: "\f0c9";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-list-ul{
+  &:before {
+    content: "\f0ca";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-list-ol{
+  &:before {
+    content: "\f0cb";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-strikethrough{
+  &:before {
+    content: "\f0cc";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-underline{
+  &:before {
+    content: "\f0cd";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-table{
+  &:before {
+    content: "\f0ce";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-magic{
+  &:before {
+    content: "\f0d0";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-truck{
+  &:before {
+    content: "\f0d1";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-pinterest{
+  &:before {
+    content: "\f0d2";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-pinterest-sign{
+  &:before {
+    content: "\f0d3";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-google-plus-sign{
+  &:before {
+    content: "\f0d4";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-google-plus{
+  &:before {
+    content: "\f0d5";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-money{
+  &:before {
+    content: "\f0d6";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-caret-down{
+  &:before {
+    content: "\f0d7";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-caret-up{
+  &:before {
+    content: "\f0d8";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-caret-left{
+  &:before {
+    content: "\f0d9";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-caret-right{
+  &:before {
+    content: "\f0da";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-columns{
+  &:before {
+    content: "\f0db";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-sort{
+  &:before {
+    content: "\f0dc";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-sort-down{
+  &:before {
+    content: "\f0dd";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-sort-up{
+  &:before {
+    content: "\f0de";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-envelope-alt{
+  &:before {
+    content: "\f0e0";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-linkedin{
+  &:before {
+    content: "\f0e1";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-undo{
+  &:before {
+    content: "\f0e2";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-legal{
+  &:before {
+    content: "\f0e3";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-dashboard{
+  &:before {
+    content: "\f0e4";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-comment-alt{
+  &:before {
+    content: "\f0e5";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-comments-alt{
+  &:before {
+    content: "\f0e6";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-bolt{
+  &:before {
+    content: "\f0e7";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-sitemap{
+  &:before {
+    content: "\f0e8";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-umbrella{
+  &:before {
+    content: "\f0e9";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+@mixin icon-paste{
+  &:before {
+    content: "\f0ea";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
+
+@mixin icon-user-md{
+  &:before {
+    content: "\f200";
+    @include Awesome;
+    padding-right: 5px;
+    text-decoration: none;
+  }
+}
+
