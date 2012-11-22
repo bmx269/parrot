@@ -17,17 +17,18 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 
 ## Grid System
 
-Mothership Strappy includes Zen Grids http://zengrids.com/ and Susy http://susy.oddbird.net/ grid frameworks. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
+Mothership Strappy includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
 
-Zen Grids is enabled by default, to change that uncomment the require susy from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
+Susy is enabled by default, to change that comment out the require 'susy', and uncomment the require 'zen' from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
 
 The chosen grid framework will need to be installed via the GEM file.
 
-Zen Grids
+### Susy
+`gem install susy`
+
+### Zen Grids
 `gem install zen-grids`
 
-Susy
-`gem install susy`
 
 ## Media Queries
 
@@ -35,4 +36,5 @@ Mothership Strappy includes Breakpoint https://github.com/canarymason/breakpoint
 
 This will need to be installed via the GEM file.
 
+### Breakpoint
 `gem install breakpoint`

@@ -1,9 +1,10 @@
 # Require any additional compass plugins here.
-# require 'susy'
-# http://susy.oddbird.net/
 
-require 'zen-grids'
+# require 'zen-grids'
 # http://zengrids.com/
+
+require 'susy'
+# http://susy.oddbird.net/
 
 require 'breakpoint'
 # https://github.com/canarymason/breakpoint
