@@ -1,7 +1,7 @@
 Mothership Strappy
 ==========
 
-Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS &amp; Compass. 
+Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS &amp; Compass.
 
 What is Bootstrap? http://twitter.github.com/bootstrap/
 
@@ -17,16 +17,16 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 
 ## Grid System
 
-Mothership Strappy includes the markup to use Zen Grids http://zengrids.com/. This can be modified in the config.rb, and imported into the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css. 
+Mothership Strappy includes Zen Grids http://zengrids.com/. This is required in the config.rb, and imported into the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
 
 This will need to be installed via the GEM file.
 
-<gem install zen-grids>
+`gem install zen-grids`
 
 ## Media Queries
 
-Mothership Strappy includes Breakpoint https://github.com/canarymason/breakpoint to help you build your media queries in SASS. This is called in the _grid.scss to ensure media queries are used in the grids as well as the rest of the theme. 
+Mothership Strappy includes Breakpoint https://github.com/canarymason/breakpoint to help you build your media queries in SASS. This is called in the _grid.scss to ensure media queries are used in the grids as well as the rest of the theme.
 
 This will need to be installed via the GEM file.
 
-<gem install breakpoint>
+`gem install breakpoint`
