@@ -208,3 +208,27 @@
   margin-top: 2px; // give it some space to breathe
   @include border-radius(4px);
 }
+
+
+//
+// Component animations
+// --------------------------------------------------
+
+
+.fade {
+  opacity: 0;
+  @include transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(height .35s ease);
+  &.in {
+    height: auto;
+  }
+}

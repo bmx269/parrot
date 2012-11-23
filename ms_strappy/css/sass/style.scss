@@ -28,27 +28,18 @@
 // Components: common
 @import "components/sprites";
 @import "components/dropdowns";
-@import "components/component-animations";
-@import "components/close";
 
 // Components: Buttons & Alerts
 @import "components/buttons";
-@import "components/button-groups";
 @import "components/alerts"; // Note: alerts share common CSS with buttons and thus have styles in _buttons.scss
 
 // Components: Nav
 @import "components/navs";
 @import "components/breadcrumbs";
-@import "components/pagination";
 @import "components/pager";
 
 
 // Components: Misc
-@import "components/thumbnails";
 @import "components/labels-badges";
-@import "components/progress-bars";
 @import "components/accordion";
-@import "components/carousel";
-
-// Utility classes
-@import "components/utilities"; // Has to be last to override when necessary
+@import "components/rotato";
