@@ -27,7 +27,7 @@
 
 // Components: common
 @import "components/sprites";
-@import "components/dropdowns";
+@import "components/media";
 
 // Components: Buttons & Alerts
 @import "components/buttons";
@@ -43,3 +43,6 @@
 @import "components/labels-badges";
 @import "components/accordion";
 @import "components/rotato";
+
+// Components: Custom Elements
+@import "components/elements";
