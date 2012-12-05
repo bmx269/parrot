@@ -73,12 +73,12 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 * **_alerts.scss** - This contains the common CSS selectors used to display *Alerts* or *Messages* visually on your site. If you need to edit or add custom *Alert* related CSS, it should be placed in this file.
 * **_breadcrumbs.scss** - This contains the common CSS selectors used to display *Breadcrumbs* visually on your site. If you need to edit or add custom *Breadcrumbs* related CSS, it should be placed in this file.
 * **_buttons.scss** - This contains the common CSS selectors used to display *Buttons* visually on your site. If you need to edit or add custom *Button* related CSS, it should be placed in this file.
-* **_rotato.scss** - This contains the common CSS selectors used to display *Rototo's* or *Slideshows* visually on your site. If you need to edit or add custom *Rotato* or *Slideshow* related CSS, it should be placed in this file.
 * **_media.scss** - This contains the common CSS selectors used to display all *Media*, like images, videos, flash, audio, overlays, etc type components visually on your site. If you need to edit or add custom *Media* related CSS, it should be placed in this file.
+* **_sprites.scss** - This is where you should put the CSS related to *Sprite Images* used on your site.
+* **_rotato.scss** - This contains the common CSS selectors used to display *Rototo's* or *Slideshows* visually on your site. If you need to edit or add custom *Rotato* or *Slideshow* related CSS, it should be placed in this file.
 * **_labels-badges.scss** - This contains the common CSS selectors used to display *Labels* visually on your site. If you need to edit or add custom *Lable* related CSS, it should be placed in this file.
 * **_navs.scss** - This contains the common CSS selectors used to display *Navigation* or *Menus* visually on your site. If you need to edit or add custom *Navigation* related CSS, it should be placed in this file.
 * **_pager.scss** - This contains the common CSS selectors used to display *Pager* visually on your site. If you need to edit or add custom *Pager* related CSS, it should be placed in this file.
-* **_sprites.scss** - This is where you should put the CSS related to *Sprite Images* used on your site.
 * **_elements.scss** - This is where you should put the CSS related to the custom *Elements* the do not fall into the files above, which are used on your site.
 
 
