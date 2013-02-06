@@ -87,4 +87,9 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 * **_grid.scss** - This contains the *Grid* settings for your site, along with the *Media Queries* for the site. The *Grid* included with the theme by default is the Susy grid framework. You should use this file to layout the sites grid structure as well as block placement. It is recommended to keep the style and placement of block elements separated, allowing quick placement of blocks, and then style is based on the type of block is in the appropriate SASS file.
 * **_scaffolding.scss** - This contains the basic *Body* styles that the theme uses. This file is getting the styles from the *Variables* file, and does not really need editing.
 
+## Please Note
 
+This project is a Sandbox on Drupal.org as well, and will eventually become a Full Project, this github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests. If you want to submit issues, please do so in the Sandbox.
+http://drupal.org/sandbox/bmx269/1848916
+
+The development of this theme is sponsored in part by ImageX Media.
