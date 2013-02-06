@@ -1,7 +1,7 @@
-Mothership Strappy
+Parrot
 ==========
 
-Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS &amp; Compass.
+Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
 
 What is Bootstrap? http://twitter.github.com/bootstrap/
 
@@ -17,7 +17,7 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 
 ## Grid System
 
-Mothership Strappy includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
+Parrot includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
 
 Susy is enabled by default, to change that comment out the require 'susy', and uncomment the require 'zen' from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
 
@@ -32,7 +32,7 @@ The chosen grid framework will need to be installed via the GEM file.
 
 ## Media Queries
 
-Mothership Strappy includes Breakpoint https://github.com/canarymason/breakpoint to help you build your media queries in SASS. If you are using Susy for your grids, you do not need to enable this. This is called in the _grid.scss to ensure media queries are used in the grids as well as the rest of the theme. If you are using Susy, comment out the import at the top of the _grid.scss.
+Parrot includes Breakpoint https://github.com/canarymason/breakpoint to help you build your media queries in SASS. If you are using Susy for your grids, you do not need to enable this. This is called in the _grid.scss to ensure media queries are used in the grids as well as the rest of the theme. If you are using Susy, comment out the import at the top of the _grid.scss.
 
 This will need to be installed via the GEM file.
 
@@ -44,7 +44,7 @@ This will need to be installed via the GEM file.
 
 The theme is not intended to be a *"base theme"*, it is meant to be a *"starter theme"* where you rename it and use it as your theme. The *"base theme"* that is to be used with this theme is the Drupal 7 version of Mothership (http://drupal.org/project/mothership).
 
-To install, copy the folder "ms_strappy" from this repo into /sites/all/themes/ of your Drupal 7 site. Rename the folder to your desired theme name, as well, rename the "ms_strappy.info" file to match the theme name. This name must be lowercase, with no spaces, as it is a machine name. You can then inside the .info file add your Fancy theme title. Renaming is not required for use.
+To install, copy the folder "parrot" from this repo into /sites/all/themes/ of your Drupal 7 site. Rename the folder to your desired theme name, as well, rename the "parrot.info" file to match the theme name. This name must be lowercase, with no spaces, as it is a machine name. You can then inside the .info file add your Fancy theme title. Renaming is not required for use.
 
 The theme uses SASS to build the CSS, then is compiled into the /css/style.css file. The SASS files are organized in a file structure that is based on overall site structure, not specific components. The structure is as follows in the /css/sass folder:
 
