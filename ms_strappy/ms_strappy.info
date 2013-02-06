@@ -21,9 +21,9 @@ features[] = comment_user_verification
 ;regions_hidden[] = im_a_hidden_but_visibel_for_a_module
 
 ;-- Required Regions
-regions[page_top] = Page Top
+regions[content_pre] = Content Pre
 regions[content] = Content
-regions[page_bottom] = Page Bottom
+regions[content_post] = Content Post
 
 ;-- Core Regions
 regions[header] = Header
