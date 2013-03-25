@@ -1,10 +1,10 @@
 #panels-dnd-main .region {float: right; margin-bottom: 5px}
-#panels-dnd-main .region-three-inset-left-sidebar {width: 25%}
+#panels-dnd-main .region-sidebar {width: 25%}
 #panels-dnd-main .inset-wrapper {float: right; width: 74.5%; margin-right: 0.5%}
 #panels-dnd-main .inset-wrapper .region {width: 100%}
-#panels-dnd-main .inset-wrapper .region-three-inset-left-middle {width: 69.5%}
-#panels-dnd-main .inset-wrapper .region-three-inset-left-inset {width: 30%; margin-right: 0.5%}
-#panels-dnd-main .region-three-inset-left-bottom {clear: both}
+#panels-dnd-main .inset-wrapper .region-middle {width: 69.5%}
+#panels-dnd-main .inset-wrapper .region-inset {width: 30%; margin-right: 0.5%}
+#panels-dnd-main .region-bottom {clear: both}
 
 /* Inset sprite */
 [id^=edit-inset] .form-type-radio label {background: url(inset-sprite.png)}

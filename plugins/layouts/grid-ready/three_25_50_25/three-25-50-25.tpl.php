@@ -10,7 +10,7 @@
  */
 
 ?>
-<div class="panel-display three-25-50-25 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="panel-display grid-ready three-25-50-25 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['three_25_50_25_top']): ?>
     <div class="region region-top region-conditional-stack">
       <div class="region-inner clearfix">
