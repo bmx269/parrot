@@ -652,3 +652,197 @@
 .input-block-level {
   @include input-block-level;
 }
+
+// Define grids for panel layouts
+@mixin panels-grid-ready($cols) {
+
+  .grid-ready {
+    &.one-column {
+      .region-one-main {
+        @include span-columns($cols, $cols);
+      }
+    }
+
+    &.two-66-33 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first {
+        @include span-columns(round($cols * 2 / 3), $cols);
+      }
+
+      .region-second {
+        @include span-columns(round($cols * 1 / 3) omega, $cols);
+      }
+    }
+
+    &.two-33-66 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first {
+        @include span-columns(round($cols * 1 / 3), $cols);
+      }
+
+      .region-second {
+        @include span-columns(round($cols * 2 / 3) omega, $cols);
+      }
+    }
+
+    &.two-50 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first {
+        @include span-columns(($cols / 2), $cols);
+      }
+
+      .region-second {
+        @include span-columns(($cols / 2) omega, $cols);
+      }
+    }
+
+    &.two-brick {
+      .region-top,
+      .region-bottom,
+      .region-middle {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-left-above,
+      .region-left-below {
+        @include span-columns(($cols / 2), $cols);
+      }
+
+      .region-right-above,
+      .region-right-below {
+        @include span-columns(($cols / 2) omega, $cols);
+      }
+    }
+
+    &.three-25-25-50 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first {
+        @include span-columns(($cols / 4), $cols);
+      }
+
+      .region-second {
+        @include span-columns(($cols / 4), $cols);
+      }
+
+      .region-third {
+        @include span-columns(($cols / 2) omega, $cols);
+      }
+    }
+
+    &.three-25-50-25 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first {
+        @include span-columns(($cols / 4), $cols);
+      }
+
+      .region-second {
+        @include span-columns(($cols / 2), $cols);
+      }
+
+      .region-third {
+        @include span-columns(($cols / 4) omega, $cols);
+      }
+    }
+
+    &.three-3x33 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first,
+      .region-second {
+        @include span-columns(round($cols / 3), $cols);
+      }
+
+      .region-third {
+        @include span-columns(round($cols / 3) omega, $cols);
+      }
+    }
+
+    &.three-50-25-25 {
+      .region-top,
+      .region-bottom {
+        @include span-columns($cols, $cols);
+      }
+
+      .region-first {
+        @include span-columns(($cols / 2), $cols);
+      }
+
+      .region-second {
+        @include span-columns(($cols / 4), $cols);
+      }
+
+      .region-third {
+        @include span-columns(($cols / 4) omega, $cols);
+      }
+    }
+
+    &.three-inset-left {
+      .inset-wrapper {
+        @include span-columns(($cols * 3 / 4), $cols);
+
+        .region-top,
+        .region-bottom {
+          @include span-columns(($cols * 3 / 4), ($cols * 3 / 4));
+        }
+
+        .region-middle {
+          @include span-columns(($cols / 2) omega, ($cols * 3 / 4));
+        }
+
+        .region-inset {
+          @include span-columns(($cols / 4), ($cols * 3 / 4));
+        }
+      }
+
+      .region-sidebar {
+        @include span-columns(($cols / 4) omega, $cols);
+      }
+    }
+
+    &.three-inset-right {
+      .inset-wrapper {
+        @include span-columns(($cols * 3 / 4) omega, $cols);
+
+        .region-top,
+        .region-bottom {
+          @include span-columns(($cols * 3 / 4), ($cols * 3 / 4));
+        }
+
+        .region-middle {
+          @include span-columns(($cols / 2), ($cols * 3 / 4));
+        }
+
+        .region-inset {
+          @include span-columns(($cols / 4) omega, ($cols * 3 / 4));
+        }
+      }
+
+      .region-sidebar {
+        @include span-columns(($cols / 4), $cols);
+      }
+    }
+  }
+}

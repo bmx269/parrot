@@ -61,8 +61,9 @@ $wide: 80em;
 
 @include at-breakpoint($narrow){ //use breakpoint($variable-name) if using "Breakpoint"
   .container{
-      @include container;
-      @include susy-grid-background;
+    @include container;
+    @include susy-grid-background;
+    @include panels-grid-ready($total-columns);
 
     // Block specific grid setting overrides in here.
 
@@ -77,8 +78,9 @@ $wide: 80em;
 @include at-breakpoint($tablet){ //use breakpoint($variable-name) if using "Breakpoint"
 
   .container{
-      @include container;
-      @include susy-grid-background;
+    @include container;
+    @include susy-grid-background;
+    @include panels-grid-ready($total-columns);
 
     // Block specific grid setting overrides in here.
 
@@ -92,8 +94,9 @@ $wide: 80em;
 
 @include at-breakpoint($computer){ //use breakpoint($variable-name) if using "Breakpoint"
   .container{
-      @include container;
-      @include susy-grid-background;
+    @include container;
+    @include susy-grid-background;
+    @include panels-grid-ready($total-columns);
 
     // Block specific grid setting overrides in here.
 
@@ -107,8 +110,9 @@ $wide: 80em;
 
 @include at-breakpoint($wide){ //use breakpoint($variable-name) if using "Breakpoint"
   .container{
-      @include container;
-      @include susy-grid-background;
+    @include container;
+    @include susy-grid-background;
+    @include panels-grid-ready($total-columns);
 
     // Block specific grid setting overrides in here.
 

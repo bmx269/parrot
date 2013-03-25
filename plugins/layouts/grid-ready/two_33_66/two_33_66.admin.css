@@ -1,7 +1,7 @@
 #panels-dnd-main .region {margin-bottom: 5px}
-#panels-dnd-main .region-two-33-66-first {float: left; width: 33%}
-#panels-dnd-main .region-two-33-66-second {float: right; width: 66.5%}
-#panels-dnd-main .region-two-33-66-bottom {clear: both}
+#panels-dnd-main .region-first {float: left; width: 33%}
+#panels-dnd-main .region-second {float: right; width: 66.5%}
+#panels-dnd-main .region-bottom {clear: both}
 
 /* Two col sprite */
 [id^=edit-two] .form-type-radio label {background: url(twocol-sprite.png)}
