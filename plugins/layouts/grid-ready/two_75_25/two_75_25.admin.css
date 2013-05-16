@@ -1,4 +1,4 @@
 #panels-dnd-main .region {margin-bottom: 5px}
-#panels-dnd-main .region-two-75-25-first {float: left; width: 74.5%}
-#panels-dnd-main .region-two-75-25-second {float: right; width: 25%}
-#panels-dnd-main .region-two-75-25-bottom {clear: both}
+#panels-dnd-main .region-first {float: left; width: 74.5%}
+#panels-dnd-main .region-second {float: right; width: 25%}
+#panels-dnd-main .region-bottom {clear: both}

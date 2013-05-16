@@ -9,26 +9,26 @@
  * - $css_id: unique id if present.
  */
 ?>
-<div class="panel-display two-75-25 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="panel-display grid-ready two-75-25 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['two_75_25_top']): ?>
-    <div class="region region-two-75-25-top region-conditional-stack">
+    <div class="region region-top region-conditional-stack">
       <div class="region-inner clearfix">
         <?php print $content['two_75_25_top']; ?>
       </div>
     </div>
   <?php endif; ?>
-  <div class="region region-two-75-25-first">
+  <div class="region region-first">
     <div class="region-inner clearfix">
       <?php print $content['two_75_25_first']; ?>
     </div>
   </div>
-  <div class="region region-two-75-25-second">
+  <div class="region region-second">
     <div class="region-inner clearfix">
       <?php print $content['two_75_25_second']; ?>
     </div>
   </div>
   <?php if ($content['two_75_25_bottom']): ?>
-    <div class="region region-two-75-25-bottom region-conditional-stack">
+    <div class="region region-bottom region-conditional-stack">
       <div class="region-inner clearfix">
         <?php print $content['two_75_25_bottom']; ?>
       </div>
