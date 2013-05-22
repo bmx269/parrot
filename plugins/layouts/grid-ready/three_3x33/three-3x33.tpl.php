@@ -12,31 +12,43 @@
 ?>
 <div class="panel-display grid-ready three-3x33 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['three_33_top']): ?>
-    <div class="region region-top region-conditional-stack">
-      <div class="region-inner clearfix">
-        <?php print $content['three_33_top']; ?>
+    <div id="three-33-top-wrapper" class="fullwidth">
+      <div class="container">
+        <div class="region region-top region-conditional-stack">
+          <div class="region-inner clearfix">
+            <?php print $content['three_33_top']; ?>
+          </div>
+        </div>
       </div>
     </div>
   <?php endif; ?>
-  <div class="region region-first">
-    <div class="region-inner clearfix">
-      <?php print $content['three_33_first']; ?>
+    <div id="three-33-middle-wrapper" class="fullwidth">
+      <div class="container">
+        <div class="region region-first">
+          <div class="region-inner clearfix">
+            <?php print $content['three_33_first']; ?>
+          </div>
+        </div>
+        <div class="region region-second">
+          <div class="region-inner clearfix">
+            <?php print $content['three_33_second']; ?>
+          </div>
+        </div>
+        <div class="region region-third">
+          <div class="region-inner clearfix">
+            <?php print $content['three_33_third']; ?>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="region region-second">
-    <div class="region-inner clearfix">
-      <?php print $content['three_33_second']; ?>
-    </div>
-  </div>
-  <div class="region region-third">
-    <div class="region-inner clearfix">
-      <?php print $content['three_33_third']; ?>
-    </div>
-  </div>
   <?php if ($content['three_33_bottom']): ?>
-    <div class="region region-bottom region-conditional-stack">
-      <div class="region-inner clearfix">
-        <?php print $content['three_33_bottom']; ?>
+    <div id="three-33-bottom-wrapper" class="fullwidth">
+      <div class="container">
+        <div class="region region-bottom region-conditional-stack">
+          <div class="region-inner clearfix">
+            <?php print $content['three_33_bottom']; ?>
+          </div>
+        </div>
       </div>
     </div>
   <?php endif; ?>

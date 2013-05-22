@@ -3,7 +3,7 @@
   Preprocess
 */
 
-/*
+
 function parrot_preprocess_html(&$vars) {
   //  kpr($vars['content']);
 }
@@ -19,6 +19,17 @@ function parrot_preprocess_page(&$vars,$hook) {
   //googlefont
   //  drupal_add_css('http://fonts.googleapis.com/css?family=Bree+Serif','external');
 
+  // if this is a panel page, add template suggestions
+  if($panel_page = page_manager_get_current_page()) {
+    // add a generic suggestion for all panel pages
+    $vars['theme_hook_suggestions'][] = 'page__panel';
+
+    // add the panel page machine name to the template suggestions
+    $vars['theme_hook_suggestions'][] = 'page__' . $panel_page['name'];
+
+    //add a body class for good measure
+    $body_classes[] = 'page-panel';
+  }
 }
 
 function parrot_preprocess_region(&$vars,$hook) {
@@ -95,4 +106,3 @@ function parrot_preprocess_field(&$vars,$hook) {
 function parrot_preprocess_maintenance_page(){
   //  kpr($vars['content']);
 }
-*/

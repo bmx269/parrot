@@ -11,9 +11,13 @@
 
 ?>
 <div class="panel-display grid-ready one-column clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div class="region region-one-main">
-    <div class="region-inner clearfix">
-      <?php print $content['one_main']; ?>
+  <div id="one-wrapper" class="fullwidth">
+    <div class="container">
+      <div class="region region-one-main">
+        <div class="region-inner clearfix">
+          <?php print $content['one_main']; ?>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -11,13 +11,17 @@
 
 ?>
 <div class="panel-display grid-ready three-inset-right clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div class="region region-sidebar">
+  <div id="three-inset-right-wrapper" class="fullwidth">
+    <div class="container">
+      <div id="three-inset-right-left-wrapper" class="clearfix">
+        <div class="region region-sidebar">
     <div class="region-inner clearfix">
       <?php print $content['three_inset_right_sidebar']; ?>
     </div>
   </div>
-  <div class="inset-wrapper clearfix">
-    <?php if ($content['three_inset_right_top']): ?>
+      </div>
+      <div id="three-inset-right-right-wrapper" class="clearfix">
+        <?php if ($content['three_inset_right_top']): ?>
       <div class="region region-top region-conditional-stack">
         <div class="region-inner clearfix">
           <?php print $content['three_inset_right_top']; ?>
@@ -42,5 +46,7 @@
         </div>
       </div>
     <?php endif; ?>
+  </div>
+    </div>
   </div>
 </div>

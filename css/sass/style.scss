@@ -1,12 +1,11 @@
 //
-// Bootstrap v2.1.1
-//
+// Uses some of the css tyles from Bootstrap v2.1.1
 // Copyright 2012 Twitter, Inc
 // Licensed under the Apache License v2.0
-// http://www.apache.org/licenses/LICENSE-2.0
 //
-// Designed and built with all the love in the world @twitter by @mdo and @fat.
 // Converted to Sass by @thomasmcdonald_, and distributed as bootstrap-sass
+// Rethought and made great by @bmx269 and redistributed as the Drupal theme Parrot
+//
 
 // Core variables and mixins
 @import "base/variables"; // Modify this for custom colors, font-sizes, etc
@@ -16,8 +15,8 @@
 @import "base/reset";
 
 // Grid system and page structure
-@import "layout/scaffolding";
 @import "layout/grid";
+@import "layout/scaffolding";
 
 // Base CSS
 @import "base/type";

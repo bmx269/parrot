@@ -1,0 +1,7 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+#panels-dnd-main .panel-row .region {width: 49.75%}
+#panels-dnd-main .region-left-below {float: left; width: 49.75%}
+#panels-dnd-main .region-right-below {float: left; width: 49.75%}
+#panels-dnd-main .region-left-top {float: left; width: 32.75%}
+#panels-dnd-main .region-middle-top {float: left; width: 32.75%}
+#panels-dnd-main .region-right-top {float: right;  width: 32.75%}

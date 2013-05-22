@@ -8,7 +8,7 @@
 // ---------------------------------------------------------------------------
 // Susy Grid
 
-
+$base-font-size: 14px;
 //this is the default number of columns
 $total-columns: 4;
 //width of each column
@@ -17,6 +17,13 @@ $column-width   : 6em;
 $gutter-width   : 1.5em;
 //space on the right and left of the grid
 $grid-padding   : $gutter-width;
+
+// $container-style: <style>; <style>: magic | static | fluid.
+$container-style: magic;
+
+// $legacy-support-for-ie  : true;
+// $legacy-support-for-ie6 : $legacy-support-for-ie;
+// $legacy-support-for-ie7 : $legacy-support-for-ie;
 
 $show-grid-backgrounds  : true;
 
@@ -31,7 +38,6 @@ $wide: 65em 12;
 // Media Query Settings for use with Breakpoint
 
 /*
-
 $breakpoint-default-media: all;
 $breakpoint-default-pair: width;
 
@@ -39,7 +45,6 @@ $narrow: 32em;
 $tablet: 48em;
 $computer: 63em;
 $wide: 80em;
-
 */
 
 
@@ -85,6 +90,16 @@ $wide: 80em;
     // Block specific grid setting overrides in here.
 
   }
+
+  #two-brick-above-wrapper{
+    .region-left-above{
+      @include span-columns(4,8);
+    }
+    .region-right-above{
+      @include span-columns(4 omega,8);
+    }
+  } //#two-brick-above-wrapper
+
 }
 
 
@@ -97,10 +112,9 @@ $wide: 80em;
     @include container;
     @include susy-grid-background;
     @include panels-grid-ready($total-columns);
-
     // Block specific grid setting overrides in here.
-
   }
+
 }
 
 
