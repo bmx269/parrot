@@ -11,8 +11,8 @@
 @import "base/variables"; // Modify this for custom colors, font-sizes, etc
 @import "base/mixins";
 
-// CSS Reset
-@import "base/reset";
+// Compass CSS Reset
+@import "compass/reset";
 
 // Grid system and page structure
 @import "layout/grid";

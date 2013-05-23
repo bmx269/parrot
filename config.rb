@@ -6,7 +6,7 @@
 require 'susy'
 # http://susy.oddbird.net/
 
-require 'breakpoint'
+# require 'breakpoint'
 # https://github.com/canarymason/breakpoint
 
 # Set this to the root of your project when deployed:
