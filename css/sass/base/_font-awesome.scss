@@ -46,7 +46,7 @@ $fontAwesomePath:   "../fonts" !default;
   text-decoration: none;
 
   /* sprites.less reset */
-  display: inline-block;
+  @include inline-block;
   width: auto;
   height: auto;
   margin-top: 0;
@@ -86,7 +86,7 @@ $fontAwesomePath:   "../fonts" !default;
 }
 
 @mixin icon-spin {
-  display: inline-block;
+  @include inline-block;
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
   -webkit-animation: spin 2s infinite linear;

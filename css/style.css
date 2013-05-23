@@ -1,36 +1,70 @@
-/*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
-    -------------------------------------------------------
-    The full suite of pictographic icons, examples, and documentation
-    can be found at: http://fortawesome.github.com/Font-Awesome/
-
-    License
-    -------------------------------------------------------
-    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-    http://creativecommons.org/licenses/by/3.0/ A mention of
-    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-    source code is considered acceptable attribution (most common on the web).
-    If human readable source code is not available to the end user, a mention in
-    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-    or mobile software).
-
-    Contact
-    -------------------------------------------------------
-    Email: dave@davegandy.com
-    Twitter: http://twitter.com/fortaweso_me
-    Work: Lead Product Designer @ http://kyruus.com
-
-    */
+/*
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+ *
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
+ */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=3.0.1");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype"), url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
 /* makes the font 33% larger relative to the icon container */
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(359deg); } }
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+
+  100% {
+    -o-transform: rotate(359deg); } }
+
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg); }
+
+  100% {
+    -ms-transform: rotate(359deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(359deg); } }
+
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 /* \f020 doesn't work in Safari. all shifted one down */
@@ -66,6 +100,7 @@ section {
 audio,
 canvas,
 video {
+  display: -moz-inline-box;
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -1289,7 +1324,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
+  display: -moz-inline-box;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   height: 24px;
   padding: 4px 6px;
   margin-bottom: 9px;
@@ -1445,7 +1483,10 @@ textarea::-webkit-input-placeholder {
 
 .radio.inline,
 .checkbox.inline {
+  display: -moz-inline-box;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   padding-top: 5px;
   margin-bottom: 0;
   vertical-align: middle; }
@@ -1493,7 +1534,10 @@ textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"],
 .row-fluid .input-prepend [class*="span"],
 .row-fluid .input-append [class*="span"] {
-  display: inline-block; }
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
 input[disabled],
 select[disabled],
@@ -1661,9 +1705,9 @@ select:focus:required:invalid {
   margin-bottom: 12px; }
 
 .help-inline {
+  display: -moz-inline-box;
   display: inline-block;
   *display: inline;
-  /* IE7 inline-block hack */
   *zoom: 1;
   vertical-align: middle;
   padding-left: 5px; }
@@ -1696,7 +1740,10 @@ select:focus:required:invalid {
       z-index: 2; }
   .input-append .add-on,
   .input-prepend .add-on {
+    display: -moz-inline-box;
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     width: auto;
     height: 24px;
     min-width: 16px;
@@ -1823,9 +1870,9 @@ input.search-query {
 .form-horizontal .uneditable-input,
 .form-horizontal .input-prepend,
 .form-horizontal .input-append {
+  display: -moz-inline-box;
   display: inline-block;
   *display: inline;
-  /* IE7 inline-block hack */
   *zoom: 1;
   margin-bottom: 0;
   vertical-align: middle; }
@@ -1838,7 +1885,10 @@ input.search-query {
 .form-inline label,
 .form-search .btn-group,
 .form-inline .btn-group {
-  display: inline-block; }
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
 .form-search .input-append,
 .form-inline .input-append,
@@ -2040,9 +2090,9 @@ table [class*=span],
   margin-top: 12px;
   margin-bottom: 12px; }
   .btn-toolbar .btn-group {
+    display: -moz-inline-box;
     display: inline-block;
     *display: inline;
-    /* IE7 inline-block hack */
     *zoom: 1; }
   .btn-toolbar .btn + .btn,
   .btn-toolbar .btn-group + .btn,
@@ -2190,9 +2240,9 @@ table [class*=span],
   border-bottom-color: white; }
 
 .btn-group-vertical {
+  display: -moz-inline-box;
   display: inline-block;
   *display: inline;
-  /* IE7 inline-block hack */
   *zoom: 1; }
 
 .btn-group-vertical .btn {
@@ -2228,9 +2278,9 @@ table [class*=span],
   border-radius: 0 0 6px 6px; }
 
 .btn {
+  display: -moz-inline-box;
   display: inline-block;
   *display: inline;
-  /* IE7 inline-block hack */
   *zoom: 1;
   padding: 4px 14px;
   margin-bottom: 0;
@@ -2603,7 +2653,10 @@ input[type="submit"].btn {
   outline: 0; }
 
 .caret {
+  display: -moz-inline-box;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 0;
   height: 0;
   vertical-align: top;
@@ -3093,9 +3146,9 @@ input[type="submit"].btn {
   -moz-border-radius: 4px;
   border-radius: 4px; }
   .breadcrumb li {
+    display: -moz-inline-box;
     display: inline-block;
     *display: inline;
-    /* IE7 inline-block hack */
     *zoom: 1;
     text-shadow: 0 1px 0 white; }
   .breadcrumb .divider {
@@ -3109,9 +3162,9 @@ input[type="submit"].btn {
   margin: 24px 0; }
 
 .pagination ul {
+  display: -moz-inline-box;
   display: inline-block;
   *display: inline;
-  /* IE7 inline-block hack */
   *zoom: 1;
   margin-left: 0;
   margin-bottom: 0;
@@ -3183,7 +3236,10 @@ input[type="submit"].btn {
 
 .pager a,
 .pager span {
+  display: -moz-inline-box;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   padding: 5px 14px;
   background-color: #fff;
   border: 1px solid #ddd;

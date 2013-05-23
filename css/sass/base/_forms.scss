@@ -78,7 +78,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  display: inline-block;
+  @include inline-block;
   height: $baseLineHeight;
   padding: 4px 6px;
   margin-bottom: 9px;
@@ -242,7 +242,7 @@ textarea {
 // TODO v3: Convert .inline to .control-inline
 .radio.inline,
 .checkbox.inline {
-  display: inline-block;
+  @include inline-block;
   padding-top: 5px;
   margin-bottom: 0;
   vertical-align: middle;
@@ -289,7 +289,7 @@ textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"],
 .row-fluid .input-prepend [class*="span"],
 .row-fluid .input-append [class*="span"] {
-  display: inline-block;
+  @include inline-block;
 }
 
 
@@ -382,8 +382,7 @@ select:focus:required:invalid {
 }
 
 .help-inline {
-  display: inline-block;
-  @include ie7-inline-block();
+  @include inline-block;
   vertical-align: middle;
   padding-left: 5px;
 }
@@ -415,7 +414,7 @@ select:focus:required:invalid {
     }
   }
   .add-on {
-    display: inline-block;
+    @include inline-block;
     width: auto;
     height: $baseLineHeight;
     min-width: 16px;
@@ -533,8 +532,7 @@ input.search-query {
   .uneditable-input,
   .input-prepend,
   .input-append {
-    display: inline-block;
-    @include ie7-inline-block();
+    @include inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
@@ -547,7 +545,7 @@ input.search-query {
 .form-inline label,
 .form-search .btn-group,
 .form-inline .btn-group {
-  display: inline-block;
+  @include inline-block;
 }
 // Remove margin for input-prepend/-append
 .form-search .input-append,

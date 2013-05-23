@@ -12,36 +12,48 @@
 ?>
 <div class="panel-display four-4x25 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['four_25_top']): ?>
-    <div class="region region-top region-conditional-stack">
-      <div class="region-inner clearfix">
-        <?php print $content['four_25_top']; ?>
+    <div id="four-25-top-wrapper" class="fullwidth">
+      <div class="container">
+        <div class="region region-top region-conditional-stack">
+          <div class="region-inner clearfix">
+            <?php print $content['four_25_top']; ?>
+          </div>
+        </div>
       </div>
     </div>
   <?php endif; ?>
-  <div class="region region-first">
-    <div class="region-inner clearfix">
-      <?php print $content['four_25_first']; ?>
+    <div id="four-25-middle-wrapper" class="fullwidth">
+      <div class="container">
+        <div class="region region-first">
+          <div class="region-inner clearfix">
+            <?php print $content['four_25_first']; ?>
+          </div>
+        </div>
+        <div class="region region-second">
+          <div class="region-inner clearfix">
+            <?php print $content['four_25_second']; ?>
+          </div>
+        </div>
+        <div class="region region-third">
+          <div class="region-inner clearfix">
+            <?php print $content['four_25_third']; ?>
+          </div>
+        </div>
+        <div class="region region-fourth">
+          <div class="region-inner clearfix">
+            <?php print $content['four_25_fourth']; ?>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="region region-second">
-    <div class="region-inner clearfix">
-      <?php print $content['four_25_second']; ?>
-    </div>
-  </div>
-  <div class="region region-third">
-    <div class="region-inner clearfix">
-      <?php print $content['four_25_third']; ?>
-    </div>
-  </div>
-  <div class="region region-fourth">
-    <div class="region-inner clearfix">
-      <?php print $content['four_25_fourth']; ?>
-    </div>
-  </div>
   <?php if ($content['four_25_bottom']): ?>
-    <div class="region region-bottom region-conditional-stack">
-      <div class="region-inner clearfix">
-        <?php print $content['four_25_bottom']; ?>
+    <div id="four-25-bottom-wrapper" class="fullwidth">
+      <div class="container">
+        <div class="region region-bottom region-conditional-stack">
+        <div class="region-inner clearfix">
+          <?php print $content['four_25_bottom']; ?>
+        </div>
+      </div>
       </div>
     </div>
   <?php endif; ?>

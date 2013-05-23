@@ -8,8 +8,7 @@
   margin: $baseLineHeight 0;
  }
 .pagination ul {
-  display: inline-block;
-  @include ie7-inline-block();
+  @include inline-block;
   margin-left: 0;
   margin-bottom: 0;
   @include border-radius(3px);
@@ -81,7 +80,7 @@
 }
 .pager a,
 .pager span {
-  display: inline-block;
+  @include inline-block;
   padding: 5px 14px;
   background-color: #fff;
   border: 1px solid #ddd;
