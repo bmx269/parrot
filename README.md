@@ -25,10 +25,10 @@ The chosen grid framework will need to be installed via the GEM file.
 
 ### Susy
 `gem install susy`
+Check that the version used is at least 1.0.8, but not yet version 2+.
 
 ### Zen Grids
 `gem install zen-grids`
-
 
 ## Media Queries
 
@@ -85,7 +85,7 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 ### The files in /layout and their intended use:
 
 * **_grid.scss** - This contains the *Grid* settings for your site, along with the *Media Queries* for the site. The *Grid* included with the theme by default is the Susy grid framework. You should use this file to layout the sites grid structure as well as block placement. It is recommended to keep the style and placement of block elements separated, allowing quick placement of blocks, and then style is based on the type of block is in the appropriate SASS file.
-* **_scaffolding.scss** - This contains the basic *Body* styles that the theme uses. This file is getting the styles from the *Variables* file, and does not really need editing.
+* **_scaffolding.scss** - This contains the basic *Body* styles that the theme uses. This file is getting the styles from the *Variables* file, and is a great place to declare the base region specific styles, i.e. wrapper backgrounds for the header and footer.
 
 ## Please Note
 
