@@ -12,12 +12,14 @@
 <div class="panel-display grid-ready two-brick-three clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['two_brick_top']): ?>
     <div id="two-brick-three-top-wrapper" class="fullwidth">
-      <div class="region region-top region-conditional-stack">
-        <div class="region-inner clearfix">
-          <?php print $content['two_brick_top']; ?>
+      <div class="container">
+        <div class="region region-top region-conditional-stack">
+          <div class="region-inner clearfix">
+            <?php print $content['two_brick_top']; ?>
+          </div>
         </div>
       </div>
-  </div>
+    </div>
   <?php endif; ?>
     <div id="two-brick-three-middle-top-wrapper" class="fullwidth">
       <div class="container">
