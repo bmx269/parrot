@@ -50,86 +50,32 @@ $wide: 80em;
 
 
 // ---------------------------------------------------------------------------
-// mobile first, grid styles
+// "Mobile First", grid styles
 
 .container{
   @include container;
   @include susy-grid-background;
 
-  // Default grid blocks here following the Mobile First strategy.
-
-}
-
-
-
-// ---------------------------------------------------------------------------
-// first breakpoint
-
-@include at-breakpoint($narrow){ //use breakpoint($variable-name) if using "Breakpoint"
-  .container{
+  @include at-breakpoint($narrow){
     @include container;
     @include susy-grid-background;
     @include panels-grid-ready($total-columns);
-
-    // Block specific grid setting overrides in here.
-
   }
-}
-
-
-
-// ---------------------------------------------------------------------------
-// second breakpoint
-
-@include at-breakpoint($tablet){ //use breakpoint($variable-name) if using "Breakpoint"
-
-  .container{
+  @include at-breakpoint($tablet){
     @include container;
     @include susy-grid-background;
     @include panels-grid-ready($total-columns);
-
-    // Block specific grid setting overrides in here.
-
   }
-
-  #two-brick-above-wrapper{
-    .region-left-above{
-      @include span-columns(4,8);
-    }
-    .region-right-above{
-      @include span-columns(4 omega,8);
-    }
-  } //#two-brick-above-wrapper
-
-}
-
-
-
-// ---------------------------------------------------------------------------
-// third breakpoint
-
-@include at-breakpoint($computer){ //use breakpoint($variable-name) if using "Breakpoint"
-  .container{
+  @include at-breakpoint($computer){
     @include container;
     @include susy-grid-background;
     @include panels-grid-ready($total-columns);
-    // Block specific grid setting overrides in here.
   }
-
-}
-
-
-
-// ---------------------------------------------------------------------------
-// fourth breakpoint
-
-@include at-breakpoint($wide){ //use breakpoint($variable-name) if using "Breakpoint"
-  .container{
+  @include at-breakpoint($wide){
     @include container;
     @include susy-grid-background;
     @include panels-grid-ready($total-columns);
-
-    // Block specific grid setting overrides in here.
-
   }
-}
+} //.container
+
+// Default grid blocks here following the "Mobile First" strategy
