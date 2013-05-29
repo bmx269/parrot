@@ -7,12 +7,12 @@
 // Rethought and made great by @bmx269 and redistributed as the Drupal theme Parrot
 //
 
+// Compass CSS Reset
+@import "compass/reset";
+
 // Core variables and mixins
 @import "base/variables"; // Modify this for custom colors, font-sizes, etc
 @import "base/mixins";
-
-// Compass CSS Reset
-@import "compass/reset";
 
 // Grid system and page structure
 @import "layout/grid";
