@@ -1,47 +1,48 @@
 //
-// Uses some of the css tyles from Bootstrap v2.1.1
-// Copyright 2012 Twitter, Inc
-// Licensed under the Apache License v2.0
+// Uses some of the css tyles from Bootstrap v2.1.1.
+// Copyright 2012 Twitter, Inc.
+// Licensed under the Apache License v2.0.
 //
-// Converted to Sass by @thomasmcdonald_, and distributed as bootstrap-sass
-// Rethought and made great by @bmx269 and redistributed as the Drupal theme Parrot
+// Converted to Sass by @thomasmcdonald_, and distributed as bootstrap-sass.
+//
+// Rethought and made great by @bmx269 and redistributed as the Drupal theme Parrot.
 //
 
-// Compass CSS Reset
+// Compass CSS Reset.
 @import "compass/reset";
 
-// Core variables and mixins
+// Core variables and mixins.
 @import "base/variables"; // Modify this for custom colors, font-sizes, etc
 @import "base/mixins";
 
-// Grid system and page structure
+// Grid system and page structure.
 @import "layout/grid";
 @import "layout/scaffolding";
 
-// Base CSS
+// Base CSS.
 @import "base/type";
 @import "base/code";
 @import "base/forms";
 @import "base/tables";
 
-// Components: common
+// Components: Common.
 @import "components/media";
 @import "components/sprites";
 
-// Components: Buttons & Alerts
+// Components: Buttons & Alerts.
 @import "components/buttons";
 @import "components/alerts"; // Note: alerts share common CSS with buttons and thus have styles in _buttons.scss
 
-// Components: Nav
+// Components: Nav.
 @import "components/navs";
 @import "components/breadcrumbs";
 @import "components/pager";
 
 
-// Components: Misc
+// Components: Misc.
 @import "components/labels-badges";
 @import "components/accordion";
 @import "components/rotato";
 
-// Components: Custom Elements
+// Components: Custom Elements.
 @import "components/elements";
