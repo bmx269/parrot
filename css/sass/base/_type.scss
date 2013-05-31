@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 
-// Body text
+// Body text.
 // -------------------------
 
 p {
@@ -17,11 +17,11 @@ p {
 }
 
 
-// Emphasis & misc
+// Emphasis & misc.
 // -------------------------
 
 small {
-  font-size: 85%; // Ex: 14px base font * 85% = about 12px
+  font-size: 85%; // Ex: 14px base font * 85% = about 12px.
 }
 strong {
   font-weight: bold;
@@ -33,7 +33,7 @@ cite {
   font-style: normal;
 }
 
-// Utility classes
+// Utility classes.
 .muted {
   color: $grayLight;
 }
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $headingsFontWeight;
   line-height: 1;
   color: $headingsColor;
-  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  text-rendering: optimizelegibility; // Fix the character spacing for headings.
   small {
     font-weight: normal;
     line-height: 1;
@@ -80,7 +80,7 @@ h3 small { font-size: 14px; }
 h4 small { font-size: 14px; }
 
 
-// Page header
+// Page header.
 // -------------------------
 
 .page-header {
@@ -91,10 +91,10 @@ h4 small { font-size: 14px; }
 
 
 
-// Lists
+// Lists.
 // --------------------------------------------------
 
-// Unordered and Ordered lists
+// Unordered and Ordered lists.
 ul, ol {
   padding: 0;
   margin: 0 0 $baseLineHeight / 2 25px;
@@ -114,7 +114,7 @@ ol.unstyled {
   list-style: none;
 }
 
-// Description Lists
+// Description Lists.
 dl {
   margin-bottom: $baseLineHeight;
 }
@@ -128,9 +128,9 @@ dt {
 dd {
   margin-left: $baseLineHeight / 2;
 }
-// Horizontal layout (like forms)
+// Horizontal layout (like forms).
 .dl-horizontal {
-  @include clearfix(); // Ensure dl clears floats if empty dd elements present
+  @include clearfix(); // Ensure dl clears floats if empty dd elements present.
   dt {
     float: left;
     width: $horizontalComponentOffset - 20;
@@ -143,10 +143,10 @@ dd {
   }
 }
 
-// MISC
+// MISC.
 // ----
 
-// Horizontal rules
+// Horizontal rules.
 hr {
   margin: $baseLineHeight 0;
   border: 0;
@@ -154,7 +154,7 @@ hr {
   border-bottom: 1px solid $white;
 }
 
-// Abbreviations and acronyms
+// Abbreviations and acronyms.
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted $grayLight;
@@ -164,7 +164,7 @@ abbr.initialism {
   text-transform: uppercase;
 }
 
-// Blockquotes
+// Blockquotes.
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 $baseLineHeight;
@@ -182,7 +182,7 @@ blockquote {
     }
   }
 
-  // Float right with text-align: right
+  // Float right with text-align: right.
   &.pull-right {
     float: right;
     padding-right: 15px;
@@ -204,7 +204,7 @@ blockquote {
   }
 }
 
-// Quotes
+// Quotes.
 q:before,
 q:after,
 blockquote:before,
@@ -212,7 +212,7 @@ blockquote:after {
   content: "";
 }
 
-// Addresses
+// Addresses.
 address {
   display: block;
   margin-bottom: $baseLineHeight;

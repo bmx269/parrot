@@ -1,9 +1,9 @@
 //
-// Tables
+// Tables.
 // --------------------------------------------------
 
 
-// BASE TABLES
+// BASE TABLES.
 // -----------------
 
 table {
@@ -13,7 +13,7 @@ table {
   border-spacing: 0;
 }
 
-// BASELINE STYLES
+// BASELINE STYLES.
 // ---------------
 
 .table {
@@ -31,11 +31,11 @@ table {
   th {
     font-weight: bold;
   }
-  // Bottom align for column headings
+  // Bottom align for column headings.
   thead th {
     vertical-align: bottom;
   }
-  // Remove top border from thead by default
+  // Remove top border from thead by default.
   caption + thead tr:first-child th,
   caption + thead tr:first-child td,
   colgroup + thead tr:first-child th,
@@ -44,7 +44,7 @@ table {
   thead:first-child tr:first-child td {
     border-top: 0;
   }
-  // Account for multiple tbody instances
+  // Account for multiple tbody instances.
   tbody + tbody {
     border-top: 2px solid $tableBorder;
   }
@@ -52,7 +52,7 @@ table {
 
 
 
-// CONDENSED TABLE W/ HALF PADDING
+// CONDENSED TABLE W/ HALF PADDING.
 // -------------------------------
 
 .table-condensed {
@@ -63,13 +63,13 @@ table {
 }
 
 
-// BORDERED VERSION
+// BORDERED VERSION.
 // ----------------
 
 .table-bordered {
   border: 1px solid $tableBorder;
   border-collapse: separate; // Done so we can round those corners!
-  *border-collapse: collapse; // IE7 can't round corners anyway
+  *border-collapse: collapse; // IE7 can't round corners anyway.
   border-left: 0;
   @include border-radius(4px);
   th,
@@ -88,7 +88,7 @@ table {
   tbody:first-child tr:first-child td {
     border-top: 0;
   }
-  // For first th or td in the first row in the first thead or tbody
+  // For first th or td in the first row in the first thead or tbody.
   thead:first-child tr:first-child th:first-child,
   tbody:first-child tr:first-child td:first-child {
     -webkit-border-top-left-radius: 4px;
@@ -101,7 +101,7 @@ table {
             border-top-right-radius: 4px;
         -moz-border-radius-topright: 4px;
   }
-  // For first th or td in the first row in the first thead or tbody
+  // For first th or td in the first row in the first thead or tbody.
   thead:last-child tr:last-child th:first-child,
   tbody:last-child tr:last-child td:first-child,
   tfoot:last-child tr:last-child td:first-child {
@@ -118,7 +118,7 @@ table {
         -moz-border-radius-bottomright: 4px;
   }
 
-  // Special fixes to round the left border on the first td/th
+  // Special fixes to round the left border on the first td/th.
   caption + thead tr:first-child th:first-child,
   caption + tbody tr:first-child td:first-child,
   colgroup + thead tr:first-child th:first-child,
@@ -141,10 +141,10 @@ table {
 
 
 
-// ZEBRA-STRIPING
+// ZEBRA-STRIPING.
 // --------------
 
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+// Default zebra-stripe styles (alternating gray and transparent backgrounds).
 .table-striped {
   tbody {
     tr:nth-child(odd) td,
@@ -155,9 +155,9 @@ table {
 }
 
 
-// HOVER EFFECT
+// HOVER EFFECT.
 // ------------
-// Placed here since it has to come after the potential zebra striping
+// Placed here since it has to come after the potential zebra striping.
 .table-hover {
   tbody {
     tr:hover td,
@@ -168,21 +168,21 @@ table {
 }
 
 
-// TABLE CELL SIZING
+// TABLE CELL SIZING.
 // -----------------
 
-// Reset default grid behavior
+// Reset default grid behavior.
 table [class*=span],
 .row-fluid table [class*=span] {
   display: table-cell;
-  float: none; // undo default grid column styles
-  margin-left: 0; // undo default grid column styles
+  float: none; // Undo default grid column styles.
+  margin-left: 0; // Undo default grid column styles.
 }
 
 
-// TABLE BACKGROUNDS
+// TABLE BACKGROUNDS.
 // -----------------
-// Exact selectors below required to override .table-striped
+// Exact selectors below required to override .table-striped.
 
 .table tbody tr {
   &.success td {
@@ -202,7 +202,7 @@ table [class*=span],
  }
 }
 
-// Hover states for .table-hover
+// Hover states for .table-hover.
 .table-hover tbody tr {
   &.success:hover td {
     background-color: darken($successBackground, 5%);

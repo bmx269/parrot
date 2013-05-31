@@ -17,9 +17,9 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 
 ## Grid System
 
-Parrot includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
+Parrot includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks, and now the Singularity Grid System https://github.com/Team-Sass/Singularity/. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
 
-Susy is enabled by default, to change that comment out the require 'susy', and uncomment the require 'zen' from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
+Susy is enabled by default, to change that comment out the require 'susy', and uncomment the require 'zen' or 'singularitygs' from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
 
 The chosen grid framework will need to be installed via the GEM file.
 
@@ -29,6 +29,20 @@ Check that the version used is at least 1.0.8, but not yet version 2+.
 
 ### Zen Grids
 `gem install zen-grids`
+
+### Singularity Grid System
+`gem install singularitygs`
+
+
+### CSS Helpers
+
+Parrot comes with the CSS fixing toolkit called, well, Toolkit https://github.com/team-sass/toolkit, brought to you by the same people that made Singularity. This makes some of the common css trouble, a lot easier.
+
+This will need to be installed via the GEM file.
+
+### Toolkit
+`gem install toolkit`
+
 
 ## Media Queries
 

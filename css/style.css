@@ -45,6 +45,16 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url('/css/../behaviors/box-sizing/boxsizing.php'); }
+
+img, video {
+  max-width: 100%;
+  height: auto; }
+
 /*
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
@@ -2009,13 +2019,9 @@ table [class*=span],
   background-color: #c4e3f3; }
 
 img {
-  /* Responsive images (ensure images don't scale beyond their parents) */
   max-width: 100%;
-  /* Part 1: Set a maxium relative to the parent */
   width: auto\9;
-  /* IE7-8 need help adjusting responsive images */
   height: auto;
-  /* Part 2: Scale the height according to the width, otherwise you get stretching */
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic; }
@@ -2289,7 +2295,6 @@ audio:not([controls]) {
     text-decoration: none;
     background-color: #e6e6e6;
     *background-color: #d9d9d9;
-    /* Buttons in IE7 don't get borders, so darken on hover */
     background-position: 0 -15px;
     -webkit-transition: background-position 0.1s linear;
     -moz-transition: background-position 0.1s linear;

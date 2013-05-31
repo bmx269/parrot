@@ -1,21 +1,22 @@
 // ---------------------------------------------------------------------------
-// Imports
+// Imports.
 
 @import "susy"; // Susy Grids
-//@import "zen"; // Zen Grids
-//@import "breakpoint"; //@Media Query Mixins
+// @import "singularitygs"; // Singularity Grid System
+// @import "zen"; // Zen Grids
+// @import "breakpoint"; //@Media Query Mixins
 
 // ---------------------------------------------------------------------------
-// Susy Grid
+// Susy Grid.
 
 $base-font-size: 14px;
-//this is the default number of columns
+// This is the default number of columns.
 $total-columns: 4;
-//width of each column
+// Width of each column.
 $column-width   : 6em;
-//space between columns
+// Space between columns.
 $gutter-width   : 1.5em;
-//space on the right and left of the grid
+// Space on the right and left of the grid.
 $grid-padding   : $gutter-width;
 
 // $container-style: <style>; <style>: magic | static | fluid.
@@ -35,7 +36,7 @@ $wide: 65em 12;
 
 
 // ---------------------------------------------------------------------------
-// Media Query Settings for use with Breakpoint
+// Media Query Settings for use with Breakpoint.
 
 /*
 $breakpoint-to-ems: true;
@@ -50,7 +51,7 @@ $wide: 80em;
 
 
 // ---------------------------------------------------------------------------
-// "Mobile First", grid styles
+// "Mobile First", grid styles.
 
 .container{
   @include container;
@@ -78,4 +79,4 @@ $wide: 80em;
   }
 } //.container
 
-// Default grid blocks here following the "Mobile First" strategy
+// Default grid blocks here following the "Mobile First" strategy.

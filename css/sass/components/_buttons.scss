@@ -3,23 +3,23 @@
 // --------------------------------------------------
 
 
-// Make the div behave like a button
+// Make the div behave like a button.
 .btn-group {
   position: relative;
-  font-size: 0; // remove as part 1 of font-size inline-block hack
-  vertical-align: middle; // match .btn alignment given font-size hack above
-  white-space: nowrap; // prevent buttons from wrapping when in tight spaces (e.g., the table on the tests page)
+  font-size: 0; // Remove as part 1 of font-size inline-block hack.
+  vertical-align: middle; // Match .btn alignment given font-size hack above.
+  white-space: nowrap; // Prevent buttons from wrapping when in tight spaces (e.g., the table on the tests page).
   @include ie7-restore-left-whitespace();
 }
 
-// Space out series of button groups
+// Space out series of button groups.
 .btn-group + .btn-group {
   margin-left: 5px;
 }
 
-// Optional: Group multiple button groups together for a toolbar
+// Optional: Group multiple button groups together for a toolbar.
 .btn-toolbar {
-  font-size: 0; // Hack to remove whitespace that results from using inline-block
+  font-size: 0; // Hack to remove whitespace that results from using inline-block.
   margin-top: $baseLineHeight / 2;
   margin-bottom: $baseLineHeight / 2;
   .btn-group {
@@ -32,7 +32,7 @@
   }
 }
 
-// Float them, remove border radius, then re-add to first and last elements
+// Float them, remove border radius, then re-add to first and last elements.
 .btn-group > .btn {
   position: relative;
   @include border-radius(0);
@@ -42,7 +42,7 @@
 }
 .btn-group > .btn,
 .btn-group > .dropdown-menu {
-  font-size: $baseFontSize; // redeclare as part 2 of font-size inline-block hack
+  font-size: $baseFontSize; // Redeclare as part 2 of font-size inline-block hack.
 }
 
 // Reset fonts for other sizes
@@ -56,7 +56,7 @@
   font-size: 16px;
 }
 
-// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
+// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match.
 .btn-group > .btn:first-child {
   margin-left: 0;
      -webkit-border-top-left-radius: 4px;
@@ -66,7 +66,7 @@
       -moz-border-radius-bottomleft: 4px;
           border-bottom-left-radius: 4px;
 }
-// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
+// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it.
 .btn-group > .btn:last-child,
 .btn-group > .dropdown-toggle {
      -webkit-border-top-right-radius: 4px;
@@ -76,7 +76,7 @@
       -moz-border-radius-bottomright: 4px;
           border-bottom-right-radius: 4px;
 }
-// Reset corners for large buttons
+// Reset corners for large buttons.
 .btn-group > .btn.large:first-child {
   margin-left: 0;
      -webkit-border-top-left-radius: 6px;
@@ -96,7 +96,7 @@
           border-bottom-right-radius: 6px;
 }
 
-// On hover/focus/active, bring the proper btn to front
+// On hover/focus/active, bring the proper btn to front.
 .btn-group > .btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn:active,
@@ -104,7 +104,7 @@
   z-index: 2;
 }
 
-// On active and open, don't show outline
+// On active and open, don't show outline.
 .btn-group .dropdown-toggle:active,
 .btn-group.open .dropdown-toggle {
   outline: 0;
@@ -115,7 +115,7 @@
 // Split button dropdowns
 // ----------------------
 
-// Give the line between buttons some depth
+// Give the line between buttons some depth.
 .btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
@@ -142,14 +142,14 @@
 
 .btn-group.open {
 
-  // The clickable button for toggling the menu
-  // Remove the gradient and set the same inset shadow as the :active state
+  // The clickable button for toggling the menu.
+  // Remove the gradient and set the same inset shadow as the :active state.
   .dropdown-toggle {
     background-image: none;
     @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
   }
 
-  // Keep the hover's background when dropdown is open
+  // Keep the hover's background when dropdown is open.
   .btn.dropdown-toggle {
     background-color: $btnBackgroundHighlight;
   }
@@ -174,12 +174,12 @@
 }
 
 
-// Reposition the caret
+// Reposition the caret.
 .btn .caret {
   margin-top: 8px;
   margin-left: 0;
 }
-// Carets in other button sizes
+// Carets in other button sizes.
 .btn-mini .caret,
 .btn-small .caret,
 .btn-large .caret {
@@ -190,7 +190,7 @@
   border-right-width: 5px;
   border-top-width:   5px;
 }
-// Upside down carets for .dropup
+// Upside down carets for .dropup.
 .dropup .btn-large .caret {
   border-bottom: 5px solid $black;
   border-top: 0;
@@ -198,7 +198,7 @@
 
 
 
-// Account for other colors
+// Account for other colors.
 .btn-primary,
 .btn-warning,
 .btn-danger,
@@ -213,11 +213,11 @@
 
 
 
-// Vertical button groups
+// Vertical button groups.
 // ----------------------
 
 .btn-group-vertical {
-  @include inline-block; // makes buttons only take up the width they need
+  @include inline-block; // Makes buttons only take up the width they need.
 }
 .btn-group-vertical .btn {
   display: block;
@@ -264,10 +264,10 @@
   cursor: pointer;
   @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid $btnBorder;
-  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus.
   border-bottom-color: darken($btnBorder, 10%);
   @include border-radius(4px);
-  @include ie7-restore-left-whitespace(); // Give IE7 some love
+  @include ie7-restore-left-whitespace(); // Give IE7 some love.
   @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)});
 
   // Hover state
@@ -275,20 +275,19 @@
     color: $grayDark;
     text-decoration: none;
     background-color: darken($white, 10%);
-    *background-color: darken($white, 15%); /* Buttons in IE7 don't get borders, so darken on hover */
+    *background-color: darken($white, 15%); // Buttons in IE7 don't get borders, so darken on hover.
     background-position: 0 -15px;
 
-    // transition is only when going to hover, otherwise the background
-    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    // transition is only when going to hover, otherwise the background behind the gradient (there for IE<=9 fallback) gets mismatched.
     @include transition(background-position .1s linear);
   }
 
-  // Focus state for keyboard and accessibility
+  // Focus state for keyboard and accessibility.
   &:focus {
     @include tab-focus();
   }
 
-  // Active state
+  // Active state.
   &.active,
   &:active {
     background-color: darken($white, 10%);
@@ -298,7 +297,7 @@
     @include box-shadow(#{inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)});
   }
 
-  // Disabled state
+  // Disabled state.
   &.disabled,
   &[disabled] {
     cursor: default;
@@ -355,7 +354,7 @@
   @include box-sizing(border-box);
 }
 
-// Vertically space out multiple block buttons
+// Vertically space out multiple block buttons.
 .btn-block + .btn-block {
   margin-top: 5px;
 }
@@ -374,7 +373,7 @@ input[type="button"] {
 // Alternate buttons
 // --------------------------------------------------
 
-// Provide *some* extra contrast for those who can get it
+// Provide *some* extra contrast for those who can get it.
 .btn-primary.active,
 .btn-warning.active,
 .btn-danger.active,
@@ -384,33 +383,33 @@ input[type="button"] {
   color: rgba(255,255,255,.75);
 }
 
-// Set the backgrounds
+// Set the backgrounds.
 // -------------------------
 .btn {
-  // reset here as of 2.0.3 due to Recess property order
+  // Reset here as of 2.0.3 due to Recess property order.
   border-color: #c5c5c5;
   border-color: rgba(0,0,0,.15) rgba(0,0,0,.15) rgba(0,0,0,.25);
 }
 .btn-primary {
   @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
 }
-// Warning appears are orange
+// Warning appears are orange.
 .btn-warning {
   @include buttonBackground($btnWarningBackground, $btnWarningBackgroundHighlight);
 }
-// Danger and error appear as red
+// Danger and error appear as red.
 .btn-danger {
   @include buttonBackground($btnDangerBackground, $btnDangerBackgroundHighlight);
 }
-// Success appears as green
+// Success appears as green.
 .btn-success {
   @include buttonBackground($btnSuccessBackground, $btnSuccessBackgroundHighlight);
 }
-// Info appears as a neutral blue
+// Info appears as a neutral blue.
 .btn-info {
   @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
 }
-// Inverse appears as dark gray
+// Inverse appears as dark gray.
 .btn-inverse {
   @include buttonBackground($btnInverseBackground, $btnInverseBackgroundHighlight);
 }
@@ -428,7 +427,7 @@ input[type="submit"].btn {
     border: 0;
   }
 
-  // IE7 has some default padding on button controls
+  // IE7 has some default padding on button controls.
   *padding-top: 3px;
   *padding-bottom: 3px;
 
@@ -450,7 +449,7 @@ input[type="submit"].btn {
 // Link buttons
 // --------------------------------------------------
 
-// Make a button look and behave like a link
+// Make a button look and behave like a link.
 .btn-link,
 .btn-link:active,
 .btn-link[disabled] {

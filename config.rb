@@ -1,10 +1,16 @@
 # Require any additional compass plugins here.
 
+require 'susy'
+# http://susy.oddbird.net/
+
+# require 'singularitygs'
+# https://github.com/Team-Sass/Singularity/
+
 # require 'zen-grids'
 # http://zengrids.com/
 
-require 'susy'
-# http://susy.oddbird.net/
+require 'toolkit'
+# https://github.com/Team-Sass/toolkit/
 
 # require 'breakpoint'
 # https://github.com/canarymason/breakpoint
