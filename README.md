@@ -34,7 +34,7 @@ Check that the version used is at least 1.0.8, but not yet version 2+.
 `gem install singularitygs`
 
 
-### CSS Helpers
+## CSS Helpers
 
 Parrot comes with the CSS fixing toolkit called, well, Toolkit https://github.com/team-sass/toolkit, brought to you by the same people that made Singularity. This makes some of the common css trouble, a lot easier.
 
