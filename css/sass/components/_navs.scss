@@ -618,4 +618,13 @@
   cursor: default;
 }
 
+// ADMIN NAV STYLES
+// ----------------
 
+#admin-menu .dropdown li li.expandable {
+  background-position: 145px center;
+
+  ul {
+    margin-top: -33px;
+  }
+}
