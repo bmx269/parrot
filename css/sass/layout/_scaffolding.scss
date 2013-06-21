@@ -14,7 +14,9 @@ body {
   color: $textColor;
   background: $bodyBackground;
 
-
+  &.admin-menu {
+    margin-top: 32px !important;
+  }
 }
 
 
