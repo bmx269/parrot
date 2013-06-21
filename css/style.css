@@ -950,6 +950,8 @@ body {
   line-height: 24px;
   color: #333333;
   background: white; }
+  body.admin-menu {
+    margin-top: 32px !important; }
 
 a {
   color: #0088cc;
@@ -3102,6 +3104,11 @@ input[type="submit"].btn {
   text-decoration: none;
   background-color: transparent;
   cursor: default; }
+
+#admin-menu .dropdown li li.expandable {
+  background-position: 145px center; }
+  #admin-menu .dropdown li li.expandable ul {
+    margin-top: -33px; }
 
 .breadcrumb {
   padding: 8px 15px;
