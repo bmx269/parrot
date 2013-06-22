@@ -1350,15 +1350,6 @@ input[type="checkbox"] {
   line-height: normal;
   cursor: pointer; }
 
-input[type="file"],
-input[type="image"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto; }
-
 select,
 input[type="file"] {
   height: 30px;
