@@ -217,3 +217,10 @@ table [class*=span],
     background-color: darken($infoBackground, 5%);
   }
 }
+
+/*
+Drupal Tables
+* ------------------------------------- */
+.table-order-asc, .table-order-desc{width:16px; height:16px; float:right}
+.table-order-asc{background: transparent url(/misc/arrow-asc.png) no-repeat center top;}
+.table-order-desc{background: transparent url(/misc/arrow-desc.png) no-repeat center top;}

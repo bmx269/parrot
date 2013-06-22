@@ -10,7 +10,9 @@
 
 // Compass CSS Reset.
 @import "compass";
-@import "compass/reset";
+
+// Normalize https://github.com/JohnAlbin/normalize.css-with-sass-or-compass
+@import "base/normalize";
 
 // Compass Toolkit CSS Helpers. https://github.com/team-sass/toolkit
 @import "toolkit";

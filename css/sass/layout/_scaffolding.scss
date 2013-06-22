@@ -54,3 +54,24 @@ a:hover {
 .img-circle {
   @include border-radius(500px); // crank the border-radius so it works with most reasonably sized images
 }
+
+/*
+Block clearfix - yup its a recap of the clearfix trick, no reason to do class="clearfix/cf/whatever" all over our markup
+----------------------------*/
+.block .content:before,.block .content:after { content:""; display:table;}
+.block .content:after { clear:both;}
+.block .content { zoom:1;}
+
+/*
+  admin styles for blocks
+* ------------------------------------- */
+.page-admin-structure-block-demo .block-region {
+  background: #ffff66;
+  border: 1px dotted #9f9e00;
+  color: #000;
+  font: 90% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  text-shadow: none;
+}

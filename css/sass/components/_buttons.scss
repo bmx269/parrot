@@ -1,3 +1,25 @@
+// Panels IPE Fix.
+
+input#panels-ipe-save,
+input#panels-ipe-cancel {
+  width: 150px;
+  margin: 5px;
+  height: 33px;
+  padding: 0 0.8em;
+  @include inline-block;
+  color: #ccc;
+  text-shadow: none;
+  @include border-radius(3px);
+  border: none;
+}
+
+input#panels-ipe-save:hover,
+input#panels-ipe-cancel:hover,
+input#panels-ipe-save:active,
+input#panels-ipe-cancel:active {
+  color: #fff;
+}
+
 //
 // Button groups
 // --------------------------------------------------
