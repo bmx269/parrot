@@ -10,39 +10,53 @@
 
 <?php print $mothership_poorthemers_helper; ?>
 
-<div id="header-wrapper" class="fullwidth">
-  <div class="container">
-    <header role="banner" class="row">
-      <div class="siteinfo">
-        <?php if ($logo): ?>
-        <div class="logo">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-            <img src="<?php print $logo; ?>" class="logo-img" alt="<?php print t('Home'); ?>" />
-          </a>
+<?php if ($page['user_bar']): ?>
+  <div id="user-wrapper" class="fullwidth">
+    <div class="container">
+      <div role="user">
+        <div class="user-region">
+          <?php print render($page['user_bar']); ?>
         </div>
-        <?php endif; ?>
-
-        <?php if($site_name OR $site_slogan ): ?>
-        <hgroup>
-          <?php if($site_name): ?>
-            <h1><?php print $site_name; ?></h1>
-          <?php endif; ?>
-          <?php if ($site_slogan): ?>
-            <h2><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
-        </hgroup>
-        <?php endif; ?>
       </div>
+    </div><!--/.container-->
+  </div><!--/#user-wrapper-->
+<?php endif; ?>
 
+<?php if($site_name OR $site_slogan OR $page['header'] ): ?>
+  <div id="header-wrapper" class="fullwidth">
+    <div class="container">
+      <header role="banner" class="row">
+        <div class="siteinfo">
+          <?php if ($logo): ?>
+            <div class="logo">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                <img src="<?php print $logo; ?>" class="logo-img" alt="<?php print t('Home'); ?>" />
+              </a>
+            </div>
+          <?php endif; ?>
 
-        <div class="header-region">
-          <?php print render($page['header']); ?>
+          <?php if($site_name OR $site_slogan ): ?>
+            <hgroup>
+              <?php if($site_name): ?>
+                <h1><?php print $site_name; ?></h1>
+              <?php endif; ?>
+              <?php if ($site_slogan): ?>
+                <h2><?php print $site_slogan; ?></h2>
+              <?php endif; ?>
+            </hgroup>
+          <?php endif; ?>
         </div>
 
+        <?php if ($page['header']): ?>
+          <div class="header-region">
+            <?php print render($page['header']); ?>
+          </div>
+        <?php endif; ?>
 
-    </header>
-  </div><!--/.container-->
-</div><!--/#header-wrapper-->
+      </header>
+    </div><!--/.container-->
+  </div><!--/#header-wrapper-->
+<?php endif; ?>
 
 <div id="content-wrapper" class="fullwidth">
   <div class="container">
