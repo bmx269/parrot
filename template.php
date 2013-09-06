@@ -21,7 +21,7 @@ function parrot_preprocess_page(&$vars,$hook) {
 
   // If this is a panel page, add template suggestions.
   // Must have Ctools Page Manager enabled. Uncomment to use.
-  /* if($panel_page = page_manager_get_current_page()) {
+  if(module_exists('page_manager') && $panel_page = page_manager_get_current_page()) {
     // add a generic suggestion for all panel pages
     $vars['theme_hook_suggestions'][] = 'page__panel';
 
@@ -30,7 +30,7 @@ function parrot_preprocess_page(&$vars,$hook) {
 
     //add a body class for good measure
     $body_classes[] = 'page-panel';
-  }*/
+  }
 }
 
 function parrot_preprocess_region(&$vars,$hook) {
