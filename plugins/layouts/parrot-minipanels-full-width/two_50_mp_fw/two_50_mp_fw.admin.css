@@ -1,0 +1,75 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+#panels-dnd-main .minipanel-two-50-first-fw {float: left; width: 49.75%}
+#panels-dnd-main .minipanel-two-50-second-fw {float: right; width: 49.75%}
+#panels-dnd-main .minipanel-two-50-bottom-fw {clear: both}
+
+.parrot-panels #minipanel-two-50-top-fw-wrapper .minipanel-two-50-top-fw {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-first-fw {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-first-fw {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-first-fw {
+      float: left;
+      margin-right: 2.5641%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-first-fw {
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-first-fw {
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-second-fw {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-second-fw {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-second-fw {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-second-fw {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-two-50-middle-fw-wrapper .minipanel-two-50-second-fw {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+.parrot-panels #minipanel-two-50-bottom-fw-wrapper .minipanel-two-50-bottom-fw {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }

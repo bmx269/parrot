@@ -623,173 +623,7 @@ $wide: 80em;
       .container:after {
         content: "";
         display: table;
-        clear: both; }
-      .container .grid-ready.one-column .region-one-main {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-66-33 .region-top,
-      .container .grid-ready.two-66-33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-66-33 .region-first {
-        width: 65.51724%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-66-33 .region-second {
-        width: 31.03448%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-33-66 .region-top,
-      .container .grid-ready.two-33-66 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-33-66 .region-first {
-        width: 31.03448%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-33-66 .region-second {
-        width: 65.51724%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-50 .region-top,
-      .container .grid-ready.two-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-50 .region-first {
-        width: 48.27586%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-50 .region-second {
-        width: 48.27586%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-brick .region-top,
-      .container .grid-ready.two-brick .region-bottom,
-      .container .grid-ready.two-brick .region-middle {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-brick .region-left-above,
-      .container .grid-ready.two-brick .region-left-below {
-        width: 48.27586%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.two-brick .region-right-above,
-      .container .grid-ready.two-brick .region-right-below {
-        width: 48.27586%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-25-50 .region-top,
-      .container .grid-ready.three-25-25-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-25-25-50 .region-first {
-        width: 24.13793%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-25-25-50 .region-second {
-        width: 24.13793%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-25-25-50 .region-third {
-        width: 48.27586%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-50-25 .region-top,
-      .container .grid-ready.three-25-50-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-25-50-25 .region-first {
-        width: 24.13793%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-25-50-25 .region-second {
-        width: 48.27586%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-25-50-25 .region-third {
-        width: 24.13793%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-3x33 .region-top,
-      .container .grid-ready.three-3x33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-3x33 .region-first,
-      .container .grid-ready.three-3x33 .region-second {
-        width: 31.03448%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-3x33 .region-third {
-        width: 31.03448%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-50-25-25 .region-top,
-      .container .grid-ready.three-50-25-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-50-25-25 .region-first {
-        width: 48.27586%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-50-25-25 .region-second {
-        width: 24.13793%;
-        float: left;
-        margin-right: 3.44828%; }
-      .container .grid-ready.three-50-25-25 .region-third {
-        width: 24.13793%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-left .inset-wrapper {
-        width: 75.86207%;
-        float: left;
-        margin-right: 3.44828%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-left .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 4.54545%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-middle {
-          width: 63.63636%;
-          float: right;
-          margin-right: 0; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-inset {
-          width: 31.81818%;
-          float: left;
-          margin-right: 4.54545%; }
-      .container .grid-ready.three-inset-left .region-sidebar {
-        width: 24.13793%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-right .inset-wrapper {
-        width: 75.86207%;
-        float: right;
-        margin-right: 0; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-right .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 4.54545%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-middle {
-          width: 63.63636%;
-          float: left;
-          margin-right: 4.54545%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-inset {
-          width: 31.81818%;
-          float: right;
-          margin-right: 0; }
-      .container .grid-ready.three-inset-right .region-sidebar {
-        width: 24.13793%;
-        float: left;
-        margin-right: 3.44828%; } }
+        clear: both; } }
   @media (min-width: 35em) {
     .container {
       max-width: 58.5em;
@@ -814,173 +648,7 @@ $wide: 80em;
       .container:after {
         content: "";
         display: table;
-        clear: both; }
-      .container .grid-ready.one-column .region-one-main {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-66-33 .region-top,
-      .container .grid-ready.two-66-33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-66-33 .region-first {
-        width: 61.53846%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-66-33 .region-second {
-        width: 35.89744%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-33-66 .region-top,
-      .container .grid-ready.two-33-66 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-33-66 .region-first {
-        width: 35.89744%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-33-66 .region-second {
-        width: 61.53846%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-50 .region-top,
-      .container .grid-ready.two-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-50 .region-first {
-        width: 48.71795%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-50 .region-second {
-        width: 48.71795%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-brick .region-top,
-      .container .grid-ready.two-brick .region-bottom,
-      .container .grid-ready.two-brick .region-middle {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-brick .region-left-above,
-      .container .grid-ready.two-brick .region-left-below {
-        width: 48.71795%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.two-brick .region-right-above,
-      .container .grid-ready.two-brick .region-right-below {
-        width: 48.71795%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-25-50 .region-top,
-      .container .grid-ready.three-25-25-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-25-25-50 .region-first {
-        width: 23.07692%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-25-25-50 .region-second {
-        width: 23.07692%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-25-25-50 .region-third {
-        width: 48.71795%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-50-25 .region-top,
-      .container .grid-ready.three-25-50-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-25-50-25 .region-first {
-        width: 23.07692%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-25-50-25 .region-second {
-        width: 48.71795%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-25-50-25 .region-third {
-        width: 23.07692%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-3x33 .region-top,
-      .container .grid-ready.three-3x33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-3x33 .region-first,
-      .container .grid-ready.three-3x33 .region-second {
-        width: 35.89744%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-3x33 .region-third {
-        width: 35.89744%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-50-25-25 .region-top,
-      .container .grid-ready.three-50-25-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-50-25-25 .region-first {
-        width: 48.71795%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-50-25-25 .region-second {
-        width: 23.07692%;
-        float: left;
-        margin-right: 2.5641%; }
-      .container .grid-ready.three-50-25-25 .region-third {
-        width: 23.07692%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-left .inset-wrapper {
-        width: 74.35897%;
-        float: left;
-        margin-right: 2.5641%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-left .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 3.44828%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-middle {
-          width: 65.51724%;
-          float: right;
-          margin-right: 0; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-inset {
-          width: 31.03448%;
-          float: left;
-          margin-right: 3.44828%; }
-      .container .grid-ready.three-inset-left .region-sidebar {
-        width: 23.07692%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-right .inset-wrapper {
-        width: 74.35897%;
-        float: right;
-        margin-right: 0; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-right .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 3.44828%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-middle {
-          width: 65.51724%;
-          float: left;
-          margin-right: 3.44828%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-inset {
-          width: 31.03448%;
-          float: right;
-          margin-right: 0; }
-      .container .grid-ready.three-inset-right .region-sidebar {
-        width: 23.07692%;
-        float: left;
-        margin-right: 2.5641%; } }
+        clear: both; } }
   @media (min-width: 45.5em) {
     .container {
       max-width: 88.5em;
@@ -1005,173 +673,7 @@ $wide: 80em;
       .container:after {
         content: "";
         display: table;
-        clear: both; }
-      .container .grid-ready.one-column .region-one-main {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-66-33 .region-top,
-      .container .grid-ready.two-66-33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-66-33 .region-first {
-        width: 66.10169%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-66-33 .region-second {
-        width: 32.20339%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-33-66 .region-top,
-      .container .grid-ready.two-33-66 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-33-66 .region-first {
-        width: 32.20339%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-33-66 .region-second {
-        width: 66.10169%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-50 .region-top,
-      .container .grid-ready.two-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-50 .region-first {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-50 .region-second {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-brick .region-top,
-      .container .grid-ready.two-brick .region-bottom,
-      .container .grid-ready.two-brick .region-middle {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-brick .region-left-above,
-      .container .grid-ready.two-brick .region-left-below {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-brick .region-right-above,
-      .container .grid-ready.two-brick .region-right-below {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-25-50 .region-top,
-      .container .grid-ready.three-25-25-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-25-50 .region-first {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-25-50 .region-second {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-25-50 .region-third {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-50-25 .region-top,
-      .container .grid-ready.three-25-50-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-50-25 .region-first {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-50-25 .region-second {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-50-25 .region-third {
-        width: 23.72881%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-3x33 .region-top,
-      .container .grid-ready.three-3x33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-3x33 .region-first,
-      .container .grid-ready.three-3x33 .region-second {
-        width: 32.20339%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-3x33 .region-third {
-        width: 32.20339%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-50-25-25 .region-top,
-      .container .grid-ready.three-50-25-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-50-25-25 .region-first {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-50-25-25 .region-second {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-50-25-25 .region-third {
-        width: 23.72881%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-left .inset-wrapper {
-        width: 74.57627%;
-        float: left;
-        margin-right: 1.69492%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-left .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 2.27273%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-middle {
-          width: 65.90909%;
-          float: right;
-          margin-right: 0; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-inset {
-          width: 31.81818%;
-          float: left;
-          margin-right: 2.27273%; }
-      .container .grid-ready.three-inset-left .region-sidebar {
-        width: 23.72881%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-right .inset-wrapper {
-        width: 74.57627%;
-        float: right;
-        margin-right: 0; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-right .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 2.27273%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-middle {
-          width: 65.90909%;
-          float: left;
-          margin-right: 2.27273%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-inset {
-          width: 31.81818%;
-          float: right;
-          margin-right: 0; }
-      .container .grid-ready.three-inset-right .region-sidebar {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; } }
+        clear: both; } }
   @media (min-width: 56.875em) {
     .container {
       max-width: 88.5em;
@@ -1196,173 +698,364 @@ $wide: 80em;
       .container:after {
         content: "";
         display: table;
-        clear: both; }
-      .container .grid-ready.one-column .region-one-main {
+        clear: both; } }
+
+.parrot-panels #minipanel-two-50-top-wrapper .minipanel-two-50-top {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
+      float: left;
+      margin-right: 2.5641%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+.parrot-panels #minipanel-two-50-bottom-wrapper .minipanel-two-50-bottom {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #minipanel-three-33-top-wrapper .minipanel-three-33-top {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-first {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-first {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-first {
+      float: left;
+      margin-right: 2.5641%;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-second {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-second {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-second {
+      float: left;
+      margin-right: 2.5641%;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-second {
+      float: left;
+      margin-right: 1.69492%;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-second {
+      float: left;
+      margin-right: 1.69492%;
+      width: 32.20339%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
+      width: 32.20339%;
+      float: right;
+      margin-right: 0; } }
+.parrot-panels #minipanel-three-33-bottom-wrapper .minipanel-three-33-bottom {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 42em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      float: left;
+      margin-right: 3.44828%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      float: left;
+      margin-right: 1.69492%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      float: left;
+      margin-right: 1.69492%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
+    @media (min-width: 26.25em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
         width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-66-33 .region-top,
-      .container .grid-ready.two-66-33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-66-33 .region-first {
-        width: 66.10169%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-66-33 .region-second {
-        width: 32.20339%;
         float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-33-66 .region-top,
-      .container .grid-ready.two-33-66 .region-bottom {
-        width: 100%;
+        margin-right: 0; } }
+    @media (min-width: 35em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
         float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-33-66 .region-first {
-        width: 32.20339%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-33-66 .region-second {
-        width: 66.10169%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-50 .region-top,
-      .container .grid-ready.two-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-50 .region-first {
+        margin-right: 2.5641%;
         width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-50 .region-second {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.two-brick .region-top,
-      .container .grid-ready.two-brick .region-bottom,
-      .container .grid-ready.two-brick .region-middle {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-brick .region-left-above,
-      .container .grid-ready.two-brick .region-left-below {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.two-brick .region-right-above,
-      .container .grid-ready.two-brick .region-right-below {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-25-50 .region-top,
-      .container .grid-ready.three-25-25-50 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-25-50 .region-first {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-25-50 .region-second {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-25-50 .region-third {
-        width: 49.15254%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-25-50-25 .region-top,
-      .container .grid-ready.three-25-50-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-50-25 .region-first {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-50-25 .region-second {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-25-50-25 .region-third {
-        width: 23.72881%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-3x33 .region-top,
-      .container .grid-ready.three-3x33 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-3x33 .region-first,
-      .container .grid-ready.three-3x33 .region-second {
-        width: 32.20339%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-3x33 .region-third {
-        width: 32.20339%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-50-25-25 .region-top,
-      .container .grid-ready.three-50-25-25 .region-bottom {
-        width: 100%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-50-25-25 .region-first {
-        width: 49.15254%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-50-25-25 .region-second {
-        width: 23.72881%;
-        float: left;
-        margin-right: 1.69492%; }
-      .container .grid-ready.three-50-25-25 .region-third {
-        width: 23.72881%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-left .inset-wrapper {
-        width: 74.57627%;
-        float: left;
-        margin-right: 1.69492%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-left .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 2.27273%; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-middle {
-          width: 65.90909%;
-          float: right;
-          margin-right: 0; }
-        .container .grid-ready.three-inset-left .inset-wrapper .region-inset {
-          width: 31.81818%;
-          float: left;
-          margin-right: 2.27273%; }
-      .container .grid-ready.three-inset-left .region-sidebar {
-        width: 23.72881%;
-        float: right;
-        margin-right: 0; }
-      .container .grid-ready.three-inset-right .inset-wrapper {
-        width: 74.57627%;
-        float: right;
-        margin-right: 0; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-top,
-        .container .grid-ready.three-inset-right .inset-wrapper .region-bottom {
-          width: 100%;
-          float: left;
-          margin-right: 2.27273%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-middle {
-          width: 65.90909%;
-          float: left;
-          margin-right: 2.27273%; }
-        .container .grid-ready.three-inset-right .inset-wrapper .region-inset {
-          width: 31.81818%;
-          float: right;
-          margin-right: 0; }
-      .container .grid-ready.three-inset-right .region-sidebar {
-        width: 23.72881%;
         float: left;
         margin-right: 1.69492%; } }
+    @media (min-width: 45.5em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+        float: left;
+        margin-right: 1.69492%;
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; } }
+    @media (min-width: 56.875em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+        float: left;
+        margin-right: 1.69492%;
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; } }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
+    @media (min-width: 26.25em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 100%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 35em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 45.5em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 56.875em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0; } }
+.parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+
+.view-mode-50_width {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline;
+  clear: both; }
+  @media (min-width: 26.25em) {
+    .view-mode-50_width {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .view-mode-50_width {
+      float: left;
+      margin-right: 2.5641%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .view-mode-50_width {
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .view-mode-50_width {
+      float: left;
+      margin-right: 1.69492%;
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%; } }
+
+.view-mode-50_width_right {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .view-mode-50_width_right {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .view-mode-50_width_right {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .view-mode-50_width_right {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .view-mode-50_width_right {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0; } }
+
+.view-mode-100_width {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
 
 body {
   margin: 0;

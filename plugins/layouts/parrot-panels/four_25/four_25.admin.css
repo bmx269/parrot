@@ -1,0 +1,8 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+#panels-dnd-main .four-25-first,
+#panels-dnd-main .four-25-second,
+#panels-dnd-main .four-25-third,
+#panels-dnd-main .four-25-fourth {float: left; width: 24%; margin-left: 0.5%; margin-right: 0.5%}
+#panels-dnd-main .four-25-first {width: 24.5%; margin-left: 0;}
+#panels-dnd-main .four-25-fourth {width: 24.5%; margin-right: 0;}
+#panels-dnd-main .four-25-bottom {clear: both}
