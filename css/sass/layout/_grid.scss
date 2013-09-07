@@ -203,7 +203,7 @@ $wide: 80em;
       @include at-breakpoint($narrow){
         @include span-columns(12 omega, 12);
       }
-      @include at-breakpoint(48em){
+      @include at-breakpoint($tablet){
         @include remove-omega;
         @include span-columns(9, 12);
       }
