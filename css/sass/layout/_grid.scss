@@ -270,6 +270,150 @@ $wide: 80em;
     }
   }
 
+  #three-inset-right-wrapper{
+    #three-inset-right-right-wrapper{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include remove-omega;
+        @include span-columns(9, 12);
+      }
+      @include at-breakpoint($computer){
+        @include remove-omega;
+        @include span-columns(9, 12);
+      }
+      @include at-breakpoint($wide){
+        @include remove-omega;
+        @include span-columns(9, 12);
+      }
+
+      .three-inset-right-middle{
+        @include span-columns(12 omega, 12);
+
+        @include at-breakpoint($narrow){
+          @include span-columns(12 omega, 12);
+        }
+        @include at-breakpoint($tablet){
+          @include remove-omega;
+          @include span-columns(6, 12);
+        }
+        @include at-breakpoint($computer){
+          @include remove-omega;
+          @include span-columns(6, 12);
+        }
+        @include at-breakpoint($wide){
+          @include remove-omega;
+          @include span-columns(6, 12);
+        }
+      }
+      .three-inset-right-inset{
+        @include span-columns(12 omega, 12);
+
+        @include at-breakpoint($narrow){
+          @include span-columns(12 omega, 12);
+        }
+        @include at-breakpoint($tablet){
+          @include span-columns(6 omega, 12);
+        }
+        @include at-breakpoint($computer){
+          @include span-columns(6 omega, 12);
+        }
+        @include at-breakpoint($wide){
+          @include span-columns(6 omega, 12);
+        }
+      }
+    }
+    #three-inset-right-left-wrapper{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include span-columns(3 omega, 12);
+      }
+      @include at-breakpoint($computer){
+        @include span-columns(3 omega, 12);
+      }
+      @include at-breakpoint($wide){
+        @include span-columns(3 omega, 12);
+      }
+    }
+  }
+
+
+  #three-33-top-wrapper{
+    .three-33-top{
+      @include span-columns(12 omega, 12);
+    }
+  }
+
+  #three-33-middle-wrapper{
+    .three-33-first{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+      @include at-breakpoint($computer){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+      @include at-breakpoint($wide){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+    }
+    .three-33-second{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+      @include at-breakpoint($computer){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+      @include at-breakpoint($wide){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+    }
+    .three-33-third{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include span-columns(4 omega, 12);
+      }
+      @include at-breakpoint($computer){
+        @include span-columns(4 omega, 12);
+      }
+      @include at-breakpoint($wide){
+        @include span-columns(4 omega, 12);
+      }
+    }
+  }
+
+  #three-33-bottom-wrapper{
+    .three-33-bottom{
+      @include span-columns(12 omega, 12);
+    }
+  }
+
 
 } //.parrot-panels
 
