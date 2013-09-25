@@ -53,6 +53,12 @@ stylesheets[all][] = css/style.css
 ; http://jpanelmenu.com/ - version 1.3.0
 ; scripts[] = js/jquery.jpanelmenu.min.js
 
+; https://github.com/ten1seven/jRespond
+; scripts[] = js/jRespond.min.js
+
+; https://github.com/tuupola/jquery_lazyload
+; scripts[] = js/jquery.lazyload.min.js
+
 scripts[] = js/script.js
 
 ;-------------- Panel layouts --------------
