@@ -13,7 +13,7 @@
   <?php if ($content['two_66_33_top']): ?>
   <div id="two-66-33-top-wrapper" class="fullwidth">
     <div class="container">
-        <div class="region region-top region-conditional-stack">
+        <div class="region two-66-33-top region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['two_66_33_top']; ?>
           </div>
@@ -23,12 +23,12 @@
   <?php endif; ?>
   <div id="two-66-33-middle-wrapper" class="fullwidth">
     <div class="container">
-      <div class="region region-first">
+      <div class="region two-66-33-first">
         <div class="region-inner clearfix">
           <?php print $content['two_66_33_first']; ?>
         </div>
       </div>
-      <div class="region region-second">
+      <div class="region two-66-33-second">
         <div class="region-inner clearfix">
           <?php print $content['two_66_33_second']; ?>
         </div>
@@ -38,7 +38,7 @@
   <?php if ($content['two_66_33_bottom']): ?>
     <div id="two-66-33-bottom-wrapper" class="fullwidth">
       <div class="container">
-        <div class="region region-bottom region-conditional-stack">
+        <div class="region two-66-33-bottom region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['two_66_33_bottom']; ?>
           </div>

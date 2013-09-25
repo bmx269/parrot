@@ -196,6 +196,9 @@ $wide: 80em;
     }
   }
 
+//
+// three-inset-left Panel
+//
   #three-inset-left-wrapper{
     #three-inset-left-left-wrapper{
       @include span-columns(12 omega, 12);
@@ -270,6 +273,9 @@ $wide: 80em;
     }
   }
 
+//
+// three-inset-right Panel
+//
   #three-inset-right-wrapper{
     #three-inset-right-right-wrapper{
       @include span-columns(12 omega, 12);
@@ -345,6 +351,9 @@ $wide: 80em;
   }
 
 
+//
+// three-33 Panel
+//
   #three-33-top-wrapper{
     .three-33-top{
       @include span-columns(12 omega, 12);
@@ -413,6 +422,113 @@ $wide: 80em;
       @include span-columns(12 omega, 12);
     }
   }
+
+
+//
+// two-33-66 Panel
+//
+  #two-33-66-top-wrapper{
+    .two-33-66-top{
+      @include span-columns(12 omega, 12);
+    }
+  }
+
+  #two-33-66-middle-wrapper{
+    .two-33-66-first{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+      @include at-breakpoint($computer){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+      @include at-breakpoint($wide){
+        @include remove-omega;
+        @include span-columns(4, 12);
+      }
+    }
+    .two-33-66-second{
+      @include span-columns(12 omega, 12);
+
+      @include at-breakpoint($narrow){
+        @include span-columns(12 omega, 12);
+      }
+      @include at-breakpoint($tablet){
+        @include span-columns(8 omega, 12);
+      }
+      @include at-breakpoint($computer){
+        @include span-columns(8 omega, 12);
+      }
+      @include at-breakpoint($wide){
+        @include span-columns(8 omega, 12);
+      }
+    }
+  }
+
+  #two-33-66-bottom-wrapper{
+    .two-33-66-bottom{
+      @include span-columns(12 omega, 12);
+    }
+  }
+
+  //
+  // two-66-33 Panel
+  //
+    #two-66-33-top-wrapper{
+      .two-66-33-top{
+        @include span-columns(12 omega, 12);
+      }
+    }
+
+    #two-66-33-middle-wrapper{
+      .two-66-33-first{
+        @include span-columns(12 omega, 12);
+
+        @include at-breakpoint($narrow){
+          @include span-columns(12 omega, 12);
+        }
+        @include at-breakpoint($tablet){
+          @include remove-omega;
+          @include span-columns(8, 12);
+        }
+        @include at-breakpoint($computer){
+          @include remove-omega;
+          @include span-columns(8, 12);
+        }
+        @include at-breakpoint($wide){
+          @include remove-omega;
+          @include span-columns(8, 12);
+        }
+      }
+      .two-66-33-second{
+        @include span-columns(12 omega, 12);
+
+        @include at-breakpoint($narrow){
+          @include span-columns(12 omega, 12);
+        }
+        @include at-breakpoint($tablet){
+          @include span-columns(4 omega, 12);
+        }
+        @include at-breakpoint($computer){
+          @include span-columns(4 omega, 12);
+        }
+        @include at-breakpoint($wide){
+          @include span-columns(4 omega, 12);
+        }
+      }
+    }
+
+    #two-66-33-bottom-wrapper{
+      .two-66-33-bottom{
+        @include span-columns(12 omega, 12);
+      }
+    }
 
 
 } //.parrot-panels
