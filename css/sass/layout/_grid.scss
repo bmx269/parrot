@@ -284,16 +284,13 @@ $wide: 80em;
         @include span-columns(12 omega, 12);
       }
       @include at-breakpoint($tablet){
-        @include remove-omega;
-        @include span-columns(9, 12);
+        @include span-columns(9 omega, 12);
       }
       @include at-breakpoint($computer){
-        @include remove-omega;
-        @include span-columns(9, 12);
+        @include span-columns(9 omega, 12);
       }
       @include at-breakpoint($wide){
-        @include remove-omega;
-        @include span-columns(9, 12);
+        @include span-columns(9 omega, 12);
       }
 
       .three-inset-right-middle{
@@ -339,13 +336,16 @@ $wide: 80em;
         @include span-columns(12 omega, 12);
       }
       @include at-breakpoint($tablet){
-        @include span-columns(3 omega, 12);
+        @include remove-omega;
+        @include span-columns(3, 12);
       }
       @include at-breakpoint($computer){
-        @include span-columns(3 omega, 12);
+        @include remove-omega;
+        @include span-columns(3, 12);
       }
       @include at-breakpoint($wide){
-        @include span-columns(3 omega, 12);
+        @include remove-omega;
+        @include span-columns(3, 12);
       }
     }
   }

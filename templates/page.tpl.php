@@ -110,10 +110,12 @@
   </div><!--/.container-->
 </div><!--/#content-wrapper-->
 
-<div id="footer-wrapper" class="fullwidth">
-  <div class="container">
-    <footer role="contentinfo" class="row">
-      <?php print render($page['footer']); ?>
-    </footer>
-  </div><!--/.container-->
-</div><!--/#footer-wrapper-->
+<?php if ($page['footer']): ?>
+  <div id="footer-wrapper" class="fullwidth">
+    <div class="container">
+      <footer role="contentinfo" class="row">
+        <?php print render($page['footer']); ?>
+      </footer>
+    </div><!--/.container-->
+  </div><!--/#footer-wrapper-->
+<?php endif; ?>

@@ -1001,25 +1001,19 @@ $wide: 80em;
       margin-right: 0; } }
   @media (min-width: 35em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
-      float: left;
-      margin-right: 2.5641%;
       width: 74.57627%;
-      float: left;
-      margin-right: 1.69492%; } }
+      float: right;
+      margin-right: 0; } }
   @media (min-width: 45.5em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
-      float: left;
-      margin-right: 1.69492%;
       width: 74.57627%;
-      float: left;
-      margin-right: 1.69492%; } }
+      float: right;
+      margin-right: 0; } }
   @media (min-width: 56.875em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
-      float: left;
-      margin-right: 1.69492%;
       width: 74.57627%;
-      float: left;
-      margin-right: 1.69492%; } }
+      float: right;
+      margin-right: 0; } }
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-middle {
     width: 100%;
     float: right;
@@ -1091,19 +1085,25 @@ $wide: 80em;
       margin-right: 0; } }
   @media (min-width: 35em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
+      float: left;
+      margin-right: 2.5641%;
       width: 23.72881%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-right: 1.69492%; } }
   @media (min-width: 45.5em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
+      float: left;
+      margin-right: 1.69492%;
       width: 23.72881%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-right: 1.69492%; } }
   @media (min-width: 56.875em) {
     .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
+      float: left;
+      margin-right: 1.69492%;
       width: 23.72881%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-right: 1.69492%; } }
 .parrot-panels #three-33-top-wrapper .three-33-top {
   width: 100%;
   float: right;
