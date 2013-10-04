@@ -1,12 +1,4 @@
-#panels-dnd-main .region {float:left; margin-bottom: 5px; width: 100%;}
-#panels-dnd-main #three-inset-left-left-wrapper{float: left; width: 66%;}
-#panels-dnd-main #three-inset-left-right-wrapper{float: right; width: 33%;}
-#panels-dnd-main #three-inset-left-left-wrapper .region {float: left; width: 100%;}
-#panels-dnd-main #three-inset-left-left-wrapper .three-inset-left-middle {width: 49.5%;}
-#panels-dnd-main #three-inset-left-left-wrapper .three-inset-left-inset {float: right; width: 49.5%;}
-#panels-dnd-main .three-inset-left-bottom {clear: both;}
-
-
+#panels-dnd-main .region {margin-bottom: 5px;}
 
 .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
   width: 100%;
@@ -40,6 +32,13 @@
       width: 74.57627%;
       float: left;
       margin-right: 1.69492%; } }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-top,
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-bottom {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
   .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
     width: 100%;
     float: right;

@@ -76,6 +76,7 @@ $wide: 80em;
 } //.container
 
 
+
 // Panels Layouts
 .parrot-panels{
   #minipanel-two-50-top-wrapper{
@@ -219,6 +220,11 @@ $wide: 80em;
         @include span-columns(9, 12);
       }
 
+      .three-inset-left-top,
+      .three-inset-left-bottom{
+        @include span-columns(12 omega, 12);
+      }
+
       .three-inset-left-middle{
         @include span-columns(12 omega, 12);
 
@@ -292,7 +298,10 @@ $wide: 80em;
       @include at-breakpoint($wide){
         @include span-columns(9 omega, 12);
       }
-
+      .three-inset-right-top,
+      .three-inset-right-bottom{
+        @include span-columns(12 omega, 12);
+      }
       .three-inset-right-middle{
         @include span-columns(12 omega, 12);
 
@@ -537,7 +546,7 @@ $wide: 80em;
 
 
 
-.view-mode-50_width{
+.view-mode-50_width_left{
   @include span-columns(12 omega, 12);
   clear: both;
 

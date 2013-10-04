@@ -904,6 +904,13 @@ $wide: 80em;
       width: 74.57627%;
       float: left;
       margin-right: 1.69492%; } }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-top,
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-bottom {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
   .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
     width: 100%;
     float: right;
@@ -1014,6 +1021,13 @@ $wide: 80em;
       width: 74.57627%;
       float: right;
       margin-right: 0; } }
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-top,
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-bottom {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-middle {
     width: 100%;
     float: right;
@@ -1347,7 +1361,7 @@ $wide: 80em;
   *margin-left: -1.5em;
   display: inline; }
 
-.view-mode-50_width {
+.view-mode-50_width_left {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -1355,26 +1369,26 @@ $wide: 80em;
   display: inline;
   clear: both; }
   @media (min-width: 26.25em) {
-    .view-mode-50_width {
+    .view-mode-50_width_left {
       width: 100%;
       float: right;
       margin-right: 0; } }
   @media (min-width: 35em) {
-    .view-mode-50_width {
+    .view-mode-50_width_left {
       float: left;
       margin-right: 2.5641%;
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; } }
   @media (min-width: 45.5em) {
-    .view-mode-50_width {
+    .view-mode-50_width_left {
       float: left;
       margin-right: 1.69492%;
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; } }
   @media (min-width: 56.875em) {
-    .view-mode-50_width {
+    .view-mode-50_width_left {
       float: left;
       margin-right: 1.69492%;
       width: 49.15254%;
