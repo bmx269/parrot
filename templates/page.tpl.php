@@ -62,7 +62,7 @@
   <div class="container">
     <div class="page row">
 
-      <div role="main" id="#main-content">
+      <div role="main" id="main-content">
         <?php print render($title_prefix); ?>
         <?php if ($title): ?>
           <h1 class="page-title"><?php print $title; ?></h1>
