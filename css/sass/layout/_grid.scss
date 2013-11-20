@@ -545,8 +545,7 @@ $wide: 80em;
 // Default grid blocks here following the "Mobile First" strategy.
 
 
-
-.view-mode-50_width_left{
+.width-50.float-left{
   @include span-columns(12 omega, 12);
   clear: both;
 
@@ -566,7 +565,7 @@ $wide: 80em;
     @include span-columns(6, 12);
   }
 }
-.view-mode-50_width_right{
+.width-50.float-right{
   @include span-columns(12 omega, 12);
 
   @include at-breakpoint($narrow){
@@ -582,7 +581,8 @@ $wide: 80em;
     @include span-columns(6 omega, 12);
   }
 }
-.view-mode-100_width{
+
+.width-100{
   @include span-columns(12 omega, 12);
 }
 

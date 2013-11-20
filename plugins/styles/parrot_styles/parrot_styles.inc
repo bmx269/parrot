@@ -1,0 +1,81 @@
+<?php
+
+$plugin = array(
+  'parrot_styles' => array(
+    'title'              => t('Parrot Styles'),
+    'description'        => t('Thin panel pane and region wrappers with custom classes'),
+    'render pane'        => 'parrot_styles_render_pane',
+    'pane settings form' => 'parrot_styles_settings_form',
+    'css'                => '../../../css/styles.css',
+
+    'hook theme'         => array(
+      'parrot_styles_theme_pane' => array(
+        'template'  => 'parrot_styles-pane',
+
+        // Change theme name 'parrot' to match changed theme name.
+        'path'      => drupal_get_path('theme', 'parrot') . '/plugins/styles/parrot_styles',
+        'variables' => array(
+          'content'  => NULL,
+          'settings' => NULL,
+        ),
+      ),
+    ),
+  ),
+);
+
+function theme_parrot_styles_render_pane($vars) {
+  $content  = $vars['content'];
+  $settings = $vars['settings'];
+  // This renders the template file parrot_styles-pane.tpl.php
+  return theme(
+    'parrot_styles_theme_pane',
+    array(
+      'content'  => $content,
+      'settings' => $settings
+    )
+  );
+}
+
+// Configuration form for the pane/region settings.
+function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_id = null, $type = null) {
+      $form['grid_width'] = array(
+        '#type'          => 'select',
+        '#title'         => t('Panel Pane Width'),
+        '#options'       => array(
+          'width-100' => t('100%  width'),
+          'width-75'  => t('75% width'),
+          'width-66'  => t('66% width'),
+          'width-50'  => t('50% width'),
+          'width-33'  => t('33% width'),
+          'width-25'  => t('25% width'),
+          ' '       => t('-None-'),
+        ),
+        '#default_value' => (isset($style_settings['grid_width'])) ? $style_settings['grid_width'] : 'width-100',
+      );
+
+     $form['float'] = array(
+        '#type'          => 'select',
+        '#title'         => t('Float'),
+        '#options'       => array(
+          'float-left'  => t('float left'),
+          'float-right'  => t('float right'),
+        ),
+        '#default_value' => (isset($style_settings['float'])) ? $style_settings['float'] : 'float-left',
+      );
+    // $form['clear_floats'] = array(
+    //     '#type'          => 'select',
+    //     '#title'         => t('Clear Floats'),
+    //     '#options'       => array(
+    //       ' '       => t('-None-'),
+    //       'clear-left'  => t('clear left'),
+    //       'clear-right'  => t('clear right'),
+    //       'clear-both'  => t('clear both'),
+    //     ),
+    //     '#default_value' => (isset($style_settings['clear_floats'])) ? $style_settings['clear_floats'] : ' ',
+    //   );
+
+
+
+  return $form;
+}
+

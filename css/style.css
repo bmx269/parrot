@@ -476,7 +476,7 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-/*
+/*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
  *  -------------------------------------------------------
@@ -1361,7 +1361,7 @@ $wide: 80em;
   *margin-left: -1.5em;
   display: inline; }
 
-.view-mode-50_width_left {
+.width-50.float-left {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -1369,60 +1369,60 @@ $wide: 80em;
   display: inline;
   clear: both; }
   @media (min-width: 26.25em) {
-    .view-mode-50_width_left {
+    .width-50.float-left {
       width: 100%;
       float: right;
       margin-right: 0; } }
   @media (min-width: 35em) {
-    .view-mode-50_width_left {
+    .width-50.float-left {
       float: left;
       margin-right: 2.5641%;
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; } }
   @media (min-width: 45.5em) {
-    .view-mode-50_width_left {
+    .width-50.float-left {
       float: left;
       margin-right: 1.69492%;
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; } }
   @media (min-width: 56.875em) {
-    .view-mode-50_width_left {
+    .width-50.float-left {
       float: left;
       margin-right: 1.69492%;
       width: 49.15254%;
       float: left;
       margin-right: 1.69492%; } }
 
-.view-mode-50_width_right {
+.width-50.float-right {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -1.5em;
   display: inline; }
   @media (min-width: 26.25em) {
-    .view-mode-50_width_right {
+    .width-50.float-right {
       width: 100%;
       float: right;
       margin-right: 0; } }
   @media (min-width: 35em) {
-    .view-mode-50_width_right {
+    .width-50.float-right {
       width: 49.15254%;
       float: right;
       margin-right: 0; } }
   @media (min-width: 45.5em) {
-    .view-mode-50_width_right {
+    .width-50.float-right {
       width: 49.15254%;
       float: right;
       margin-right: 0; } }
   @media (min-width: 56.875em) {
-    .view-mode-50_width_right {
+    .width-50.float-right {
       width: 49.15254%;
       float: right;
       margin-right: 0; } }
 
-.view-mode-100_width {
+.width-100 {
   width: 100%;
   float: right;
   margin-right: 0;
