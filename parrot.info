@@ -65,6 +65,7 @@ stylesheets[all][] = css/style.css
 scripts[] = js/script.js
 
 ;-------------- Panel layouts --------------
+plugins[panels][styles] = plugins/styles
 plugins[panels][layouts] = plugins/layouts
 
 ;-------------- Default Mothership Settings  -------------
