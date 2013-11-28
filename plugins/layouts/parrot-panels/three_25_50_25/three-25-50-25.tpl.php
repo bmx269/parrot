@@ -14,7 +14,7 @@
   <?php if ($content['three_25_50_25_top']): ?>
     <div id="three-25-50-25-top-wrapper" class="fullwidth">
       <div class="container">
-        <div class="region region-top region-conditional-stack">
+        <div class="region three-25-50-25-top region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['three_25_50_25_top']; ?>
           </div>
@@ -26,21 +26,21 @@
     <div id="three-25-50-25-middle-wrapper" class="fullwidth">
       <div class="container">
       <?php if ($content['three_25_50_25_first']): ?>
-      <div class="region region-first">
+      <div class="region three-25-50-25-first">
           <div class="region-inner clearfix">
             <?php print $content['three_25_50_25_first']; ?>
           </div>
         </div>
       <?php endif; ?>
       <?php if ($content['three_25_50_25_second']): ?>
-        <div class="region region-second">
+        <div class="region three-25-50-25-second">
           <div class="region-inner clearfix">
             <?php print $content['three_25_50_25_second']; ?>
           </div>
         </div>
       <?php endif; ?>
       <?php if ($content['three_25_50_25_third']): ?>
-        <div class="region region-third">
+        <div class="region three-25-50-25-third">
           <div class="region-inner clearfix">
             <?php print $content['three_25_50_25_third']; ?>
           </div>
@@ -51,7 +51,7 @@
   <?php if ($content['three_25_50_25_bottom']): ?>
     <div id="three-25-50-25-bottom-wrapper" class="fullwidth">
       <div class="container">
-        <div class="region region-bottom region-conditional-stack">
+        <div class="region three-25-50-25-bottom region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['three_25_50_25_bottom']; ?>
           </div>

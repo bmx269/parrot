@@ -17,7 +17,18 @@ body {
   &.admin-menu {
     margin-top: 32px !important;
   }
+
+  &.cke_editable{
+      background: #fff;
+      margin: 10px;
+    }
 }
+
+.cke_panel_container body{
+    background: #fff;
+    margin: 0px;
+}
+
 
 
 // Links

@@ -1438,6 +1438,13 @@ body {
   background: white; }
   body.admin-menu {
     margin-top: 32px !important; }
+  body.cke_editable {
+    background: #fff;
+    margin: 10px; }
+
+.cke_panel_container body {
+  background: #fff;
+  margin: 0px; }
 
 a {
   color: #0088cc;
