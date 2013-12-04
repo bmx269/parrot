@@ -72,6 +72,7 @@ plugins[panels][layouts] = plugins/layouts
 settings[mothership_rebuild_registry] = 0
 settings[mothership_poorthemers_helper] = 0
 settings[mothership_test] = 0
+settings[mothership_mediaquery_indicator] = 0
 
 settings[mothership_nuke_css]= mothership_css_nuke_theme
 settings[mothership_html5] = 1
