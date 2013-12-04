@@ -85,7 +85,7 @@ input[type="button"] {
   -webkit-appearance: none;
   @include border-radius(2px);
   @include background-clip(padding-box);
-  background: #dddddd image-url("../../img/button.png") repeat-x;
+  background: #dddddd url("../img/button.png") repeat-x;
   @include background-image(linear-gradient(white, #dddddd));
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
