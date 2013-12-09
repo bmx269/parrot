@@ -1,0 +1,47 @@
+{#
+
+//kpr(get_defined_vars());
+//http://drupalcontrib.org/api/drupal/drupal--modules--node--node.tpl.php
+//node--[CONTENT TYPE].tpl.php
+
+#}
+
+hide(content.comments);
+hide(content.links);
+
+{% if id_node %}
+  {% set id_node = ' id="' ~ id_node ~ '"' %}
+{% endif %}
+{% if classes %}
+  {% set classes = ' class="' ~ classes ~ '"' %}
+{% endif %}
+
+<article{{ id_node }}{{ classes }}{{ attributes }} role="article">
+  {{ mothership_poorthemers_helper }}
+  {{ title_prefix }}
+  {% if !page %}
+    <h2{{ title_attributes }}><a href="{{ node_url }}" rel="bookmark">{{ title }}</a></h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+  <footer>
+    {{ user_picture }}
+    <span class="author">{{ 'Written by'|t }} {{ name }}</span>
+    <span class="date">{{ 'On the'|t }} <time>{{ date }}</time></span>
+
+    {#{% if module_exists('comment') %}#}
+      <span class="comments">{{ comment_count }} Comments</span>
+    {#{% endif %}#}
+
+  </footer>
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  {{ content.links }}
+
+  {{ content.comments }}
+</article>

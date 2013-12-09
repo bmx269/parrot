@@ -1,0 +1,122 @@
+{#
+//kpr(get_defined_vars());
+//kpr(theme_hook_suggestions);
+//template naming
+//page--[CONTENT TYPE].tpl.php
+#}
+{% if theme_get_setting('mothership_poorthemers_helper') %}
+<!--page.tpl.php-->
+{% endif %}
+
+ {{ mothership_poorthemers_helper }}
+
+{% if page.user_bar %}
+  <div id="user-wrapper" class="fullwidth">
+    <div class="container">
+      <div role="user">
+        <div class="user-region">
+          {{ page.user_bar }}
+        </div>
+      </div>
+    </div><!--/.container-->
+  </div><!--/#user-wrapper-->
+{% endif %}
+
+{% if site_name or site_slogan or page.header %}
+  <div id="header-wrapper" class="fullwidth">
+    <div class="container">
+      <header role="banner" class="row">
+        <div class="siteinfo">
+          {% if logo %}
+            <div class="logo">
+              <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+                <img src="{{ logo }}" class="logo-img" alt="{{ 'Home'|t }}" />
+              </a>
+            </div>
+          {% endif %}
+
+          {% if site_name or site_slogan %}
+            <hgroup>
+              {% if site_name %}
+                <h1> {{ site_name }}</h1>
+              {% endif %}
+              {% if site_slogan %}
+                <h2> {{ site_slogan }}</h2>
+              {% endif %}
+            </hgroup>
+          {% endif %}
+        </div>
+
+        {% if page.header %}
+          <div class="header-region">
+            {{ page.header }}
+          </div>
+        {% endif %}
+
+      </header>
+    </div><!--/.container-->
+  </div><!--/#header-wrapper-->
+{% endif %}
+
+<div id="content-wrapper" class="fullwidth">
+  <div class="container">
+    <div class="page row">
+
+      <div role="main" id="main-content">
+        {{ title_prefix }}
+        {% if title %}
+          <h1 class="page-title"> {{ title }}</h1>
+        {% endif %}
+        {{ title_suffix }}
+
+        {{ breadcrumb }}
+
+        {% if action_links %}
+          <ul class="action-links">{{ action_links }}</ul>
+        {% endif %}
+
+        {% if tabs['#primary'][0] or tabs['#secondary'][0] %}
+          <nav class="tabs">{{ tabs }}</nav>
+        {% endif %}
+
+        {% if page.highlighted or messages %}
+          <div class="drupal-messages">
+           {{ page.highlighted }}
+           {{ messages }}
+          </div>
+        {% endif %}
+
+
+        {{ page.content_pre }}
+
+        {{ page.content }}
+
+        {{ page.content_post }}
+
+      </div><!--/main-->
+
+      {% if page.sidebar_first %}
+        <div class="sidebar-first">
+        {{ page.sidebar_first }}
+        </div>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <div class="sidebar-second">
+          {{ page.sidebar_second }}
+        </div>
+      {% endif %}
+    </div><!--/page-->
+  </div><!--/.container-->
+</div><!--/#content-wrapper-->
+
+
+{% if page.footer %}
+  <div id="footer-wrapper" class="fullwidth">
+    <div class="container">
+      <footer role="contentinfo" class="row">
+        {{ page.footer }}
+      </footer>
+    </div><!--/.container-->
+  </div><!--/#footer-wrapper-->
+{% endif %}

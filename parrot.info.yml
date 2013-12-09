@@ -1,0 +1,158 @@
+name: Parrot
+description: 'Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.'
+screenshot: screenshot.png
+core: 8.x
+type: theme
+base theme: mothership
+
+#-------------- F E A T U R E S -------------
+features:
+  - logo
+  - favicon
+  - name
+  - slogan
+  - node_user_picture
+  - comment_user_picture
+  - comment_user_verification
+#- main_menu
+#- secondary_menu
+
+#-------------- R E G I O N S -------------
+#regions_hidden[]: im_a_hidden_but_visibel_for_a_module
+
+#-- Required Regions
+regions:
+  content_pre: 'Content Pre'
+  content: Content
+  content_post: 'Content Post'
+
+  #-- Core Regions
+  user_bar: 'User Bar'
+  header: Header
+  footer: Footer
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  help: Help
+  highlighted: Highlighted
+
+#-------------- C S S -------------
+stylesheets:
+  all:
+    - css/style.css
+    - mothership-layout.css
+
+#-------------- CSS FOAD -------------
+  # - donteverloadmeagain.css
+    - mothership-layout.css
+
+
+#-------------- JS -------------
+# http://formalize.me/ for default Drupal jQuery use the
+# non-legacy one when using jQuery Update module
+scripts:
+  - js/jquery.formalize.legacy.min.js
+
+  # http://formalize.me/ for jQuery 1.7+
+  # - js/jquery.formalize.min.js
+
+  # http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+  # - js/jquery.scrollTo.min.js
+
+  # http://jpanelmenu.com/ - version 1.3.0
+  # - js/jquery.jpanelmenu.min.js
+
+  # https://github.com/ten1seven/jRespond
+  # - js/jRespond.min.js
+
+  # https://github.com/tuupola/jquery_lazyload
+  # - js/jquery.lazyload.min.js
+
+  - js/script.js
+
+#-------------- Panel layouts --------------
+plugins:
+  panels:
+    styles:
+      - plugins/styles
+    layouts:
+      - plugins/layouts
+
+#-------------- Default Mothership Settings  -------------
+settings:
+  mothership_rebuild_registry: 0
+  mothership_poorthemers_helper: 0
+  mothership_test: 0
+  mothership_mediaquery_indicator: 0
+
+  mothership_nuke_css: mothership_css_nuke_theme
+  mothership_html5: 1
+  mothership_viewport: 1
+  mothership_css_reset: 0
+  mothership_css_reset_html5: 0
+  mothership_css_default: 0
+  mothership_css_mothershipstyles: 0
+  mothership_css_normalize: 0
+
+  mothership_classes_body_html: 1
+  mothership_classes_body_front: 0
+  mothership_classes_body_loggedin: 1
+  mothership_classes_body_layout: 0
+  mothership_classes_body_toolbar: 0
+  mothership_classes_body_pagenode: 1
+  mothership_classes_body_path: 0
+  mothership_classes_body_path_first: 0
+
+  mothership_classes_region: 1
+  mothership_region_wrapper: 1
+
+  mothership_classes_block: 1
+  mothership_classes_block_id: 0
+  mothership_classes_block_id_as_class: 0
+  mothership_classes_block_contentdiv: 1
+
+  mothership_classes_node: 0
+  mothership_classes_node_state: 0
+  mothership_classes_node_id: 0
+
+  mothership_classes_view: 1
+  mothership_classes_view_name: 1
+  mothership_classes_view_view_id: 0
+
+  mothership_classes_view_row: 1
+  mothership_classes_view_row_count: 1
+  mothership_classes_view_row_first_last: 1
+  mothership_classes_view_row_rename: 0
+
+  mothership_classes_field_field: 0
+  mothership_classes_field_type: 0
+  mothership_classes_field_label: 1
+
+  mothership_classes_form_wrapper_formitem: 1
+  mothership_classes_form_wrapper_formtype: 1
+  mothership_classes_form_wrapper_formname: 1
+  mothership_classes_form_label: 1
+  mothership_classes_form_input: 1
+  mothership_classes_form_description: 1
+  mothership_form_required: 1
+  mothership_form_labelwrap: 0
+
+  mothership_classes_menu_wrapper: 1
+  mothership_classes_menu_items: 0
+  mothership_classes_menu_items_firstlast: 1
+  mothership_classes_menu_collapsed: 0
+  mothership_classes_menu_items_active: 0
+  mothership_classes_menu_leaf: 1
+
+  mothership_modernizr: 0
+  mothership_selectivizr: 0
+  mothership_selectivizr_cdn: 0
+
+
+  mothership_frontpage_default_message: 1
+  mothership_content_block_wrapper: 1
+  mothership_frontpage_regions: 1
+
+  mothership_classes_body_freeform: ''
+  mothership_classes_block_freeform: ''
+  mothership_classes_node_freeform: ''
+  mothership_classes_region_freeform: ''
