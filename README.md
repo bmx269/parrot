@@ -1,7 +1,7 @@
-Parrot
+Parrot for Drupal 8 (TWIG)
 ==========
 
-Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
+Parrot sits on the shoulders of some great projects. Parrot is a Drupal 8 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
 
 What is Bootstrap? http://twitter.github.com/bootstrap/
 
