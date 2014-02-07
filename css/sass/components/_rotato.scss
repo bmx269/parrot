@@ -23,7 +23,7 @@
     @include transition(.6s ease-in-out left);
   }
 
-  // Account for jankitude on images
+  // Account for jankitude on images.
   .item > img {
     display: block;
     line-height: 1;
@@ -64,7 +64,7 @@
 
 }
 
-// Left/right controls for nav
+// Left/right controls for nav.
 // ---------------------------
 
 .carousel-control {
@@ -84,20 +84,16 @@
   @include border-radius(23px);
   @include opacity(0.5);
 
-  // we can't have this transition here
-  // because webkit cancels the carousel
-  // animation if you trip this while
-  // in the middle of another animation
-  // ;_;
+  // We can't have this transition here because webkit cancels the carousel animation if you trip this while in the middle of another animation.
   // @include transition(opacity .2s linear);
 
-  // Reposition the right one
+  // Reposition the right one.
   &.right {
     left: auto;
     right: 15px;
   }
 
-  // Hover state
+  // Hover state.
   &:hover {
     color: $white;
     text-decoration: none;
@@ -106,7 +102,7 @@
 }
 
 
-// Caption for text below images
+// Caption for text below images.
 // -----------------------------
 
 .carousel-caption {

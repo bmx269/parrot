@@ -1,48 +1,54 @@
 //
-// Bootstrap v2.1.1
+// Uses some of the css tyles from Bootstrap v2.1.1.
+// Copyright 2012 Twitter, Inc.
+// Licensed under the Apache License v2.0.
 //
-// Copyright 2012 Twitter, Inc
-// Licensed under the Apache License v2.0
-// http://www.apache.org/licenses/LICENSE-2.0
+// Converted to Sass by @thomasmcdonald_, and distributed as bootstrap-sass.
 //
-// Designed and built with all the love in the world @twitter by @mdo and @fat.
-// Converted to Sass by @thomasmcdonald_, and distributed as bootstrap-sass
+// Rethought and made great by @bmx269 and redistributed as the Drupal theme Parrot.
+//
 
-// Core variables and mixins
+// Compass CSS Reset.
+@import "compass";
+
+// Normalize https://github.com/JohnAlbin/normalize.css-with-sass-or-compass
+@import "base/normalize";
+
+// Compass Toolkit CSS Helpers. https://github.com/team-sass/toolkit
+@import "toolkit";
+
+// Core variables and mixins.
 @import "base/variables"; // Modify this for custom colors, font-sizes, etc
+@import "components/sprites";
 @import "base/mixins";
 
-// CSS Reset
-@import "base/reset";
-
-// Grid system and page structure
-@import "layout/scaffolding";
+// Grid system and page structure.
 @import "layout/grid";
+@import "layout/scaffolding";
 
-// Base CSS
+// Base CSS.
 @import "base/type";
 @import "base/code";
 @import "base/forms";
 @import "base/tables";
 
-// Components: common
+// Components: Common.
 @import "components/media";
-@import "components/sprites";
 
-// Components: Buttons & Alerts
+// Components: Buttons & Alerts.
 @import "components/buttons";
 @import "components/alerts"; // Note: alerts share common CSS with buttons and thus have styles in _buttons.scss
 
-// Components: Nav
+// Components: Nav.
 @import "components/navs";
 @import "components/breadcrumbs";
 @import "components/pager";
 
 
-// Components: Misc
+// Components: Misc.
 @import "components/labels-badges";
 @import "components/accordion";
 @import "components/rotato";
 
-// Components: Custom Elements
+// Components: Custom Elements.
 @import "components/elements";

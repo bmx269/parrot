@@ -26,6 +26,7 @@ regions[content] = Content
 regions[content_post] = Content Post
 
 ;-- Core Regions
+regions[user_bar] = User Bar
 regions[header] = Header
 regions[footer] = Footer
 regions[sidebar_first] = Sidebar First
@@ -40,17 +41,39 @@ stylesheets[all][] = css/style.css
 
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
+stylesheets[all][] = mothership-layout.css
 
 ;-------------- JS -------------
+; http://formalize.me/ for default Drupal jQuery use the
+; non-legacy one when using jQuery Update module
+ scripts[] = js/jquery.formalize.legacy.min.js
+
+; http://formalize.me/ for jQuery 1.7+
+; scripts[] = js/jquery.formalize.min.js
+
+; http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+; scripts[] = js/jquery.scrollTo.min.js
+
+; http://jpanelmenu.com/ - version 1.3.0
+; scripts[] = js/jquery.jpanelmenu.min.js
+
+; https://github.com/ten1seven/jRespond
+; scripts[] = js/jRespond.min.js
+
+; https://github.com/tuupola/jquery_lazyload
+; scripts[] = js/jquery.lazyload.min.js
+
 scripts[] = js/script.js
 
 ;-------------- Panel layouts --------------
+plugins[panels][styles] = plugins/styles
 plugins[panels][layouts] = plugins/layouts
 
 ;-------------- Default Mothership Settings  -------------
 settings[mothership_rebuild_registry] = 0
 settings[mothership_poorthemers_helper] = 0
 settings[mothership_test] = 0
+settings[mothership_mediaquery_indicator] = 0
 
 settings[mothership_nuke_css]= mothership_css_nuke_theme
 settings[mothership_html5] = 1
@@ -59,6 +82,7 @@ settings[mothership_css_reset] = 0
 settings[mothership_css_reset_html5] = 0
 settings[mothership_css_default] = 0
 settings[mothership_css_mothershipstyles] = 0
+settings[mothership_css_normalize] = 0
 
 settings[mothership_classes_body_html] = 1
 settings[mothership_classes_body_front] = 0
@@ -114,6 +138,7 @@ settings[mothership_modernizr] = 0
 settings[mothership_selectivizr] = 0
 settings[mothership_selectivizr_cdn] = 0
 
+
 settings[mothership_frontpage_default_message] = 1
 settings[mothership_content_block_wrapper] = 1
 settings[mothership_frontpage_regions] = 1
@@ -122,3 +147,9 @@ settings[mothership_classes_body_freeform] = ''
 settings[mothership_classes_block_freeform] = ''
 settings[mothership_classes_node_freeform] = ''
 settings[mothership_classes_region_freeform] = ''
+
+; Information added by drupal.org packaging script on 2013-07-16
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "parrot"
+datestamp = "1373983271"

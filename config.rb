@@ -1,12 +1,18 @@
 # Require any additional compass plugins here.
 
-# require 'zen-grids'
-# http://zengrids.com/
-
 require 'susy'
 # http://susy.oddbird.net/
 
-require 'breakpoint'
+# require 'singularitygs'
+# https://github.com/Team-Sass/Singularity/
+
+# require 'zen-grids'
+# http://zengrids.com/
+
+require 'toolkit'
+# https://github.com/Team-Sass/toolkit/
+
+# require 'breakpoint'
 # https://github.com/canarymason/breakpoint
 
 # Set this to the root of your project when deployed:
@@ -23,7 +29,7 @@ output_style = :nested
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 color_output = false
 
 preferred_syntax = :sass

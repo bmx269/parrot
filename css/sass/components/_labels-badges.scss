@@ -8,14 +8,14 @@
 .badge {
   font-size: $baseFontSize * .846;
   font-weight: bold;
-  line-height: 14px; // ensure proper line-height if floated
+  line-height: 14px; // Ensure proper line-height if floated.
   color: $white;
   vertical-align: baseline;
   white-space: nowrap;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   background-color: $grayLight;
 }
-// Set unique padding and border-radii
+// Set unique padding and border-radius.
 .label {
   padding: 1px 4px 2px;
   @include border-radius(3px);
@@ -25,7 +25,7 @@
   @include border-radius(9px);
 }
 
-// Hover state, but only for links
+// Hover state, but only for links.
 a {
   &.label:hover,
   &.badge:hover {
@@ -36,7 +36,7 @@ a {
 }
 
 // Colors
-// Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
+// Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute).
 
 // Important (red)
 .label-important, .badge-important               { background-color: $errorText; }
@@ -54,7 +54,7 @@ a {
 .label-inverse, .badge-inverse                { background-color: $grayDark; }
 .label-inverse[href], .badge-inverse[href]    { background-color: darken($grayDark, 10%); }
 
-// Quick fix for labels/badges in buttons
+// Quick fix for labels/badges in buttons.
 .btn {
   .label,
   .badge {

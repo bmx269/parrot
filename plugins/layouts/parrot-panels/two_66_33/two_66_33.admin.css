@@ -1,0 +1,77 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+
+.parrot-panels #two-66-33-top-wrapper .two-66-33-top {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #two-66-33-middle-wrapper .two-66-33-first {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-first {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 40.25em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-first {
+      float: left;
+      margin-right: 2.5641%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 50.75em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 40.25em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 50.75em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #two-66-33-middle-wrapper .two-66-33-second {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+.parrot-panels #two-66-33-bottom-wrapper .container {
+  padding-bottom: 20px; }
+  @media (min-width: 40.25em) {
+    .parrot-panels #two-66-33-bottom-wrapper .container {
+      padding-bottom: 40px; } }
+.parrot-panels #two-66-33-bottom-wrapper .two-66-33-bottom {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }

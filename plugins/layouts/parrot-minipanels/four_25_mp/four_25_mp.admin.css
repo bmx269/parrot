@@ -1,0 +1,135 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+.parrot-panels #minipanel-four-25-top-wrapper .minipanel-four-25-top {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-first {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-first {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-first {
+      float: left;
+      margin-right: 2.5641%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-first {
+      float: left;
+      margin-right: 1.69492%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-second {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-second {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-second {
+      float: left;
+      margin-right: 2.5641%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-second {
+      float: left;
+      margin-right: 1.69492%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-second {
+      float: left;
+      margin-right: 1.69492%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-third {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-third {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-third {
+      float: left;
+      margin-right: 2.5641%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-third {
+      float: left;
+      margin-right: 1.69492%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-third {
+      float: left;
+      margin-right: 1.69492%;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; } }
+.parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+.parrot-panels #minipanel-four-25-bottom-wrapper .minipanel-four-25-bottom {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }

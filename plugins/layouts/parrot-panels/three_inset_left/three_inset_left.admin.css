@@ -1,0 +1,125 @@
+#panels-dnd-main .region {margin-bottom: 5px;}
+
+.parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      float: left;
+      margin-right: 2.5641%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      float: left;
+      margin-right: 1.69492%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
+      float: left;
+      margin-right: 1.69492%;
+      width: 74.57627%;
+      float: left;
+      margin-right: 1.69492%; } }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-top,
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-bottom {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
+    @media (min-width: 26.25em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+        width: 100%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 35em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+        float: left;
+        margin-right: 2.5641%;
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; } }
+    @media (min-width: 45.5em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+        float: left;
+        margin-right: 1.69492%;
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; } }
+    @media (min-width: 56.875em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
+        float: left;
+        margin-right: 1.69492%;
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; } }
+  .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1.5em;
+    display: inline; }
+    @media (min-width: 26.25em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 100%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 35em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 45.5em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0; } }
+    @media (min-width: 56.875em) {
+      .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0; } }
+.parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 35em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 45.5em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
+      width: 23.72881%;
+      float: right;
+      margin-right: 0; } }

@@ -9,13 +9,13 @@
 // --------------------------------------------------
 
 
-// Use the .menu class on any <li> element within the topbar or ul.tabs and you'll get some superfancy dropdowns
+// Use the .menu class on any <li> element within the topbar or ul.tabs and you'll get some superfancy dropdowns,
 .dropup,
 .dropdown {
   position: relative;
 }
 .dropdown-toggle {
-  // The caret makes the toggle a bit too tall in IE7
+  // The caret makes the toggle a bit too tall in IE7.
   *margin-bottom: -3px;
 }
 .dropdown-toggle:active,
@@ -23,10 +23,10 @@
   outline: 0;
 }
 
-// Dropdown arrow/caret
+// Dropdown arrow/caret.
 // --------------------
 .caret {
-  display: inline-block;
+  @include inline-block;
   width: 0;
   height: 0;
   vertical-align: top;
@@ -36,20 +36,20 @@
   content: "";
 }
 
-// Place the caret
+// Place the caret.
 .dropdown .caret {
   margin-top: 8px;
   margin-left: 2px;
 }
 
-// The dropdown menu (ul)
+// The dropdown menu (ul).
 // ----------------------
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   z-index: $zindexDropdown;
-  display: none; // none by default, but block on "open" of the menu
+  display: none; // none by default, but block on "open" of the menu.
   float: left;
   min-width: 160px;
   padding: 5px 0;
@@ -66,18 +66,18 @@
      -moz-background-clip: padding;
           background-clip: padding-box;
 
-  // Aligns the dropdown menu to right
+  // Aligns the dropdown menu to right.
   &.pull-right {
     right: 0;
     left: auto;
   }
 
-  // Dividers (basically an hr) within the dropdown
+  // Dividers (basically an hr) within the dropdown.
   .divider {
     @include nav-divider($dropdownDividerTop, $dropdownDividerBottom);
   }
 
-  // Links within the dropdown menu
+  // Links within the dropdown menu.
   a {
     display: block;
     padding: 3px 20px;
@@ -113,23 +113,22 @@
 
 // Disabled state
 // --------------
-// Gray out text and ensure the hover state remains gray
+// Gray out text and ensure the hover state remains gray.
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
   color: $grayLight;
 }
-// Nuke hover effects
+// Nuke hover effects.
 .dropdown-menu .disabled > a:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
 }
 
-// Open state for the dropdown
+// Open state for the dropdown.
 // ---------------------------
 .open {
-  // IE7's z-index only goes to the nearest positioned ancestor, which would
-  // make the menu appear below buttons that appeared later on the page
+  // IE7's z-index only goes to the nearest positioned ancestor, which would make the menu appear below buttons that appeared later on the page.
   *z-index: $zindexDropdown;
 
   & > .dropdown-menu {
@@ -137,17 +136,16 @@
   }
 }
 
-// Right aligned dropdowns
+// Right aligned dropdowns.
 // ---------------------------
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
 
-// Allow for dropdowns to go bottom up (aka, dropup-menu)
+// Allow for dropdowns to go bottom up (aka, dropup-menu).
 // ------------------------------------------------------
 // Just add .dropup after the standard .dropdown class and you're set, bro.
-// TODO: abstract this so that the navbar fixed styles are not placed here?
 .dropup,
 .navbar-fixed-bottom .dropdown {
   // Reverse the caret
@@ -156,7 +154,7 @@
     border-bottom: 4px solid $black;
     content: "";
   }
-  // Different positioning for bottom up menu
+  // Different positioning for bottom up menu.
   .dropdown-menu {
     top: auto;
     bottom: 100%;
@@ -202,7 +200,7 @@
 
 // Tweak nav headers
 // -----------------
-// Increase padding from 15px to 20px on sides
+// Increase padding from 15px to 20px on sides.
 .dropdown .dropdown-menu .nav-header {
   padding-left: 20px;
   padding-right: 20px;
@@ -211,7 +209,7 @@
 // Typeahead
 // ---------
 .typeahead {
-  margin-top: 2px; // give it some space to breathe
+  margin-top: 2px; // Give it some space to breathe.
   @include border-radius(4px);
 }
 
@@ -620,4 +618,13 @@
   cursor: default;
 }
 
+// ADMIN NAV STYLES
+// ----------------
 
+#admin-menu .dropdown li li.expandable {
+  background-position: 145px center;
+
+  ul {
+    margin-top: -33px;
+  }
+}
