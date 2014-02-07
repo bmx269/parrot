@@ -106,3 +106,6 @@ This project is a Sandbox on Drupal.org as well, and will eventually become a Fu
 http://drupal.org/sandbox/bmx269/1848916
 
 The development of this theme is sponsored in part by ImageX Media.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bmx269/parrot/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
