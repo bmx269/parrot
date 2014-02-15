@@ -2,4 +2,8 @@
 // Sprites
 // --------------------------------------------------
 
+$sprite-spacing: 20px;
+@import "sprite/*.png";
+@include all-sprite-sprites;
 
+// To use a sprite, use @extend sprite-filename;

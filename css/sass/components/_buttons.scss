@@ -1,7 +1,9 @@
 // Panels IPE Fix.
 
 input.panels-ipe-save,
-input.panels-ipe-cancel {
+input.panels-ipe-cancel,
+input#panels-ipe-save,
+input#panels-ipe-cancel {
   width: auto;
   margin: 5px;
   height: 33px;
@@ -16,7 +18,11 @@ input.panels-ipe-cancel {
 input.panels-ipe-save:hover,
 input.panels-ipe-cancel:hover,
 input.panels-ipe-save:active,
-input.panels-ipe-cancel:active {
+input.panels-ipe-cancel:active,
+input#panels-ipe-save:hover,
+input#panels-ipe-cancel:hover,
+input#panels-ipe-save:active,
+input#panels-ipe-cancel:active  {
   color: #fff;
 }
 

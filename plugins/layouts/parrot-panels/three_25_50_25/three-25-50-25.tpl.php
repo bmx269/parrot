@@ -26,7 +26,7 @@
     <div id="three-25-50-25-middle-wrapper" class="fullwidth">
       <div class="container">
       <?php if ($content['three_25_50_25_first']): ?>
-      <div class="region three-25-50-25-first">
+        <div class="region three-25-50-25-first">
           <div class="region-inner clearfix">
             <?php print $content['three_25_50_25_first']; ?>
           </div>
