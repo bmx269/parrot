@@ -41,6 +41,7 @@ stylesheets[all][] = css/style.css
 
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
+stylesheets[all][] = mothership-layout.css
 
 ;-------------- JS -------------
 ; http://formalize.me/ for default Drupal jQuery use the
@@ -72,6 +73,7 @@ plugins[panels][layouts] = plugins/layouts
 settings[mothership_rebuild_registry] = 0
 settings[mothership_poorthemers_helper] = 0
 settings[mothership_test] = 0
+settings[mothership_mediaquery_indicator] = 0
 
 settings[mothership_nuke_css]= mothership_css_nuke_theme
 settings[mothership_html5] = 1
@@ -80,6 +82,7 @@ settings[mothership_css_reset] = 0
 settings[mothership_css_reset_html5] = 0
 settings[mothership_css_default] = 0
 settings[mothership_css_mothershipstyles] = 0
+settings[mothership_css_normalize] = 0
 
 settings[mothership_classes_body_html] = 1
 settings[mothership_classes_body_front] = 0
@@ -134,6 +137,7 @@ settings[mothership_classes_menu_leaf] = 1
 settings[mothership_modernizr] = 0
 settings[mothership_selectivizr] = 0
 settings[mothership_selectivizr_cdn] = 0
+
 
 settings[mothership_frontpage_default_message] = 1
 settings[mothership_content_block_wrapper] = 1
