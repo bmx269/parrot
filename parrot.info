@@ -1,5 +1,5 @@
-name = Parrot
-description = Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
+name = Parrot Bootstrap 3
+description = Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses Twitter Bootstrap 3.
 screenshot = screenshot.png
 engine = phptemplate
 core = 7.x
@@ -62,6 +62,20 @@ stylesheets[all][] = mothership-layout.css
 
 ; https://github.com/tuupola/jquery_lazyload
 ; scripts[] = js/jquery.lazyload.min.js
+
+; Bootstrap 3 JS
+scripts[] = js/affix.js
+scripts[] = js/alert.js
+scripts[] = js/button.js
+scripts[] = js/carousel.js
+scripts[] = js/collapse.js
+scripts[] = js/dropdown.js
+scripts[] = js/modal.js
+scripts[] = js/popover.js
+scripts[] = js/scrollspy.js
+scripts[] = js/tab.js
+scripts[] = js/tooltip.js
+scripts[] = js/transition.js
 
 scripts[] = js/script.js
 

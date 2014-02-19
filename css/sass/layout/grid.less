@@ -1,0 +1,497 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+.container-fluid {
+  .container-fixed();
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+.row {
+  .make-row();
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+.make-grid-columns();
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+.make-grid(xs);
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+
+
+// Panels Layouts
+.parrot-panels{
+  #minipanel-two-50-top-wrapper{
+    .make-row();
+
+    .minipanel-two-50-top{
+    }
+  }
+  #minipanel-two-50-middle-wrapper{
+    .minipanel-two-50-first{
+      .make-sm-column(6);
+      .make-md-column(6);
+      .make-lg-column(6);
+    }
+    .minipanel-two-50-second{
+      .make-sm-column(6);
+      .make-md-column(6);
+      .make-lg-column(6);
+    }
+  }
+
+  #minipanel-two-50-bottom-wrapper{
+    .make-row();
+
+    .minipanel-two-50-bottom{
+    }
+  }
+
+  #minipanel-three-33-top-wrapper{
+    .make-row();
+
+    .minipanel-three-33-top{
+    }
+  }
+
+  #minipanel-three-33-middle-wrapper{
+    .make-row();
+
+    .minipanel-three-33-first{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+    .minipanel-three-33-second{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+    .minipanel-three-33-third{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+  }
+
+  #minipanel-three-33-bottom-wrapper{
+    .make-row();
+
+    .minipanel-three-33-bottom{
+    }
+  }
+
+  #minipanel-four-25-top-wrapper{
+    .make-row();
+
+    .minipanel-four-25-top{
+    }//.minipanel-four-25-top
+  } //#minipanel-four-25-top-wrapper
+
+  #minipanel-four-25-middle-wrapper{
+    .make-row();
+
+    .minipanel-four-25-first{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    } //.minipanel-four-25-first
+
+    .minipanel-four-25-second{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }//.minipanel-four-25-second
+
+    .minipanel-four-25-third{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }//.minipanel-four-25-third
+
+    .minipanel-four-25-fourth{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }//.minipanel-four-25-fourth
+  } //#minipanel-four-25-middle-wrapper
+
+  #minipanel-four-25-bottom-wrapper{
+    .make-row();
+
+    .minipanel-four-25-bottom{
+    }//.minipanel-four-25-bottom
+  } //#minipanel-four-25-bottom-wrapper
+
+
+//
+// three-inset-left Panel
+//
+  #three-inset-left-wrapper{
+    .make-row();
+
+    #three-inset-left-left-wrapper{
+      .make-sm-column(9);
+      .make-md-column(9);
+      .make-lg-column(9);
+
+      .three-inset-left-top,
+      .three-inset-left-bottom{
+        .make-sm-column(12);
+        .make-md-column(12);
+        .make-lg-column(12);
+      }
+
+      .three-inset-left-middle{
+        .make-sm-column(6);
+        .make-md-column(6);
+        .make-lg-column(6);
+      }
+      .three-inset-left-inset{
+        .make-sm-column(6);
+        .make-md-column(6);
+        .make-lg-column(6);
+      }
+    }
+
+    #three-inset-left-right-wrapper{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }
+  }
+
+//
+// three-inset-right Panel
+//
+  #three-inset-right-wrapper{
+    .make-row();
+
+    #three-inset-right-right-wrapper{
+      .make-sm-column(9);
+      .make-md-column(9);
+      .make-lg-column(9);
+
+      .three-inset-right-top,
+      .three-inset-right-bottom{
+      }
+      .three-inset-right-middle{
+        .make-sm-column(6);
+        .make-md-column(6);
+        .make-lg-column(6);
+      }
+      .three-inset-right-inset{
+        .make-sm-column(6);
+        .make-md-column(6);
+        .make-lg-column(6);
+      }
+    }
+    #three-inset-right-left-wrapper{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }
+  }
+
+
+//
+// three-33 Panel
+//
+  #three-33-top-wrapper{
+    .make-row();
+
+    .three-33-top{
+    }
+  }
+
+  #three-33-middle-wrapper{
+    .make-row();
+
+    .three-33-first{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+    .three-33-second{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+    .three-33-third{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+  }
+
+  #three-33-bottom-wrapper{
+    .make-row();
+
+    .three-33-bottom{
+    }
+  }
+
+
+  #three-25-50-25-top-wrapper{
+    .make-row();
+
+    .three-25-50-25-top{
+    }
+  }
+  #three-25-50-25-middle-wrapper{
+    .make-row();
+
+    .three-25-50-25-first{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }
+    .three-25-50-25-second{
+      .make-sm-column(6);
+      .make-md-column(6);
+      .make-lg-column(6);
+    }
+    .three-25-50-25-third{
+      .make-sm-column(3);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }
+  }
+
+  #three-25-50-25-bottom-wrapper{
+    .make-row();
+
+    .three-25-50-25-bottom{
+    }
+  }
+
+
+//
+// two-33-66 Panel
+//
+  #two-33-66-top-wrapper{
+    .make-row();
+
+    .two-33-66-top{
+    }
+  }
+
+  #two-33-66-middle-wrapper{
+    .make-row();
+
+    .two-33-66-first{
+      .make-sm-column(4);
+      .make-md-column(4);
+      .make-lg-column(4);
+    }
+    .two-33-66-second{
+      .make-sm-column(8);
+      .make-md-column(8);
+      .make-lg-column(8);
+    }
+  }
+
+  #two-33-66-bottom-wrapper{
+    .make-row();
+
+    .two-33-66-bottom{
+    }
+  }
+
+  //
+  // two-33-66 Panel
+  //
+  #two-33-66-alt-top-wrapper{
+    .make-row();
+
+    .two-33-66-alt-top{
+    }
+  }
+
+  #two-33-66-alt-middle-wrapper{
+    .make-row();
+
+    .two-33-66-alt-first{
+      .make-sm-column(5);
+      .make-md-column(3);
+      .make-lg-column(3);
+    }
+    .two-33-66-alt-second{
+      .make-sm-column-pull(5);
+      .make-sm-column-pull(3);
+      .make-sm-column-pull(3);
+      .make-sm-column(6);
+      .make-md-column(9);
+      .make-lg-column(9);
+      }
+    }
+
+
+  #two-33-66-alt-bottom-wrapper{
+    .make-row();
+
+    .two-33-66-alt-bottom{
+    }
+  }
+
+  //
+  // two-66-33 Panel
+  //
+    #two-66-33-top-wrapper{
+      .make-row();
+
+      .two-66-33-top{
+      }
+    }
+
+    #two-66-33-middle-wrapper{
+      .make-row();
+
+      .two-66-33-first{
+        .make-sm-column(8);
+        .make-md-column(8);
+        .make-lg-column(8);
+      }
+      .two-66-33-second{
+        .make-sm-column(4);
+        .make-md-column(4);
+        .make-lg-column(4);
+      }
+    }
+
+    #two-66-33-bottom-wrapper{
+      .make-row();
+
+      .two-66-33-bottom{
+      }
+    }
+
+    #four-25-top-wrapper{
+      .make-row();
+
+      .four-25-top{
+      }//.four-25-top
+    } //#four-25-top-wrapper
+
+    #four-25-middle-wrapper{
+      .make-row();
+
+      .four-25-first{
+        .make-sm-column(3);
+        .make-md-column(3);
+        .make-lg-column(3);
+      } //.four-25-first
+
+      .four-25-second{
+        .make-sm-column(3);
+        .make-md-column(3);
+        .make-lg-column(3);
+      }//.four-25-second
+
+      .four-25-third{
+        .make-sm-column(3);
+        .make-md-column(3);
+        .make-lg-column(3);
+      }//.four-25-third
+
+      .four-25-fourth{
+        .make-sm-column(3);
+        .make-md-column(3);
+        .make-lg-column(3);
+      }//.four-25-fourth
+    } //#four-25-middle-wrapper
+
+    #four-25-bottom-wrapper{
+      .make-row();
+
+      .four-25-bottom{
+      }//.four-25-bottom
+    } //#four-25-bottom-wrapper
+} //.parrot-panels
+
+.width-25{
+  .make-sm-column(3);
+  .make-md-column(3);
+  .make-lg-column(3);
+}
+
+
+.width-33{
+  .make-sm-column(4);
+  .make-md-column(4);
+  .make-lg-column(4);
+}
+
+.width-50{
+  .make-sm-column(6);
+  .make-md-column(6);
+  .make-lg-column(6);
+}
+
+.width-66{
+  .make-sm-column(8);
+  .make-md-column(8);
+  .make-lg-column(8);
+}
+
+.width-75{
+  .make-sm-column(9);
+  .make-md-column(9);
+  .make-lg-column(9);
+}
+
+
+.width-100{
+  clear: both;
+}
