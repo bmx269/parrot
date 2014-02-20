@@ -64,18 +64,7 @@ stylesheets[all][] = mothership-layout.css
 ; scripts[] = js/jquery.lazyload.min.js
 
 ; Bootstrap 3 JS
-scripts[] = js/affix.js
-scripts[] = js/alert.js
-scripts[] = js/button.js
-scripts[] = js/carousel.js
-scripts[] = js/collapse.js
-scripts[] = js/dropdown.js
-scripts[] = js/modal.js
-scripts[] = js/popover.js
-scripts[] = js/scrollspy.js
-scripts[] = js/tab.js
-scripts[] = js/tooltip.js
-scripts[] = js/transition.js
+scripts[] = js/bootstrap.min.js
 
 scripts[] = js/script.js
 

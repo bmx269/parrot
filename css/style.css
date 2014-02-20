@@ -3052,6 +3052,9 @@ select[multiple].input-lg {
   top: 0;
   right: 15px;
 }
+ul.secondary a.active {
+  border-bottom: 0;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
