@@ -39,14 +39,14 @@ To use the Parrot Styles feature, you have to edit: /plugins/styles/parrot_style
 
 ```php
 Line 15: // Change theme name 'parrot' to match changed theme name.
-Line 16: 'path'      => drupal_get_path('theme', 'parrot') . '/plugins/styles/parrot_styles',
+Line 16: 'path' => drupal_get_path('theme', 'parrot') . '/plugins/styles/parrot_styles',
 ```
 
 If theme was called mythemename:
 
 ```php
 Line 15: // Change theme name 'parrot' to match changed theme name.
-Line 16: 'path'      => drupal_get_path('theme', 'mythemename') . '/plugins/styles/parrot_styles',
+Line 16: 'path' => drupal_get_path('theme', 'mythemename') . '/plugins/styles/parrot_styles',
 ```
 
 The theme uses LESS to build the CSS, then is compiled into the /css/style.css file. The LESS files are organized in a file structure that is based on overall site structure, not specific components. The structure is as follows in the /css folder:

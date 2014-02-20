@@ -53,15 +53,15 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
         '#default_value' => (isset($style_settings['grid_width'])) ? $style_settings['grid_width'] : 'width-100',
       );
 
-     $form['float'] = array(
-        '#type'          => 'select',
-        '#title'         => t('Float'),
-        '#options'       => array(
-          'float-left'  => t('float left'),
-          'float-right'  => t('float right'),
-        ),
-        '#default_value' => (isset($style_settings['float'])) ? $style_settings['float'] : 'float-left',
-      );
+     // $form['float'] = array(
+     //    '#type'          => 'select',
+     //    '#title'         => t('Float'),
+     //    '#options'       => array(
+     //      'float-left'  => t('float left'),
+     //      'float-right'  => t('float right'),
+     //    ),
+     //    '#default_value' => (isset($style_settings['float'])) ? $style_settings['float'] : 'float-left',
+     //  );
     // $form['clear_floats'] = array(
     //     '#type'          => 'select',
     //     '#title'         => t('Clear Floats'),
