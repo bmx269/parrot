@@ -69,13 +69,15 @@
 }
 
 
-
 // Panels Layouts
 .parrot-panels{
   #minipanel-two-50-top-wrapper{
     .make-row();
 
     .minipanel-two-50-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
   #minipanel-two-50-middle-wrapper{
@@ -95,6 +97,9 @@
     .make-row();
 
     .minipanel-two-50-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -102,6 +107,9 @@
     .make-row();
 
     .minipanel-three-33-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -129,6 +137,9 @@
     .make-row();
 
     .minipanel-three-33-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -136,6 +147,9 @@
     .make-row();
 
     .minipanel-four-25-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }//.minipanel-four-25-top
   } //#minipanel-four-25-top-wrapper
 
@@ -171,6 +185,9 @@
     .make-row();
 
     .minipanel-four-25-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }//.minipanel-four-25-bottom
   } //#minipanel-four-25-bottom-wrapper
 
@@ -225,6 +242,9 @@
 
       .three-inset-right-top,
       .three-inset-right-bottom{
+        .make-sm-column(12);
+        .make-md-column(12);
+        .make-lg-column(12);
       }
       .three-inset-right-middle{
         .make-sm-column(6);
@@ -252,6 +272,9 @@
     .make-row();
 
     .three-33-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -279,6 +302,9 @@
     .make-row();
 
     .three-33-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -287,6 +313,9 @@
     .make-row();
 
     .three-25-50-25-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
   #three-25-50-25-middle-wrapper{
@@ -313,6 +342,9 @@
     .make-row();
 
     .three-25-50-25-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -324,6 +356,9 @@
     .make-row();
 
     .two-33-66-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -346,6 +381,9 @@
     .make-row();
 
     .two-33-66-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -356,6 +394,9 @@
     .make-row();
 
     .two-33-66-alt-top{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -363,17 +404,20 @@
     .make-row();
 
     .two-33-66-alt-first{
-      .make-sm-column(5);
+      .make-sm-column(4);
       .make-md-column(3);
       .make-lg-column(3);
+      .make-sm-column-pull(5);
+      .make-md-column-pull(6);
+      .make-lg-column-pull(6);
     }
     .two-33-66-alt-second{
-      .make-sm-column-pull(5);
-      .make-sm-column-pull(3);
-      .make-sm-column-pull(3);
-      .make-sm-column(6);
+      .make-sm-column(8);
       .make-md-column(9);
       .make-lg-column(9);
+      .make-sm-column-push(7);
+      .make-md-column-push(6);
+      .make-lg-column-push(6);
       }
     }
 
@@ -382,6 +426,9 @@
     .make-row();
 
     .two-33-66-alt-bottom{
+      .make-sm-column(12);
+      .make-md-column(12);
+      .make-lg-column(12);
     }
   }
 
@@ -392,6 +439,9 @@
       .make-row();
 
       .two-66-33-top{
+        .make-sm-column(12);
+        .make-md-column(12);
+        .make-lg-column(12);
       }
     }
 
@@ -414,6 +464,9 @@
       .make-row();
 
       .two-66-33-bottom{
+        .make-sm-column(12);
+        .make-md-column(12);
+        .make-lg-column(12);
       }
     }
 
@@ -421,6 +474,9 @@
       .make-row();
 
       .four-25-top{
+        .make-sm-column(12);
+        .make-md-column(12);
+        .make-lg-column(12);
       }//.four-25-top
     } //#four-25-top-wrapper
 
@@ -456,6 +512,9 @@
       .make-row();
 
       .four-25-bottom{
+        .make-sm-column(12);
+        .make-md-column(12);
+        .make-lg-column(12);
       }//.four-25-bottom
     } //#four-25-bottom-wrapper
 } //.parrot-panels
@@ -494,4 +553,20 @@
 
 .width-100{
   clear: both;
+  .make-sm-column(12);
+  .make-md-column(12);
+  .make-lg-column(12);
+}
+
+
+.siteinfo{
+  .make-sm-column(12);
+  .make-md-column(12);
+  .make-lg-column(12);
+}
+
+.header-region{
+  .make-sm-column(12);
+  .make-md-column(12);
+  .make-lg-column(12);
 }
