@@ -22,7 +22,7 @@
   </div><!--/#user-wrapper-->
 <?php endif; ?>
 
-<?php if($site_name OR $site_slogan OR $page['header'] ): ?>
+<?php if($site_name OR $site_slogan OR $logo OR $page['header'] ): ?>
   <div id="header-wrapper" class="fullwidth">
     <div class="container">
       <header role="banner" class="row">
