@@ -11,8 +11,8 @@
 
 ?>
 <div class="panel-display parrot-panels three-inset-left clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div id="three-inset-left-wrapper" class="fullwidth">
-    <div class="container">
+  <div class="container">
+    <div id="three-inset-left-wrapper" class="fullwidth">
       <div id="three-inset-left-left-wrapper" class="clearfix">
 
       <?php if ($content['three_inset_left_top']): ?>

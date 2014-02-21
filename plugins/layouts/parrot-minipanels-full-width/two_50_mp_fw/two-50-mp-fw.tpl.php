@@ -13,8 +13,8 @@
 <div class="panel-display parrot-panels minipanel-two-50-fw clearfix" <?php if
 (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['minipanel_two_50_top_fw']): ?>
-    <div id="minipanel-two-50-top-fw-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="minipanel-two-50-top-fw-wrapper" class="fullwidth">
         <div class="region minipanel-two-50-top-fw region-conditional-stack">
         <div class="region-inner clearfix">
           <?php print $content['minipanel_two_50_top_fw']; ?>
@@ -23,8 +23,8 @@
       </div>
     </div>
   <?php endif; ?>
-    <div id="minipanel-two-50-middle-fw-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="minipanel-two-50-middle-fw-wrapper" class="fullwidth">
         <div class="region minipanel-two-50-first-fw">
           <div class="region-inner clearfix">
             <?php print $content['minipanel_two_50_first_fw']; ?>
@@ -38,8 +38,8 @@
       </div>
     </div>
   <?php if ($content['minipanel_two_50_bottom_fw']): ?>
-    <div id="minipanel-two-50-bottom-fw-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="minipanel-two-50-bottom-fw-wrapper" class="fullwidth">
         <div class="region minipanel-two-50-bottom-fw region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['minipanel_two_50_bottom_fw']; ?>

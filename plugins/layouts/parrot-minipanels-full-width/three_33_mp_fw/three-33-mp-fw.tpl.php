@@ -14,8 +14,8 @@
 if (!empty
 ($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['minipanel_three_33_top_fw']): ?>
-    <div id="minipanel-three-33-top-fw-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="minipanel-three-33-top-fw-wrapper" class="fullwidth">
         <div class="region minipanel-three-33-top-fw region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['minipanel_three_33_top_fw']; ?>
@@ -24,8 +24,8 @@ if (!empty
       </div>
     </div>
   <?php endif; ?>
-    <div id="minipanel-three-33-middle-fw-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="minipanel-three-33-middle-fw-wrapper" class="fullwidth">
         <div class="region minipanel-three-33-first-fw">
           <div class="region-inner clearfix">
             <?php print $content['minipanel_three_33_first_fw']; ?>
@@ -44,8 +44,8 @@ if (!empty
       </div>
     </div>
   <?php if ($content['minipanel_three_33_bottom_fw']): ?>
-    <div id="minipanel-three-33-bottom-fw-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="minipanel-three-33-bottom-fw-wrapper" class="fullwidth">
         <div class="region minipanel-three-33-bottom-fw region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['minipanel_three_33_bottom_fw']; ?>

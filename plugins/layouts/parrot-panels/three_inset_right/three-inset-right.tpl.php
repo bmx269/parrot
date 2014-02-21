@@ -11,9 +11,8 @@
 
 ?>
 <div class="panel-display parrot-panels three-inset-right clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div id="three-inset-right-wrapper" class="fullwidth">
-    <div class="container">
-
+  <div class="container">
+    <div id="three-inset-right-wrapper" class="fullwidth">
       <div id="three-inset-right-left-wrapper" class="clearfix">
         <div class="region three-inset-right-sidebar">
           <div class="region-inner clearfix">

@@ -12,8 +12,8 @@
 ?>
 <div class="panel-display parrot-panels three-33 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['three_33_top']): ?>
-    <div id="three-33-top-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="three-33-top-wrapper" class="fullwidth">
         <div class="region three-33-top region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['three_33_top']; ?>
@@ -22,8 +22,8 @@
       </div>
     </div>
   <?php endif; ?>
-    <div id="three-33-middle-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="three-33-middle-wrapper" class="fullwidth">
         <div class="region three-33-first">
           <div class="region-inner clearfix">
             <?php print $content['three_33_first']; ?>
@@ -42,8 +42,8 @@
       </div>
     </div>
   <?php if ($content['three_33_bottom']): ?>
-    <div id="three-33-bottom-wrapper" class="fullwidth">
-      <div class="container">
+    <div class="container">
+      <div id="three-33-bottom-wrapper" class="fullwidth">
         <div class="region three-33-bottom region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['three_33_bottom']; ?>
