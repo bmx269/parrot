@@ -1420,11 +1420,16 @@ pre code {
     width: 100%;
   }
 }
+.parrot-panels #minipanel-two-50-middle-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-first {
@@ -1449,6 +1454,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-two-50-middle-wrapper .minipanel-two-50-second {
@@ -1533,6 +1539,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-first {
@@ -1557,6 +1564,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-second {
@@ -1581,6 +1589,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-three-33-middle-wrapper .minipanel-three-33-third {
@@ -1665,6 +1674,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-first {
@@ -1689,6 +1699,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-second {
@@ -1713,6 +1724,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-third {
@@ -1737,6 +1749,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #minipanel-four-25-middle-wrapper .minipanel-four-25-fourth {
@@ -2443,6 +2456,7 @@ pre code {
 .parrot-panels #two-33-66-alt-middle-wrapper {
   margin-left: -15px;
   margin-right: -15px;
+  overflow: hidden;
 }
 .parrot-panels #two-33-66-alt-middle-wrapper .two-33-66-alt-first {
   position: relative;
@@ -2819,6 +2833,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .width-25 {
@@ -2843,6 +2858,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .width-33 {
@@ -2867,6 +2883,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .width-50 {
@@ -2891,6 +2908,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .width-66 {
@@ -2915,6 +2933,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .width-75 {
@@ -2955,54 +2974,6 @@ pre code {
 }
 @media (min-width: 1200px) {
   .width-100 {
-    float: left;
-    width: 100%;
-  }
-}
-.siteinfo {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .siteinfo {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .siteinfo {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .siteinfo {
-    float: left;
-    width: 100%;
-  }
-}
-.header-region {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .header-region {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .header-region {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .header-region {
     float: left;
     width: 100%;
   }
@@ -7207,6 +7178,8 @@ button.close {
 .row:after,
 .parrot-panels #minipanel-two-50-top-wrapper:before,
 .parrot-panels #minipanel-two-50-top-wrapper:after,
+.parrot-panels #minipanel-two-50-middle-wrapper:before,
+.parrot-panels #minipanel-two-50-middle-wrapper:after,
 .parrot-panels #minipanel-two-50-bottom-wrapper:before,
 .parrot-panels #minipanel-two-50-bottom-wrapper:after,
 .parrot-panels #minipanel-three-33-top-wrapper:before,
@@ -7289,6 +7262,7 @@ button.close {
 .container-fluid:after,
 .row:after,
 .parrot-panels #minipanel-two-50-top-wrapper:after,
+.parrot-panels #minipanel-two-50-middle-wrapper:after,
 .parrot-panels #minipanel-two-50-bottom-wrapper:after,
 .parrot-panels #minipanel-three-33-top-wrapper:after,
 .parrot-panels #minipanel-three-33-middle-wrapper:after,
