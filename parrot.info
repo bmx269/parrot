@@ -134,10 +134,11 @@ settings[mothership_classes_menu_collapsed] = 0
 settings[mothership_classes_menu_items_active] = 0
 settings[mothership_classes_menu_leaf] = 1
 
-settings[mothership_modernizr] = 0
-settings[mothership_selectivizr] = 0
+; polyfills
+settings[mothership_respondjs] = 1
+settings[mothership_modernizr] = 1
+settings[mothership_selectivizr] = 1
 settings[mothership_selectivizr_cdn] = 0
-
 
 settings[mothership_frontpage_default_message] = 1
 settings[mothership_content_block_wrapper] = 1
