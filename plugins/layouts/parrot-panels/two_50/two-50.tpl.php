@@ -14,7 +14,7 @@
   <?php if ($content['two_50_top']): ?>
     <div class="container">
       <div id="two-50-top-wrapper" class="fullwidth">
-        <div class="region region-top region-conditional-stack">
+        <div class="region two-50-top region-conditional-stack">
         <div class="region-inner clearfix">
           <?php print $content['two_50_top']; ?>
         </div>
@@ -24,12 +24,12 @@
   <?php endif; ?>
     <div class="container">
       <div id="two-50-middle-wrapper" class="fullwidth">
-        <div class="region region-first">
+        <div class="region two-50-first">
           <div class="region-inner clearfix">
             <?php print $content['two_50_first']; ?>
           </div>
         </div>
-        <div class="region region-second">
+        <div class="region two-50-second">
           <div class="region-inner clearfix">
             <?php print $content['two_50_second']; ?>
           </div>
@@ -39,7 +39,7 @@
   <?php if ($content['two_50_bottom']): ?>
     <div class="container">
       <div id="two-50-bottom-wrapper" class="fullwidth">
-        <div class="region region-bottom region-conditional-stack">
+        <div class="region two-50-bottom region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['two_50_bottom']; ?>
           </div>

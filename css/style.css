@@ -2053,6 +2053,116 @@ pre code {
     width: 25%;
   }
 }
+.parrot-panels #two-50-top-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.parrot-panels #two-50-top-wrapper .two-50-top {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .parrot-panels #two-50-top-wrapper .two-50-top {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .parrot-panels #two-50-top-wrapper .two-50-top {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .parrot-panels #two-50-top-wrapper .two-50-top {
+    float: left;
+    width: 100%;
+  }
+}
+.parrot-panels #two-50-middle-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.parrot-panels #two-50-middle-wrapper .two-50-first {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  .parrot-panels #two-50-middle-wrapper .two-50-first {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .parrot-panels #two-50-middle-wrapper .two-50-first {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .parrot-panels #two-50-middle-wrapper .two-50-first {
+    float: left;
+    width: 50%;
+  }
+}
+.parrot-panels #two-50-middle-wrapper .two-50-second {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  .parrot-panels #two-50-middle-wrapper .two-50-second {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .parrot-panels #two-50-middle-wrapper .two-50-second {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .parrot-panels #two-50-middle-wrapper .two-50-second {
+    float: left;
+    width: 50%;
+  }
+}
+.parrot-panels #two-50-bottom-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.parrot-panels #two-50-bottom-wrapper .two-50-bottom {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .parrot-panels #two-50-bottom-wrapper .two-50-bottom {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .parrot-panels #two-50-bottom-wrapper .two-50-bottom {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .parrot-panels #two-50-bottom-wrapper .two-50-bottom {
+    float: left;
+    width: 100%;
+  }
+}
 .parrot-panels #three-33-top-wrapper {
   margin-left: -15px;
   margin-right: -15px;
@@ -7198,6 +7308,12 @@ button.close {
 .parrot-panels #three-inset-left-wrapper:after,
 .parrot-panels #three-inset-right-wrapper:before,
 .parrot-panels #three-inset-right-wrapper:after,
+.parrot-panels #two-50-top-wrapper:before,
+.parrot-panels #two-50-top-wrapper:after,
+.parrot-panels #two-50-middle-wrapper:before,
+.parrot-panels #two-50-middle-wrapper:after,
+.parrot-panels #two-50-bottom-wrapper:before,
+.parrot-panels #two-50-bottom-wrapper:after,
 .parrot-panels #three-33-top-wrapper:before,
 .parrot-panels #three-33-top-wrapper:after,
 .parrot-panels #three-33-middle-wrapper:before,
@@ -7272,6 +7388,9 @@ button.close {
 .parrot-panels #minipanel-four-25-bottom-wrapper:after,
 .parrot-panels #three-inset-left-wrapper:after,
 .parrot-panels #three-inset-right-wrapper:after,
+.parrot-panels #two-50-top-wrapper:after,
+.parrot-panels #two-50-middle-wrapper:after,
+.parrot-panels #two-50-bottom-wrapper:after,
 .parrot-panels #three-33-top-wrapper:after,
 .parrot-panels #three-33-middle-wrapper:after,
 .parrot-panels #three-33-bottom-wrapper:after,
