@@ -213,23 +213,29 @@
       .make-sm-column(9);
       .make-md-column(9);
       .make-lg-column(9);
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 0;
 
       .three-inset-left-top,
       .three-inset-left-bottom{
         .make-sm-column(12);
         .make-md-column(12);
         .make-lg-column(12);
+        margin-right: 0;
       }
 
       .three-inset-left-middle{
         .make-sm-column(6);
         .make-md-column(6);
         .make-lg-column(6);
+        margin-right: 0;
       }
       .three-inset-left-inset{
         .make-sm-column(6);
         .make-md-column(6);
         .make-lg-column(6);
+        margin-right: 0;
       }
     }
 
@@ -237,6 +243,7 @@
       .make-sm-column(3);
       .make-md-column(3);
       .make-lg-column(3);
+      margin-right: 0;
     }
   }
 
@@ -247,34 +254,55 @@
     .make-row();
 
     #three-inset-right-right-wrapper{
-      .make-sm-column(9);
-      .make-md-column(9);
+      .make-xs-column(12);
+      .make-sm-column(8);
+      .make-md-column(8);
       .make-lg-column(9);
+      margin-right: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @media (min-width: @screen-sm-min) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media (min-width: @screen-md-min) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media (min-width: @screen-lg-min) {
+        padding-left: 0;
+        padding-right: 0;
+      }
 
       .three-inset-right-top,
       .three-inset-right-bottom{
         .make-sm-column(12);
         .make-md-column(12);
         .make-lg-column(12);
+        margin-right: 0;
       }
       .three-inset-right-middle{
         .make-sm-column(6);
         .make-md-column(6);
         .make-lg-column(6);
+        margin-right: 0;
       }
       .three-inset-right-inset{
         .make-sm-column(6);
         .make-md-column(6);
         .make-lg-column(6);
+        margin-right: 0;
       }
     }
     #three-inset-right-left-wrapper{
-      .make-sm-column(3);
-      .make-md-column(3);
+      .make-xs-column(12);
+      .make-sm-column(4);
+      .make-md-column(4);
       .make-lg-column(3);
+      margin-right: 0;
     }
   }
-
 
 //
 // two 50 Panel
@@ -464,6 +492,9 @@
       .make-sm-column-pull(5);
       .make-md-column-pull(6);
       .make-lg-column-pull(6);
+
+      // padding-bottom: 2000px;
+      // margin-bottom: -2000px;
     }
     .two-33-66-alt-second{
       .make-sm-column(8);

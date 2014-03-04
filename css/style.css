@@ -1806,6 +1806,9 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper {
@@ -1831,6 +1834,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-top,
@@ -1858,6 +1862,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-middle {
@@ -1882,6 +1887,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-left-wrapper #three-inset-left-left-wrapper .three-inset-left-inset {
@@ -1906,6 +1912,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-left-wrapper #three-inset-left-right-wrapper {
@@ -1930,21 +1937,24 @@ pre code {
   margin-right: -15px;
 }
 .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
+  margin-right: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
     float: left;
-    width: 75%;
+    width: 66.66666666666666%;
   }
 }
 @media (min-width: 992px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
     float: left;
-    width: 75%;
+    width: 66.66666666666666%;
   }
 }
 @media (min-width: 1200px) {
@@ -1953,12 +1963,31 @@ pre code {
     width: 75%;
   }
 }
+@media (min-width: 768px) {
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-top,
 .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-bottom {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-top,
@@ -1986,6 +2015,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-middle {
@@ -2010,6 +2040,7 @@ pre code {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-right-wrapper .three-inset-right-inset {
@@ -2030,21 +2061,24 @@ pre code {
   }
 }
 .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
+  float: left;
+  width: 100%;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
     float: left;
-    width: 25%;
+    width: 33.33333333333333%;
   }
 }
 @media (min-width: 992px) {
   .parrot-panels #three-inset-right-wrapper #three-inset-right-left-wrapper {
     float: left;
-    width: 25%;
+    width: 33.33333333333333%;
   }
 }
 @media (min-width: 1200px) {
