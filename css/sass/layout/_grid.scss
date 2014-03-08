@@ -22,6 +22,9 @@ $grid-padding   : $gutter-width;
 // $container-style: <style>; <style>: magic | static | fluid.
 $container-style: magic;
 
+$border-box-sizing: true;
+
+@include border-box-sizing;
 // $legacy-support-for-ie  : true;
 // $legacy-support-for-ie6 : $legacy-support-for-ie;
 // $legacy-support-for-ie7 : $legacy-support-for-ie;

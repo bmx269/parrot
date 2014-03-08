@@ -569,6 +569,11 @@ img, video {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /*
 $breakpoint-to-ems: true;
 $breakpoint-default-media: all;
@@ -581,8 +586,8 @@ $wide: 80em;
 */
 .container {
   *zoom: 1;
-  max-width: 28.5em;
-  _width: 28.5em;
+  max-width: 31.5em;
+  _width: 31.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   margin-left: auto;
@@ -607,7 +612,7 @@ $wide: 80em;
     clear: both; }
   @media (min-width: 26.25em) {
     .container {
-      max-width: 43.5em;
+      max-width: 46.5em;
       padding-left: 1.5em;
       padding-right: 1.5em;
       margin-left: auto;
@@ -632,7 +637,7 @@ $wide: 80em;
         clear: both; } }
   @media (min-width: 35em) {
     .container {
-      max-width: 58.5em;
+      max-width: 61.5em;
       padding-left: 1.5em;
       padding-right: 1.5em;
       margin-left: auto;
@@ -657,7 +662,7 @@ $wide: 80em;
         clear: both; } }
   @media (min-width: 45.5em) {
     .container {
-      max-width: 88.5em;
+      max-width: 91.5em;
       padding-left: 1.5em;
       padding-right: 1.5em;
       margin-left: auto;
@@ -682,7 +687,7 @@ $wide: 80em;
         clear: both; } }
   @media (min-width: 56.875em) {
     .container {
-      max-width: 88.5em;
+      max-width: 91.5em;
       padding-left: 1.5em;
       padding-right: 1.5em;
       margin-left: auto;
