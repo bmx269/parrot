@@ -24,7 +24,7 @@ Susy is enabled by default, to change that comment out the require 'susy', and u
 The chosen grid framework will need to be installed via the GEM file.
 
 ### Susy
-`gem install susy`
+`gem install susy -v 1.0.9`
 Check that the version used is at least 1.0.8, but not yet version 2+.
 
 ### Zen Grids
@@ -102,7 +102,7 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 
 ## Please Note
 
-This project is a on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests. 
+This project is a on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests.
 
 Drupal.org Parrot Theme https://drupal.org/project/parrot
 
