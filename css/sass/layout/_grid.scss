@@ -1051,5 +1051,195 @@ $wide: 80em;
 }
 
 
+.pre-12{
+
+  @include at-breakpoint($tablet){
+    @include pre(3, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(3, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(3, 24);
+  }
+}
+
+.post-12,
+.float-right.post-12{
+
+  @include at-breakpoint($tablet){
+    @include post(3, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(3, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(3, 24);
+  }
+}
+
+.pre-16{
+
+  @include at-breakpoint($tablet){
+    @include pre(4, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(4, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(4, 24);
+  }
+}
+
+.post-16,
+.float-right.post-16{
+
+  @include at-breakpoint($tablet){
+    @include post(4, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(4, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(4, 24);
+  }
+}
+
+.pre-25{
+
+  @include at-breakpoint($tablet){
+    @include pre(6, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(6, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(6, 24);
+  }
+}
+
+.post-25,
+.float-right.post-25{
+
+  @include at-breakpoint($tablet){
+    @include post(6, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(6, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(6, 24);
+  }
+}
+
+.pre-33{
+
+  @include at-breakpoint($tablet){
+    @include pre(8, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(8, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(8, 24);
+  }
+}
+
+.post-33,
+.float-right.post-33{
+
+  @include at-breakpoint($tablet){
+    @include post(8, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(8, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(8, 24);
+  }
+}
+
+.pre-50{
+
+  @include at-breakpoint($tablet){
+    @include pre(12, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(12, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(12, 24);
+  }
+}
+
+.post-50,
+.float-right.post-50{
+
+  @include at-breakpoint($tablet){
+    @include post(12, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(12, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(12, 24);
+  }
+}
+
+.pre-66{
+
+  @include at-breakpoint($tablet){
+    @include pre(16, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(16, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(16, 24);
+  }
+}
+
+.post-66,
+.float-right.post-66{
+
+  @include at-breakpoint($tablet){
+    @include post(16, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(16, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(16, 24);
+  }
+}
+
+.pre-75{
+
+  @include at-breakpoint($tablet){
+    @include pre(18, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(18, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(18, 24);
+  }
+}
+
+.post-75,
+.float-right.post-75{
+
+  @include at-breakpoint($tablet){
+    @include post(18, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(18, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(18, 24);
+  }
+}
+
+
 
 // Default grid blocks here following the "Mobile First" strategy.

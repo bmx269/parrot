@@ -68,7 +68,7 @@ function theme_parrot_styles_render_pane($vars) {
 function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_id = null, $type = null) {
   $form['grid_width'] = array(
     '#type'          => 'select',
-    '#title'         => t('Panel Pane Width'),
+    '#title'         => t('Pane Width'),
     '#options'       => array(
       'width-100' => t('100%  width'),
       'width-75'  => t('75% width'),
@@ -79,6 +79,40 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
       ' '       => t('-None-'),
     ),
     '#default_value' => (isset($style_settings['grid_width'])) ? $style_settings['grid_width'] : 'width-100',
+  );
+
+  $form['left-margin'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Left Margin'),
+    '#options'       => array(
+      '' => t('None'),
+      'pre-75'  => t('75%'),
+      'pre-66'  => t('66%'),
+      'pre-50'  => t('50%'),
+      'pre-33'  => t('33%'),
+      'pre-25'  => t('25%'),
+      'pre-16'  => t('16%'),
+      'pre-12'  => t('12%'),
+    ),
+    '#default_value' => (isset($style_settings['left-margin'])) ?
+        $style_settings['left-margin'] : '',
+  );
+
+  $form['right-margin'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Right Margin'),
+    '#options'       => array(
+      '' => t('None'),
+      'post-75'  => t('75%'),
+      'post-66'  => t('66%'),
+      'post-50'  => t('50%'),
+      'post-33'  => t('33%'),
+      'post-25'  => t('25%'),
+      'post-16'  => t('16%'),
+      'post-12'  => t('12%'),
+    ),
+    '#default_value' => (isset($style_settings['right-margin'])) ?
+        $style_settings['right-margin'] : '',
   );
 
   $form['float'] = array(

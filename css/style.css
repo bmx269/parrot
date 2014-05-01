@@ -466,16 +466,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
-
-img, video {
-  max-width: 100%;
-  height: auto; }
-
 .sprite-sprite, .sprite-logo {
   background: url('../img/sprite-sc56163011c.png') no-repeat; }
 
@@ -2121,6 +2111,167 @@ $wide: 80em;
   *margin-left: -1.5em;
   display: inline;
   clear: both; }
+
+@media (min-width: 35em) {
+  .pre-12 {
+    margin-left: 12.60504%; } }
+@media (min-width: 45.5em) {
+  .pre-12 {
+    margin-left: 12.60504%; } }
+@media (min-width: 56.875em) {
+  .pre-12 {
+    margin-left: 12.60504%; } }
+
+@media (min-width: 35em) {
+  .post-12,
+  .float-right.post-12 {
+    margin-right: 12.60504%; } }
+@media (min-width: 45.5em) {
+  .post-12,
+  .float-right.post-12 {
+    margin-right: 12.60504%; } }
+@media (min-width: 56.875em) {
+  .post-12,
+  .float-right.post-12 {
+    margin-right: 12.60504%; } }
+
+@media (min-width: 35em) {
+  .pre-16 {
+    margin-left: 16.80672%; } }
+@media (min-width: 45.5em) {
+  .pre-16 {
+    margin-left: 16.80672%; } }
+@media (min-width: 56.875em) {
+  .pre-16 {
+    margin-left: 16.80672%; } }
+
+@media (min-width: 35em) {
+  .post-16,
+  .float-right.post-16 {
+    margin-right: 16.80672%; } }
+@media (min-width: 45.5em) {
+  .post-16,
+  .float-right.post-16 {
+    margin-right: 16.80672%; } }
+@media (min-width: 56.875em) {
+  .post-16,
+  .float-right.post-16 {
+    margin-right: 16.80672%; } }
+
+@media (min-width: 35em) {
+  .pre-25 {
+    margin-left: 25.21008%; } }
+@media (min-width: 45.5em) {
+  .pre-25 {
+    margin-left: 25.21008%; } }
+@media (min-width: 56.875em) {
+  .pre-25 {
+    margin-left: 25.21008%; } }
+
+@media (min-width: 35em) {
+  .post-25,
+  .float-right.post-25 {
+    margin-right: 25.21008%; } }
+@media (min-width: 45.5em) {
+  .post-25,
+  .float-right.post-25 {
+    margin-right: 25.21008%; } }
+@media (min-width: 56.875em) {
+  .post-25,
+  .float-right.post-25 {
+    margin-right: 25.21008%; } }
+
+@media (min-width: 35em) {
+  .pre-33 {
+    margin-left: 33.61345%; } }
+@media (min-width: 45.5em) {
+  .pre-33 {
+    margin-left: 33.61345%; } }
+@media (min-width: 56.875em) {
+  .pre-33 {
+    margin-left: 33.61345%; } }
+
+@media (min-width: 35em) {
+  .post-33,
+  .float-right.post-33 {
+    margin-right: 33.61345%; } }
+@media (min-width: 45.5em) {
+  .post-33,
+  .float-right.post-33 {
+    margin-right: 33.61345%; } }
+@media (min-width: 56.875em) {
+  .post-33,
+  .float-right.post-33 {
+    margin-right: 33.61345%; } }
+
+@media (min-width: 35em) {
+  .pre-50 {
+    margin-left: 50.42017%; } }
+@media (min-width: 45.5em) {
+  .pre-50 {
+    margin-left: 50.42017%; } }
+@media (min-width: 56.875em) {
+  .pre-50 {
+    margin-left: 50.42017%; } }
+
+@media (min-width: 35em) {
+  .post-50,
+  .float-right.post-50 {
+    margin-right: 50.42017%; } }
+@media (min-width: 45.5em) {
+  .post-50,
+  .float-right.post-50 {
+    margin-right: 50.42017%; } }
+@media (min-width: 56.875em) {
+  .post-50,
+  .float-right.post-50 {
+    margin-right: 50.42017%; } }
+
+@media (min-width: 35em) {
+  .pre-66 {
+    margin-left: 67.22689%; } }
+@media (min-width: 45.5em) {
+  .pre-66 {
+    margin-left: 67.22689%; } }
+@media (min-width: 56.875em) {
+  .pre-66 {
+    margin-left: 67.22689%; } }
+
+@media (min-width: 35em) {
+  .post-66,
+  .float-right.post-66 {
+    margin-right: 67.22689%; } }
+@media (min-width: 45.5em) {
+  .post-66,
+  .float-right.post-66 {
+    margin-right: 67.22689%; } }
+@media (min-width: 56.875em) {
+  .post-66,
+  .float-right.post-66 {
+    margin-right: 67.22689%; } }
+
+@media (min-width: 35em) {
+  .pre-75 {
+    margin-left: 75.63025%; } }
+@media (min-width: 45.5em) {
+  .pre-75 {
+    margin-left: 75.63025%; } }
+@media (min-width: 56.875em) {
+  .pre-75 {
+    margin-left: 75.63025%; } }
+
+@media (min-width: 35em) {
+  .post-75,
+  .float-right.post-75 {
+    margin-right: 75.63025%; } }
+@media (min-width: 45.5em) {
+  .post-75,
+  .float-right.post-75 {
+    margin-right: 75.63025%; } }
+@media (min-width: 56.875em) {
+  .post-75,
+  .float-right.post-75 {
+    margin-right: 75.63025%; } }
 
 body {
   margin: 0;
