@@ -1,7 +1,4 @@
 <?php
-//kpr(get_defined_vars());
-//kpr($variables);
-//kpr($variables['theme_hook_suggestions']);
 /**
  * @file panels-pane.tpl.php
  * Main panel pane template
@@ -20,19 +17,24 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!-- / tpl:  allerbase/panes/panels-pane--panels-mini.tpl.php -->
-<?php } ?>
-<div class="<?php print $classes; ?>" <?php print $id; ?> <?php print $attributes; ?>>
+<?php if ($poorthemers_helper = theme_get_setting('mothership_poorthemers_helper')): ?>
+<!-- Begin template: <?php print str_replace(DRUPAL_ROOT, '', file_create_url(__FILE__)) ?> -->
+<?php
+//kpr(get_defined_vars());
+//kpr($variables);
+//kpr($variables['theme_hook_suggestions']);
+?>
+<?php endif ?>
+<div class="<?php print $classes ?>" <?php print $id ?> <?php print $attributes ?>>
 
   <?php if ($title): ?>
     <h2><?php print $title; ?></h2>
-  <?php endif; ?>
+  <?php endif ?>
 
   <?php print render($content); ?>
 </div>
-<?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!-- / tpl:  allerbase/panes/panels-pane--panels-mini.tpl.php -->
-<?php } ?>
+<?php if ($poorthemers_helper): ?>
+<!-- End template: <?php print str_replace(DRUPAL_ROOT, '', file_create_url(__FILE__)) ?> -->
+<?php endif ?>
 
 
