@@ -28,10 +28,17 @@ function theme_parrot_styles_render_pane($vars) {
   $settings = $vars['settings'];
 
   // Add custom css & render pane
+  $extra_attrib = array();
   $extra_css = array();
   if (!empty($settings) && !empty($vars['pane'])) {
     if (!empty($settings['grid_width'])) {
       $extra_css[] = $settings['grid_width'];
+    }
+    if (!empty($settings['left_margin'])) {
+      $extra_css[] = $settings['left-margin'];
+    }
+    if (!empty($settings['right_margin'])) {
+      $extra_css[] = $settings['right-margin'];
     }
     if (!empty($settings['float'])) {
       $extra_css[] = $settings['float'];
@@ -39,6 +46,12 @@ function theme_parrot_styles_render_pane($vars) {
     if (!empty($settings['custom_classes'])) {
       $extra_css[] = trim($settings['custom_classes']);
     }
+
+    // help here
+    if (!empty($settings['custom_attrib'])) {
+      $extra_attrib[] = $settings['custom_attrib'];
+    }
+
 
     if (!empty($extra_css)) {
       // Add to pane settings for reference
@@ -60,7 +73,8 @@ function theme_parrot_styles_render_pane($vars) {
   }
 
   // This renders the template file parrot_styles-pane.tpl.php
-  return theme('panels_pane', $vars);
+  $vars['custom_attrib'] = reset($extra_attrib);
+  return theme('parrot_styles_theme_pane', $vars);
 }
 
 
@@ -81,7 +95,7 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
     '#default_value' => (isset($style_settings['grid_width'])) ? $style_settings['grid_width'] : 'width-100',
   );
 
-  $form['left-margin'] = array(
+  $form['left_margin'] = array(
     '#type'          => 'select',
     '#title'         => t('Left Margin'),
     '#options'       => array(
@@ -94,11 +108,11 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
       'pre-16'  => t('16%'),
       'pre-12'  => t('12%'),
     ),
-    '#default_value' => (isset($style_settings['left-margin'])) ?
-        $style_settings['left-margin'] : '',
+    '#default_value' => (isset($style_settings['left_margin'])) ?
+        $style_settings['left_margin'] : '',
   );
 
-  $form['right-margin'] = array(
+  $form['right_margin'] = array(
     '#type'          => 'select',
     '#title'         => t('Right Margin'),
     '#options'       => array(
@@ -111,8 +125,8 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
       'post-16'  => t('16%'),
       'post-12'  => t('12%'),
     ),
-    '#default_value' => (isset($style_settings['right-margin'])) ?
-        $style_settings['right-margin'] : '',
+    '#default_value' => (isset($style_settings['right_margin'])) ?
+        $style_settings['right_margin'] : '',
   );
 
   $form['float'] = array(
@@ -132,6 +146,12 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
     '#description' => t('A space separated list of custom CSS classes to apply to pane. ie. block-border-bottom-orange my-block etc')
    );
 
+  $form['custom_attrib'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Custom Attributes'),
+    '#default_value' => (isset($style_settings['custom_attrib'])) ? $style_settings['custom_attrib'] : '',
+    '#description' => t('A space separated list of custom attributes to apply to pane. ie. data-type="blabla" etc')
+  );
+
   return $form;
 }
-
