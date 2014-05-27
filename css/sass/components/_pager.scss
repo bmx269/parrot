@@ -75,31 +75,42 @@
   text-align: center;
   @include clearfix();
 }
-.pager li {
-  display: inline;
-}
-.pager a,
-.pager span {
+
+.pager li{
   @include inline-block;
-  padding: 5px 14px;
+  padding: 0px;
   background-color: #fff;
   border: 1px solid #ddd;
   @include border-radius(15px);
+  overflow: hidden;
+
+  &.current{
+    padding: 5px 14px;
+  }
 }
-.pager a:hover {
+
+.pager li a{
+  display: block;
+  padding: 5px 14px;
+  text-decoration: none;
+}
+.pager li:hover {
   text-decoration: none;
   background-color: #f5f5f5;
 }
-.pager .next a,
-.pager .next span {
+
+.pager .last{
   float: right;
 }
-.pager .previous a {
+.pager .first {
   float: left;
+
+  &.current{
+    float: none;
+  }
 }
-.pager .disabled a,
-.pager .disabled a:hover,
-.pager .disabled span {
+.pager .disabled,
+.pager .disabled:hover{
   color: $grayLight;
   background-color: #fff;
   cursor: default;

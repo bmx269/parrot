@@ -2924,28 +2924,34 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.table {
+.table, table {
   width: 100%;
   margin-bottom: 24px; }
-  .table th,
-  .table td {
+  .table th, table th,
+  .table td,
+  table td {
     padding: 8px;
     line-height: 24px;
     text-align: left;
     vertical-align: top;
     border-top: 1px solid #dddddd; }
-  .table th {
+  .table th, table th {
     font-weight: bold; }
-  .table thead th {
+  .table thead th, table thead th {
     vertical-align: bottom; }
-  .table caption + thead tr:first-child th,
+  .table caption + thead tr:first-child th, table caption + thead tr:first-child th,
   .table caption + thead tr:first-child td,
+  table caption + thead tr:first-child td,
   .table colgroup + thead tr:first-child th,
+  table colgroup + thead tr:first-child th,
   .table colgroup + thead tr:first-child td,
+  table colgroup + thead tr:first-child td,
   .table thead:first-child tr:first-child th,
-  .table thead:first-child tr:first-child td {
+  table thead:first-child tr:first-child th,
+  .table thead:first-child tr:first-child td,
+  table thead:first-child tr:first-child td {
     border-top: 0; }
-  .table tbody + tbody {
+  .table tbody + tbody, table tbody + tbody {
     border-top: 2px solid #dddddd; }
 
 .table-condensed th,
@@ -3031,15 +3037,15 @@ table [class*=span],
   float: none;
   margin-left: 0; }
 
-.table tbody tr.success td {
+.table tbody tr.success td, table tbody tr.success td {
   background-color: #dff0d8; }
-.table tbody tr.error td {
+.table tbody tr.error td, table tbody tr.error td {
   background-color: #f2dede; }
-.table tbody tr.warning td {
+.table tbody tr.warning td, table tbody tr.warning td {
   background-color: #fcf8e3; }
-.table tbody tr.info td {
+.table tbody tr.info td, table tbody tr.info td {
   background-color: #d9edf7; }
-.table tbody tr tbody tr.warning td {
+.table tbody tr tbody tr.warning td, table tbody tr tbody tr.warning td {
   background-color: #fcf8e3; }
 
 .table-hover tbody tr.success:hover td {
@@ -3064,6 +3070,19 @@ Drupal Tables
 
 .table-order-desc {
   background: transparent url(/misc/arrow-desc.png) no-repeat center top; }
+
+table {
+  height: auto; }
+
+tr.even {
+  background-color: transparent;
+  border-bottom: inherit;
+  padding: 0; }
+
+tr.odd {
+  background-color: #f9f9f9;
+  border-bottom: inherit;
+  padding: 0; }
 
 img {
   max-width: 100%;
@@ -4345,39 +4364,43 @@ input[type="submit"].btn {
   *zoom: 1; }
 
 .pager li {
-  display: inline; }
-
-.pager a,
-.pager span {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  padding: 5px 14px;
+  padding: 0px;
   background-color: #fff;
   border: 1px solid #ddd;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  overflow: hidden; }
+  .pager li.current {
+    padding: 5px 14px; }
 
-.pager a:hover {
+.pager li a {
+  display: block;
+  padding: 5px 14px;
+  text-decoration: none; }
+
+.pager li:hover {
   text-decoration: none;
   background-color: #f5f5f5; }
 
-.pager .next a,
-.pager .next span {
+.pager .last {
   float: right; }
 
-.pager .previous a {
+.pager .first {
   float: left; }
+  .pager .first.current {
+    float: none; }
 
-.pager .disabled a,
-.pager .disabled a:hover,
-.pager .disabled span {
+.pager .disabled,
+.pager .disabled:hover {
   color: #999999;
   background-color: #fff;
   cursor: default; }

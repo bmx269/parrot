@@ -224,3 +224,22 @@ Drupal Tables
 .table-order-asc, .table-order-desc{width:16px; height:16px; float:right}
 .table-order-asc{background: transparent url(/misc/arrow-asc.png) no-repeat center top;}
 .table-order-desc{background: transparent url(/misc/arrow-desc.png) no-repeat center top;}
+
+
+
+table{
+  @extend .table;
+  height: auto;
+}
+
+tr.even {
+  background-color: transparent;
+  border-bottom: inherit;
+  padding: 0;
+}
+
+tr.odd {
+  background-color: $tableBackgroundAccent;
+  border-bottom: inherit;
+  padding: 0;
+}
