@@ -58,6 +58,17 @@
   </div><!--/#header-wrapper-->
 <?php endif; ?>
 
+<?php if($page['highlighted'] OR $messages ): ?>
+  <div id="highlighted-wrapper" class="fullwidth">
+    <div class="container">
+      <?php print render($page['highlighted']); ?>
+      <div class="drupal-messages">
+        <?php print $messages; ?>
+      </div>
+    </div><!--/.container-->
+  </div><!--/#highlighted-wrapper-->
+<?php endif; ?>
+
 <div id="panel-wrapper" class="fullwidth">
   <div role="main" id="main-content">
 
@@ -69,14 +80,6 @@
       <nav class="tabs"><?php print render($tabs); ?></nav>
     <?php endif; ?>
 
-    <?php if($page['highlighted'] OR $messages){ ?>
-      <div class="drupal-messages">
-        <?php print render($page['highlighted']); ?>
-        <?php print $messages; ?>
-      </div>
-    <?php } ?>
-
-
     <?php print render($page['content_pre']); ?>
 
     <?php print render($page['content']); ?>
@@ -84,6 +87,19 @@
     <?php print render($page['content_post']); ?>
 
   </div><!--/main-->
+
+  <?php if ($page['sidebar_first']): ?>
+    <div class="sidebar-first">
+    <?php print render($page['sidebar_first']); ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($page['sidebar_second']): ?>
+    <div class="sidebar-second">
+      <?php print render($page['sidebar_second']); ?>
+    </div>
+  <?php endif; ?>
+
 </div><!--/#content-wrapper-->
 
 <?php if ($page['footer']): ?>

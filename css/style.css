@@ -4387,7 +4387,7 @@ input[type="submit"].btn {
   padding: 5px 14px;
   text-decoration: none; }
 
-.pager li:hover {
+.pager li a:hover {
   text-decoration: none;
   background-color: #f5f5f5; }
 

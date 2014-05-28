@@ -18,22 +18,17 @@ features[] = comment_user_verification
 ;features[] = secondary_menu
 
 ;-------------- R E G I O N S -------------
-;regions_hidden[] = im_a_hidden_but_visibel_for_a_module
-
-;-- Required Regions
+;regions_hidden[] = im_a_hidden_but_visible_for_a_module
+regions[user_bar] = User Bar
+regions[header] = Header
+regions[help] = Help
+regions[highlighted] = Highlighted
 regions[content_pre] = Content Pre
 regions[content] = Content
 regions[content_post] = Content Post
-
-;-- Core Regions
-regions[user_bar] = User Bar
-regions[header] = Header
-regions[footer] = Footer
 regions[sidebar_first] = Sidebar First
 regions[sidebar_second] = Sidebar Second
-regions[help] = Help
-regions[highlighted] = Highlighted
-
+regions[footer] = Footer
 
 
 ;-------------- C S S -------------
