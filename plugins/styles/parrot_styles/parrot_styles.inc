@@ -35,10 +35,10 @@ function theme_parrot_styles_render_pane($vars) {
       $extra_css[] = $settings['grid_width'];
     }
     if (!empty($settings['left_margin'])) {
-      $extra_css[] = $settings['left-margin'];
+      $extra_css[] = $settings['left_margin'];
     }
     if (!empty($settings['right_margin'])) {
-      $extra_css[] = $settings['right-margin'];
+      $extra_css[] = $settings['right_margin'];
     }
     if (!empty($settings['float'])) {
       $extra_css[] = $settings['float'];
