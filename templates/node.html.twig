@@ -6,8 +6,10 @@
 
 #}
 
+{#
 hide(content.comments);
 hide(content.links);
+#}
 
 {% if id_node %}
   {% set id_node = ' id="' ~ id_node ~ '"' %}
@@ -19,7 +21,7 @@ hide(content.links);
 <article{{ id_node }}{{ classes }}{{ attributes }} role="article">
   {{ mothership_poorthemers_helper }}
   {{ title_prefix }}
-  {% if !page %}
+  {% if page == false %}
     <h2{{ title_attributes }}><a href="{{ node_url }}" rel="bookmark">{{ title }}</a></h2>
   {% endif %}
   {{ title_suffix }}

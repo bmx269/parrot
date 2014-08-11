@@ -3,7 +3,7 @@ description: 'Parrot sits on the shoulders of some great projects. Parrot is a D
 screenshot: screenshot.png
 core: 8.x
 type: theme
-base theme: mothership
+# base theme: mothership
 
 #-------------- F E A T U R E S -------------
 features:
