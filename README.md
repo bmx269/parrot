@@ -1,7 +1,7 @@
 Parrot for Drupal 8 (TWIG)
 ==========
 
-Parrot sits on the shoulders of some great projects. Parrot is a Drupal 8 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
+Parrot sits on the shoulders of some great projects. Parrot is a Drupal 8 theme that uses "some" Bootstrap CSS structure, with SASS & Compass.
 
 What is Bootstrap? http://twitter.github.com/bootstrap/
 
@@ -10,8 +10,7 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 
 ## Requirements
 
-* Drupal 7 website
-* Mothership base theme http://drupal.org/project/mothership
+* Drupal 8 website
 * SASS installed. The theme uses SASS to build the css.
 * Compass installed.
 
@@ -24,7 +23,7 @@ Susy is enabled by default, to change that comment out the require 'susy', and u
 The chosen grid framework will need to be installed via the GEM file.
 
 ### Susy
-`gem install susy`
+`gem install susy -v 1.0.9`
 Check that the version used is at least 1.0.8, but not yet version 2+.
 
 ### Zen Grids
@@ -102,7 +101,8 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 
 ## Please Note
 
-This project is a Sandbox on Drupal.org as well, and will eventually become a Full Project, this github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests. If you want to submit issues, please do so in the Sandbox.
-http://drupal.org/sandbox/bmx269/1848916
+This project is a on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests.
+
+Drupal.org Parrot Theme https://drupal.org/project/parrot
 
 The development of this theme is sponsored in part by ImageX Media.
