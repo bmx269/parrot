@@ -13,23 +13,23 @@
 <div class="panel-display parrot-panels two-50 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['two_50_top']): ?>
     <div id="two-50-top-wrapper" class="fullwidth">
+      <div class="region two-50-top region-conditional-stack">
       <div class="container">
-        <div class="region region-top region-conditional-stack">
         <div class="region-inner clearfix">
           <?php print $content['two_50_top']; ?>
         </div>
       </div>
-      </div>
+    </div>
     </div>
   <?php endif; ?>
     <div id="two-50-middle-wrapper" class="fullwidth">
       <div class="container">
-        <div class="region region-first">
+        <div class="region two-50-first">
           <div class="region-inner clearfix">
             <?php print $content['two_50_first']; ?>
           </div>
         </div>
-        <div class="region region-second">
+        <div class="region two-50-second">
           <div class="region-inner clearfix">
             <?php print $content['two_50_second']; ?>
           </div>
@@ -39,7 +39,7 @@
   <?php if ($content['two_50_bottom']): ?>
     <div id="two-50-bottom-wrapper" class="fullwidth">
       <div class="container">
-        <div class="region region-bottom region-conditional-stack">
+        <div class="region two-50-bottom region-conditional-stack">
           <div class="region-inner clearfix">
             <?php print $content['two_50_bottom']; ?>
           </div>
