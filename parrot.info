@@ -6,6 +6,9 @@ core = 7.x
 php = 5.2
 base theme = mothership
 
+;--------- D E P E N D A N C I E S ----------
+dependancies[] = mothership
+
 ;-------------- F E A T U R E S -------------
 features[] = logo
 features[] = favicon
