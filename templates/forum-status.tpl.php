@@ -1,0 +1,1 @@
+<?php print $icon_class ?>
