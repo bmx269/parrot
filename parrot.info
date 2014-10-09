@@ -4,10 +4,6 @@ screenshot = screenshot.png
 engine = phptemplate
 core = 7.x
 php = 5.2
-base theme = mothership
-
-;--------- D E P E N D A N C I E S ----------
-dependancies[] = mothership
 
 ;-------------- F E A T U R E S -------------
 features[] = logo
@@ -39,12 +35,11 @@ stylesheets[all][] = css/style.css
 
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
-stylesheets[all][] = mothership-layout.css
 
 ;-------------- JS -------------
 ; http://formalize.me/ for default Drupal jQuery use the
 ; non-legacy one when using jQuery Update module
- scripts[] = js/jquery.formalize.legacy.min.js
+scripts[] = js/jquery.formalize.legacy.min.js
 
 ; http://formalize.me/ for jQuery 1.7+
 ; scripts[] = js/jquery.formalize.min.js
@@ -66,86 +61,6 @@ scripts[] = js/script.js
 ;-------------- Panel layouts --------------
 plugins[panels][styles] = plugins/styles
 plugins[panels][layouts] = plugins/layouts
-
-;-------------- Default Mothership Settings  -------------
-settings[mothership_rebuild_registry] = 0
-settings[mothership_poorthemers_helper] = 0
-settings[mothership_test] = 0
-settings[mothership_mediaquery_indicator] = 0
-
-settings[mothership_nuke_css]= mothership_css_nuke_theme
-settings[mothership_html5] = 1
-settings[mothership_viewport] = 1
-settings[mothership_css_reset] = 0
-settings[mothership_css_reset_html5] = 0
-settings[mothership_css_default] = 0
-settings[mothership_css_mothershipstyles] = 0
-settings[mothership_css_normalize] = 0
-
-settings[mothership_classes_body_html] = 1
-settings[mothership_classes_body_front] = 0
-settings[mothership_classes_body_loggedin] = 1
-settings[mothership_classes_body_layout] = 0
-settings[mothership_classes_body_toolbar] = 0
-settings[mothership_classes_body_pagenode] = 1
-settings[mothership_classes_body_path] = 0
-settings[mothership_classes_body_path_first] = 0
-
-settings[mothership_classes_region] = 1
-settings[mothership_region_wrapper] = 1
-
-settings[mothership_classes_block] = 1
-settings[mothership_classes_block_id] = 0
-settings[mothership_classes_block_id_as_class] = 0
-settings[mothership_classes_block_contentdiv] = 1
-
-settings[mothership_classes_node] = 0
-settings[mothership_classes_node_state] = 0
-settings[mothership_classes_node_id] = 0
-
-settings[mothership_classes_view] = 1
-settings[mothership_classes_view_name] = 1
-settings[mothership_classes_view_view_id] = 0
-
-settings[mothership_classes_view_row] = 1
-settings[mothership_classes_view_row_count] = 1
-settings[mothership_classes_view_row_first_last] = 1
-settings[mothership_classes_view_row_rename] = 0
-
-settings[mothership_classes_field_field] = 0
-settings[mothership_classes_field_type] = 0
-settings[mothership_classes_field_label] = 1
-
-settings[mothership_classes_form_wrapper_formitem] = 1
-settings[mothership_classes_form_wrapper_formtype] = 1
-settings[mothership_classes_form_wrapper_formname] = 1
-settings[mothership_classes_form_label] = 1
-settings[mothership_classes_form_input] = 1
-settings[mothership_classes_form_description] = 1
-settings[mothership_form_required] = 1
-settings[mothership_form_labelwrap] = 0
-
-settings[mothership_classes_menu_wrapper] = 1
-settings[mothership_classes_menu_items] = 0
-settings[mothership_classes_menu_items_firstlast] = 1
-settings[mothership_classes_menu_collapsed] = 0
-settings[mothership_classes_menu_items_active] = 0
-settings[mothership_classes_menu_leaf] = 1
-
-; polyfills
-settings[mothership_respondjs] = 1
-settings[mothership_modernizr] = 1
-settings[mothership_selectivizr] = 1
-settings[mothership_selectivizr_cdn] = 0
-
-settings[mothership_frontpage_default_message] = 1
-settings[mothership_content_block_wrapper] = 1
-settings[mothership_frontpage_regions] = 1
-
-settings[mothership_classes_body_freeform] = ''
-settings[mothership_classes_block_freeform] = ''
-settings[mothership_classes_node_freeform] = ''
-settings[mothership_classes_region_freeform] = ''
 
 ; Information added by drupal.org packaging script on 2013-07-16
 version = "7.x-1.x-dev"
