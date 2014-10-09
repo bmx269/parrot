@@ -1878,3 +1878,24 @@ $fontAwesomePath:   "../fonts" !default;
   }
 }
 
+
+@mixin icon-youtube-sign {
+  &:before {
+    content: "\f166";
+    @include Awesome;
+  }
+}
+
+@mixin icon-youtube {
+  &:before {
+    content: "\f167";
+    @include Awesome;
+  }
+}
+
+@mixin icon-youtube-play {
+  &:before {
+    content: "\f16a";
+    @include Awesome;
+  }
+}

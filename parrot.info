@@ -63,7 +63,7 @@ plugins[panels][styles] = plugins/styles
 plugins[panels][layouts] = plugins/layouts
 
 ; Information added by drupal.org packaging script on 2013-07-16
-version = "7.x-1.x-dev"
+version = "7.x-2.x-dev"
 core = "7.x"
 project = "parrot"
 datestamp = "1373983271"

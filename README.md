@@ -100,7 +100,14 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 * **_grid.scss** - This contains the *Grid* settings for your site, along with the *Media Queries* for the site. The *Grid* included with the theme by default is the Susy grid framework. You should use this file to layout the sites grid structure as well as block placement. It is recommended to keep the style and placement of block elements separated, allowing quick placement of blocks, and then style is based on the type of block is in the appropriate SASS file.
 * **_scaffolding.scss** - This contains the basic *Body* styles that the theme uses. This file is getting the styles from the *Variables* file, and is a great place to declare the base region specific styles, i.e. wrapper backgrounds for the header and footer.
 
-## Please Note
+## New Addtions ##
+### Panels Parrot Styles: ###
+
+Using the Panels styles settings, you can access additional settings for each panel pane. You can choose widths, margins, and add additional classes, and even custom attributes to do things like parallax backgrounds. This feature allows you or your client to make quickly layout changes to your content in a responsive manner. All the grid widths are set in the _grid.scss, so you can customize them to fit your needs. 
+
+To use Parrot Styles, change the theme name on line 16 of /plugins/styles/parrot_styles/parrot_styles.inc
+
+## Please Note ##
 
 This project is a on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests.
 
