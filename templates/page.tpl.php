@@ -4,12 +4,7 @@
 //template naming
 //page--[CONTENT TYPE].tpl.php
 ?>
-<?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
 <!--page.tpl.php-->
-<?php } ?>
-
-<?php print $mothership_poorthemers_helper; ?>
-
 <?php if ($page['user_bar']): ?>
   <div id="user-wrapper" class="fullwidth">
     <div class="container">
