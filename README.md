@@ -1,7 +1,7 @@
 Parrot
 ==========
 
-Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses "some" Bootstrap CSS structure, with SASS & Compass.
+Parrot sits on the shoulders of some great projects. Parrot 2 is a Drupal 7  starter theme that uses "some" Bootstrap CSS structure, with SASS & Compass.
 
 What is Bootstrap? http://twitter.github.com/bootstrap/
 
@@ -11,7 +11,6 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 ## Requirements
 
 * Drupal 7 website
-* Mothership base theme http://drupal.org/project/mothership
 * SASS installed. The theme uses SASS to build the css.
 * Compass installed.
 
