@@ -1,0 +1,11 @@
+{% if count.items > 1 %}
+  <div class="field-items"{{ content_attributes }}>
+    {% for delta, item in items %}
+      <div class="field-item{% if delta % 2 %} odd {% elseif %} even{% endif %}">{{ item }}</div>
+    {% endfor %}
+  </div>
+{% else %}
+  {% for delta, item if items %}
+    {{ item }}
+  {% endfor %}
+{% endif %}

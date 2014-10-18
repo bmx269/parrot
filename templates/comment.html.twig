@@ -1,0 +1,33 @@
+<article{{ attributes }}>
+  {{ title_prefix }}
+  {% if title %}
+    <h3{{ title_attributes}}>
+      {{ title }}
+    </h3>
+  {% endif %}
+  {{ title_suffix }}
+  <footer>
+    {% if new %}
+      <mark>{{ new }}</mark>
+    {% endif %}
+    <figure>
+      {{ picture }}
+      <figcaption>{{ author }}</figcaption>
+    </figure>
+
+    <span class="date"><time>{{ created }}</time></span>
+    <span class="changed">({% trans %}changed{% endtrans %}<time>{{ changed }}</time>)</span>
+    {{ permalink }}
+  </footer>
+
+  <div class="content"{{ content_attributes }}>
+    {{ content|without('links') }}
+    {% if signature %}
+      <aside class="user-signature">
+        {{ signature }}
+      </aside>
+    {% endif %}
+  </div>
+
+  {{ content.links }}
+</article>
