@@ -1,4 +1,4 @@
-<?php
+{#
 /**
  * @file
  * Implementation of a panels grid ready layout.
@@ -8,14 +8,15 @@
  *   panel of the layout.
  * - $css_id: unique id if present.
  */
-
-?>
-<div class="panel-display parrot-panels one-fw-column clearfix" <?php if
-(!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div id="one-fw-wrapper" class="fullwidth">
-    <div class="region one-fw-main">
+#}
+<div class="panel-display parrot-panels minipanels minipanel-one-column clearfix"
+{% if css_id %}
+  id="{{ css_id }}"
+{% endif %}>
+  <div class="minipanel-one-wrapper fullwidth">
+    <div class="region region-minipanel-one-main">
       <div class="region-inner clearfix">
-        <?php print $content['one_fw_main']; ?>
+        {{ content.minipanel_one_main }}
       </div>
     </div>
   </div>
