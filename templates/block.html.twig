@@ -1,0 +1,17 @@
+{# //add a aria role search if this is the search block #}
+<div {{ id_block }} {% if classes %}class="{{ classes }}" {% endif %}{{ attributes }}{% if variables.block_html_id == "block-search_form" %} role="search"{% endif %}>
+  {{ title_prefix }}
+  {% if block.subject %}
+    <h2{{ title_attributes }}>{{ block.subject }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% if block.module == "block" %}
+  <div{{ content_attributes }}>
+  {% endif %}
+
+  {{ content }}
+
+  {% if block.module == "block" %}
+  </div>
+  {% endif %}
+</div>

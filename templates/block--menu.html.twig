@@ -1,0 +1,12 @@
+<nav {{ id_block }} {% if classes %}class="{{ classes }}" {% endif %}{{ attributes }} role="navigation">
+  {{ title_prefix }}
+  {% if block.subject %}
+    <h2 {{ title_attributes }}>{{block.subject}}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {{ content }}
+
+  {% if block.module == "block" %}
+  <div {{ content_attributes }}>{{ content }}</div>
+  {% endif %}
+</nav>

@@ -1,0 +1,11 @@
+<article>
+  {{ title_prefix }}
+  <h3><a href="{{ url }}">{{ title }}</a></h3>
+  {{ title_suffix }}
+  {% if snippet %}
+    <p>{{ snippet }}</p>
+  {% endif %}
+  {% if info %}
+    <footer>{{ info }}</footer>
+  {% endif %}
+</article>
