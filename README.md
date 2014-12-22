@@ -24,7 +24,10 @@ Susy is enabled by default, to change that comment out the require 'susy', and u
 The chosen grid framework will need to be installed via the GEM file.
 
 ### Susy
+`gem install sass -v 3.3.13`
+
 `gem install susy -v 1.0.9`
+
 Check that the version used is at least 1.0.8, but not yet version 2+.
 
 ### Zen Grids

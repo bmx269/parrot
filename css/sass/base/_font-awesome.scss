@@ -1899,3 +1899,10 @@ $fontAwesomePath:   "../fonts" !default;
     @include Awesome;
   }
 }
+
+@mixin icon-instagram {
+  &:before {
+    content: "\f16d";
+    @include Awesome;
+  }
+}

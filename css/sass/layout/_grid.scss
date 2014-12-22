@@ -904,6 +904,94 @@ $wide: 80em;
       }
     }
 } //.parrot-panels
+.width-12.float-left{
+  @include span-columns(8 omega, 8);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(1, 8);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(1, 8);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(1, 8);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-12.float-right{
+  @include span-columns(8 omega, 8);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(1 omega, 8);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(1 omega, 8);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(1 omega, 8);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-16.float-left{
+  @include span-columns(12 omega, 12);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(12 omega, 12);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(2, 12);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(2, 12);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(2, 12);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-16.float-right{
+  @include span-columns(12 omega, 12);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(12 omega, 12);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(2 omega,12);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(2 omega, 12);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(2 omega, 12);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
 
 .width-25.float-left{
   @include span-columns(12 omega, 12);
@@ -924,6 +1012,9 @@ $wide: 80em;
     @include remove-omega;
     @include span-columns(3, 12);
   }
+  &.clear-both{
+      clear: both;
+    }
 }
 
 .width-25.float-right{
@@ -941,6 +1032,9 @@ $wide: 80em;
   @include at-breakpoint($wide){
     @include span-columns(3 omega, 12);
   }
+  &.clear-both{
+      clear: both;
+    }
 }
 
 .width-33.float-left{
@@ -962,6 +1056,9 @@ $wide: 80em;
     @include remove-omega;
     @include span-columns(4, 12);
   }
+  &.clear-both{
+      clear: both;
+    }
 }
 
 .width-33.float-right{
@@ -979,7 +1076,55 @@ $wide: 80em;
   @include at-breakpoint($wide){
     @include span-columns(4 omega, 12);
   }
+  &.clear-both{
+      clear: both;
+    }
 }
+
+.width-37.float-left{
+  @include span-columns(8 omega, 8);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(3, 8);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(3, 8);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(3, 8);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-37.float-right{
+  @include span-columns(8 omega, 8);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(3 omega, 8);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(3 omega, 8);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(3 omega, 8);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
 
 .width-50.float-left{
   @include span-columns(12 omega, 12);
@@ -1000,6 +1145,9 @@ $wide: 80em;
     @include remove-omega;
     @include span-columns(6, 12);
   }
+  &.clear-both{
+      clear: both;
+    }
 }
 
 .width-50.float-right{
@@ -1016,6 +1164,53 @@ $wide: 80em;
   }
   @include at-breakpoint($wide){
     @include span-columns(6 omega, 12);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-62.float-left{
+  @include span-columns(8 omega, 8);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(5, 8);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(5, 8);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(5, 8);
+  }
+  &.clear-both{
+      clear: both;
+  }
+}
+
+.width-62.float-right{
+  @include span-columns(8 omega, 8);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(5 omega, 8);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(5 omega, 8);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(5 omega, 8);
+  }
+  &.clear-both{
+      clear: both;
   }
 }
 
@@ -1038,6 +1233,9 @@ $wide: 80em;
     @include remove-omega;
     @include span-columns(8, 12);
   }
+  &.clear-both{
+      clear: both;
+  }
 }
 
 .width-66.float-right{
@@ -1054,6 +1252,9 @@ $wide: 80em;
   }
   @include at-breakpoint($wide){
     @include span-columns(8 omega, 12);
+  }
+  &.clear-both{
+      clear: both;
   }
 }
 
@@ -1076,6 +1277,9 @@ $wide: 80em;
     @include remove-omega;
     @include span-columns(9, 12);
   }
+  &.clear-both{
+      clear: both;
+    }
 }
 
 .width-75.float-right{
@@ -1093,7 +1297,99 @@ $wide: 80em;
   @include at-breakpoint($wide){
     @include span-columns(9 omega, 12);
   }
+  &.clear-both{
+    clear: both;
+  }
 }
+
+.width-84.float-left{
+  @include span-columns(12 omega, 12);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(12 omega, 12);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(10, 12);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(10, 12);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(10, 12);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-84.float-right{
+  @include span-columns(12 omega, 12);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(12 omega, 12);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(10 omega, 12);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(10 omega, 12);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(10 omega, 12);
+  }
+  &.clear-both{
+    clear: both;
+  }
+}
+
+.width-87.float-left{
+  @include span-columns(8 omega, 8);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(7, 8);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(7, 8);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(7, 8);
+  }
+  &.clear-both{
+      clear: both;
+  }
+}
+
+.width-87.float-right{
+  @include span-columns(8 omega, 8);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(8 omega, 8);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(7 omega, 8);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(7 omega, 8);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(7 omega, 8);
+  }
+  &.clear-both{
+      clear: both;
+  }
+}
+
 
 .width-100{
   @include span-columns(12 omega, 12);
@@ -1209,6 +1505,33 @@ $wide: 80em;
   }
 }
 
+.pre-37{
+
+  @include at-breakpoint($tablet){
+    @include pre(9, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(9, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(9, 24);
+  }
+}
+
+.post-37,
+.float-right.post-37{
+
+  @include at-breakpoint($tablet){
+    @include post(9, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(9, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(9, 24);
+  }
+}
+
 .pre-50{
 
   @include at-breakpoint($tablet){
@@ -1233,6 +1556,33 @@ $wide: 80em;
   }
   @include at-breakpoint($wide){
     @include post(12, 24);
+  }
+}
+
+.pre-62{
+
+  @include at-breakpoint($tablet){
+    @include pre(15, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(15, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(15, 24);
+  }
+}
+
+.post-62,
+.float-right.post-62{
+
+  @include at-breakpoint($tablet){
+    @include post(15, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(15, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(15, 24);
   }
 }
 
@@ -1287,6 +1637,60 @@ $wide: 80em;
   }
   @include at-breakpoint($wide){
     @include post(18, 24);
+  }
+}
+
+.pre-84{
+
+  @include at-breakpoint($tablet){
+    @include pre(20, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(20, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(20, 24);
+  }
+}
+
+.post-84,
+.float-right.post-84{
+
+  @include at-breakpoint($tablet){
+    @include post(20, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(20, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(20, 24);
+  }
+}
+
+.pre-87{
+
+  @include at-breakpoint($tablet){
+    @include pre(21, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include pre(21, 24);
+  }
+  @include at-breakpoint($wide){
+    @include pre(21, 24);
+  }
+}
+
+.post-87,
+.float-right.post-87{
+
+  @include at-breakpoint($tablet){
+    @include post(21, 24);;
+  }
+  @include at-breakpoint($computer){
+    @include post(21, 24);
+  }
+  @include at-breakpoint($wide){
+    @include post(21, 24);
   }
 }
 
