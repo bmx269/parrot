@@ -63,6 +63,20 @@ The theme is not intended to be a *"base theme"*, it is meant to be a *"starter 
 
 To install, copy the folder "parrot" from this repo into /sites/all/themes/ of your Drupal 7 site. Rename the folder to your desired theme name, as well, rename the "parrot.info" file to match the theme name. You will also have to search the "template.php" for "parrot" and replace the name with your new theme name. This name must be lowercase, with no spaces, as it is a machine name. You can then inside the .info file add your Fancy theme title. Renaming is not required for use.
 
+To use the Parrot Styles feature, you have to edit: /plugins/styles/parrot_styles/parrot_styles.inc and change Line 16 theme name to your theme's name.
+
+```php
+Line 15: // Change theme name 'parrot' to match changed theme name.
+Line 16: 'path' => drupal_get_path('theme', 'parrot') . '/plugins/styles/parrot_styles',
+```
+
+If theme was called mythemename:
+
+```php
+Line 15: // Change theme name 'parrot' to match changed theme name.
+Line 16: 'path' => drupal_get_path('theme', 'mythemename') . '/plugins/styles/parrot_styles',
+```
+
 The theme uses SASS to build the CSS, then is compiled into the /css/style.css file. The SASS files are organized in a file structure that is based on overall site structure, not specific components. The structure is as follows in the /css/sass folder:
 
 * /base
