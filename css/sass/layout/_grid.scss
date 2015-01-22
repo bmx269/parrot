@@ -1400,7 +1400,7 @@ $wide: 80em;
 .pre-12{
 
   @include at-breakpoint($tablet){
-    @include pre(3, 24);;
+    @include pre(3, 24);
   }
   @include at-breakpoint($computer){
     @include pre(3, 24);
@@ -1414,7 +1414,7 @@ $wide: 80em;
 .float-right.post-12{
 
   @include at-breakpoint($tablet){
-    @include post(3, 24);;
+    @include post(3, 24);
   }
   @include at-breakpoint($computer){
     @include post(3, 24);
@@ -1427,7 +1427,7 @@ $wide: 80em;
 .pre-16{
 
   @include at-breakpoint($tablet){
-    @include pre(4, 24);;
+    @include pre(4, 24);
   }
   @include at-breakpoint($computer){
     @include pre(4, 24);
@@ -1441,7 +1441,7 @@ $wide: 80em;
 .float-right.post-16{
 
   @include at-breakpoint($tablet){
-    @include post(4, 24);;
+    @include post(4, 24);
   }
   @include at-breakpoint($computer){
     @include post(4, 24);
@@ -1454,7 +1454,7 @@ $wide: 80em;
 .pre-25{
 
   @include at-breakpoint($tablet){
-    @include pre(6, 24);;
+    @include pre(6, 24);
   }
   @include at-breakpoint($computer){
     @include pre(6, 24);
@@ -1468,7 +1468,7 @@ $wide: 80em;
 .float-right.post-25{
 
   @include at-breakpoint($tablet){
-    @include post(6, 24);;
+    @include post(6, 24);
   }
   @include at-breakpoint($computer){
     @include post(6, 24);
@@ -1481,7 +1481,7 @@ $wide: 80em;
 .pre-33{
 
   @include at-breakpoint($tablet){
-    @include pre(8, 24);;
+    @include pre(8, 24);
   }
   @include at-breakpoint($computer){
     @include pre(8, 24);
@@ -1495,7 +1495,7 @@ $wide: 80em;
 .float-right.post-33{
 
   @include at-breakpoint($tablet){
-    @include post(8, 24);;
+    @include post(8, 24);
   }
   @include at-breakpoint($computer){
     @include post(8, 24);
@@ -1508,7 +1508,7 @@ $wide: 80em;
 .pre-37{
 
   @include at-breakpoint($tablet){
-    @include pre(9, 24);;
+    @include pre(9, 24);
   }
   @include at-breakpoint($computer){
     @include pre(9, 24);
@@ -1522,7 +1522,7 @@ $wide: 80em;
 .float-right.post-37{
 
   @include at-breakpoint($tablet){
-    @include post(9, 24);;
+    @include post(9, 24);
   }
   @include at-breakpoint($computer){
     @include post(9, 24);
@@ -1535,7 +1535,7 @@ $wide: 80em;
 .pre-50{
 
   @include at-breakpoint($tablet){
-    @include pre(12, 24);;
+    @include pre(12, 24);
   }
   @include at-breakpoint($computer){
     @include pre(12, 24);
@@ -1549,7 +1549,7 @@ $wide: 80em;
 .float-right.post-50{
 
   @include at-breakpoint($tablet){
-    @include post(12, 24);;
+    @include post(12, 24);
   }
   @include at-breakpoint($computer){
     @include post(12, 24);
@@ -1562,7 +1562,7 @@ $wide: 80em;
 .pre-62{
 
   @include at-breakpoint($tablet){
-    @include pre(15, 24);;
+    @include pre(15, 24);
   }
   @include at-breakpoint($computer){
     @include pre(15, 24);
@@ -1576,7 +1576,7 @@ $wide: 80em;
 .float-right.post-62{
 
   @include at-breakpoint($tablet){
-    @include post(15, 24);;
+    @include post(15, 24);
   }
   @include at-breakpoint($computer){
     @include post(15, 24);
@@ -1589,7 +1589,7 @@ $wide: 80em;
 .pre-66{
 
   @include at-breakpoint($tablet){
-    @include pre(16, 24);;
+    @include pre(16, 24);
   }
   @include at-breakpoint($computer){
     @include pre(16, 24);
@@ -1603,7 +1603,7 @@ $wide: 80em;
 .float-right.post-66{
 
   @include at-breakpoint($tablet){
-    @include post(16, 24);;
+    @include post(16, 24);
   }
   @include at-breakpoint($computer){
     @include post(16, 24);
@@ -1616,7 +1616,7 @@ $wide: 80em;
 .pre-75{
 
   @include at-breakpoint($tablet){
-    @include pre(18, 24);;
+    @include pre(18, 24);
   }
   @include at-breakpoint($computer){
     @include pre(18, 24);
@@ -1630,7 +1630,7 @@ $wide: 80em;
 .float-right.post-75{
 
   @include at-breakpoint($tablet){
-    @include post(18, 24);;
+    @include post(18, 24);
   }
   @include at-breakpoint($computer){
     @include post(18, 24);
@@ -1643,7 +1643,7 @@ $wide: 80em;
 .pre-84{
 
   @include at-breakpoint($tablet){
-    @include pre(20, 24);;
+    @include pre(20, 24);
   }
   @include at-breakpoint($computer){
     @include pre(20, 24);
@@ -1657,7 +1657,7 @@ $wide: 80em;
 .float-right.post-84{
 
   @include at-breakpoint($tablet){
-    @include post(20, 24);;
+    @include post(20, 24);
   }
   @include at-breakpoint($computer){
     @include post(20, 24);
@@ -1670,7 +1670,7 @@ $wide: 80em;
 .pre-87{
 
   @include at-breakpoint($tablet){
-    @include pre(21, 24);;
+    @include pre(21, 24);
   }
   @include at-breakpoint($computer){
     @include pre(21, 24);
@@ -1684,7 +1684,7 @@ $wide: 80em;
 .float-right.post-87{
 
   @include at-breakpoint($tablet){
-    @include post(21, 24);;
+    @include post(21, 24);
   }
   @include at-breakpoint($computer){
     @include post(21, 24);
