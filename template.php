@@ -22,7 +22,7 @@ function parrot_preprocess_page(&$vars,$hook) {
   // If this is a panel page, add template suggestions.
   // Must have Ctools Page Manager enabled. Uncomment to use.
   if (module_exists('page_manager')) {
-    if($panel_page = page_manager_get_current_page()) {
+    if(isset($panel_page) && $panel_page === page_manager_get_current_page()) {
       // add a generic suggestion for all panel pages
       $vars['theme_hook_suggestions'][] = 'page__panel';
 

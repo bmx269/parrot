@@ -35,7 +35,7 @@ $border-box-sizing: true;
 // $legacy-support-for-ie6 : $legacy-support-for-ie;
 // $legacy-support-for-ie7 : $legacy-support-for-ie;
 
-$show-grid-backgrounds  : true;
+$show-grid-backgrounds  : false;
 
 //alternative layout breakpoints
 $narrow:30em 6;
@@ -992,6 +992,49 @@ $wide: 80em;
     }
 }
 
+.width-20.float-left{
+  @include span-columns(10 omega, 10);
+  clear: right;
+
+  @include at-breakpoint($narrow){
+    @include span-columns(10 omega, 10);
+  }
+  @include at-breakpoint($tablet){
+    @include remove-omega;
+    @include span-columns(2, 10);
+  }
+  @include at-breakpoint($computer){
+    @include remove-omega;
+    @include span-columns(2, 10);
+  }
+  @include at-breakpoint($wide){
+    @include remove-omega;
+    @include span-columns(2, 10);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
+
+.width-20.float-right{
+  @include span-columns(10 omega, 10);
+
+  @include at-breakpoint($narrow){
+    @include span-columns(10 omega, 10);
+  }
+  @include at-breakpoint($tablet){
+    @include span-columns(2 omega, 10);
+  }
+  @include at-breakpoint($computer){
+    @include span-columns(2 omega, 10);
+  }
+  @include at-breakpoint($wide){
+    @include span-columns(2 omega, 10);
+  }
+  &.clear-both{
+      clear: both;
+    }
+}
 
 .width-25.float-left{
   @include span-columns(12 omega, 12);
@@ -1448,6 +1491,33 @@ $wide: 80em;
   }
   @include at-breakpoint($wide){
     @include post(4, 24);
+  }
+}
+
+.pre-20{
+
+  @include at-breakpoint($tablet){
+    @include pre(2, 10);
+  }
+  @include at-breakpoint($computer){
+    @include pre(2, 10);
+  }
+  @include at-breakpoint($wide){
+    @include pre(2, 10);
+  }
+}
+
+.post-20,
+.float-right.post-20{
+
+  @include at-breakpoint($tablet){
+    @include post(2, 10);
+  }
+  @include at-breakpoint($computer){
+    @include post(2, 10);
+  }
+  @include at-breakpoint($wide){
+    @include post(2, 10);
   }
 }
 
