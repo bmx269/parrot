@@ -1,5 +1,5 @@
 //
-// Uses some of the css tyles from Bootstrap v2.1.1.
+// Uses some of the css styles from Bootstrap v2.1.1.
 // Copyright 2012 Twitter, Inc.
 // Licensed under the Apache License v2.0.
 //
@@ -9,6 +9,7 @@
 //
 
 // Compass CSS Reset.
+@import "breakpoint";
 @import "compass";
 
 // Normalize https://github.com/JohnAlbin/normalize.css-with-sass-or-compass

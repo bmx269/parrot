@@ -12,8 +12,8 @@ require 'susy'
 #require 'toolkit'
 # https://github.com/Team-Sass/toolkit/
 
-# require 'breakpoint'
-# https://github.com/canarymason/breakpoint
+require 'breakpoint'
+# https://github.com/at-import/breakpoint
 
 # Set this to the root of your project when deployed:
 http_path = "/"

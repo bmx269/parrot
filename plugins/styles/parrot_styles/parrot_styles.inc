@@ -35,13 +35,16 @@ function theme_parrot_styles_render_pane($vars) {
       $extra_css[] = $settings['grid_width'];
     }
     if (!empty($settings['left_margin'])) {
-      $extra_css[] = $settings['left_margin'];
+      $extra_css[] = $settings['left-margin'];
     }
     if (!empty($settings['right_margin'])) {
-      $extra_css[] = $settings['right_margin'];
+      $extra_css[] = $settings['right-margin'];
     }
     if (!empty($settings['float'])) {
       $extra_css[] = $settings['float'];
+    }
+    if (!empty($settings['clear'])) {
+      $extra_css[] = $settings['clear'];
     }
     if (!empty($settings['custom_classes'])) {
       $extra_css[] = trim($settings['custom_classes']);
@@ -85,11 +88,18 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
     '#title'         => t('Pane Width'),
     '#options'       => array(
       'width-100' => t('100%  width'),
+      'width-87'  => t('87% width'),
+      'width-84'  => t('84% width'),
       'width-75'  => t('75% width'),
       'width-66'  => t('66% width'),
+      'width-62'  => t('62% width'),
       'width-50'  => t('50% width'),
+      'width-37'  => t('37% width'),
       'width-33'  => t('33% width'),
       'width-25'  => t('25% width'),
+      'width-20'  => t('20% width'),
+      'width-16'  => t('16% width'),
+      'width-12'  => t('12% width'),
       ' '       => t('-None-'),
     ),
     '#default_value' => (isset($style_settings['grid_width'])) ? $style_settings['grid_width'] : 'width-100',
@@ -100,11 +110,16 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
     '#title'         => t('Left Margin'),
     '#options'       => array(
       '' => t('None'),
+      'pre-87'  => t('87%'),
+      'pre-84'  => t('84%'),
       'pre-75'  => t('75%'),
       'pre-66'  => t('66%'),
+      'pre-62'  => t('62%'),
       'pre-50'  => t('50%'),
+      'pre-37'  => t('37%'),
       'pre-33'  => t('33%'),
       'pre-25'  => t('25%'),
+      'pre-20'  => t('20%'),
       'pre-16'  => t('16%'),
       'pre-12'  => t('12%'),
     ),
@@ -117,11 +132,16 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
     '#title'         => t('Right Margin'),
     '#options'       => array(
       '' => t('None'),
+      'post-87'  => t('87%'),
+      'post-84'  => t('84%'),
       'post-75'  => t('75%'),
       'post-66'  => t('66%'),
+      'post-62'  => t('62%'),
       'post-50'  => t('50%'),
+      'post-37'  => t('37%'),
       'post-33'  => t('33%'),
       'post-25'  => t('25%'),
+      'post-20'  => t('20%'),
       'post-16'  => t('16%'),
       'post-12'  => t('12%'),
     ),
@@ -137,6 +157,16 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
       'float-right'  => t('float right'),
     ),
     '#default_value' => (isset($style_settings['float'])) ? $style_settings['float'] : 'float-left',
+  );
+
+  $form['clear'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Clear Above Row'),
+    '#options'       => array(
+      ''  => t('Default Row Clear'),
+      'clear-both'  => t('Force Row Clear'),
+    ),
+    '#default_value' => (isset($style_settings['clear'])) ? $style_settings['clear'] : '',
   );
 
   $form['custom_classes'] = array(
