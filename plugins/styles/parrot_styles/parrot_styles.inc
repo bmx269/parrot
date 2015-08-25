@@ -169,6 +169,17 @@ function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_i
     '#default_value' => (isset($style_settings['clear'])) ? $style_settings['clear'] : '',
   );
 
+  $form['equalheight'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Equal Height Blocks'),
+    '#options'       => array(
+      ''  => t('Default Heights'),
+      'equal-height' => t('Make Equal Heights'),
+    ),
+    '#default_value' => (isset($style_settings['equalheight'])) ?
+        $style_settings['equalheight'] : '',
+  );
+
   $form['custom_classes'] = array(
     '#type' => 'textarea',
     '#title' => t('Custom CSS Classes'),

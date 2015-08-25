@@ -15,6 +15,7 @@ function parrot_preprocess_page(&$vars,$hook) {
 
   //webfont
   //drupal_add_css('http://cloud.webtype.com/css/CXXXX.css','external');
+  drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css','external');
 
   //googlefont
   //  drupal_add_css('http://fonts.googleapis.com/css?family=Bree+Serif','external');
