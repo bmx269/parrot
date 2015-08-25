@@ -97,7 +97,7 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 * **_variables.scss** - This contains the *Variables* used in the other CSS selectors, for example, theme specific colors. If you need to edit or add custom *Variables*, they should be placed in this file.
 
 
-### The files in /base and their intended use:
+### The files in /components and their intended use:
 
 * **_accordion.scss** - This contains the common CSS selectors used to display *Accordions* visually on your site. If you need to edit or add custom *Accordion* related CSS, it should be placed in this file.
 * **_alerts.scss** - This contains the common CSS selectors used to display *Alerts* or *Messages* visually on your site. If you need to edit or add custom *Alert* related CSS, it should be placed in this file.
