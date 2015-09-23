@@ -126,7 +126,7 @@ To use Parrot Styles, change the theme name on line 16 of /plugins/styles/parrot
 
 ## Please Note ##
 
-This project is a on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests.
+This project is on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests.
 
 Drupal.org Parrot Theme https://drupal.org/project/parrot
 
