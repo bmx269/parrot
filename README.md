@@ -89,7 +89,7 @@ required for use.
 The theme uses SASS to build the CSS, then is compiled into the /css/style.css
 file. The SASS files are organized in a file structure that is based on overall
 site structure, not specific components. The structure is as follows in the
-/css/sass folder:
+/sass folder:
 
 * /base
 * /components

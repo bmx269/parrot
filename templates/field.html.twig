@@ -1,11 +1,7 @@
 {#
-// $Id: field.tpl.php,v 1.13 2010/03/26 17:14:45 dries Exp $
-
 /**
- * @file field.tpl.php
+ * @file field.html.twig
  * Default template implementation to display the value of a field.
- *
- * @see theme_field()
  *
  * Available variables:
  * - $items: An array of field values. Use render() to output them.
@@ -39,7 +35,6 @@
  *   into a string within the variable $classes.
  *
  * @see template_preprocess_field()
- * @see theme_field()
  */
 #}
 <div{{ attributes }}>
@@ -47,7 +42,7 @@
     <label{{ title_attributes }}>{{ label }}</label>
   {% endif %}
   {% if count.items > 1 %}
-    <div class="field-items"{{ content_attributes }}>
+    <div{{ content_attributes.addClass('field-items') }}>
       {% for delta, item in items %}
         <div class="field-item {% if delta % 2 %} odd{% else %} even{% endif %}" {{ item_attributes.delta }}>{{ item }}</div>
       {% endfor %}
