@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="parrot">Parrot</h1>
+
+<p>Parrot sits on the shoulders of some great projects. Parrot is a Drupal 7 Mothership subtheme that uses &#8220;some&#8221; Bootstrap CSS structure, with SASS &amp; Compass.</p>
+
+<p>What is Bootstrap? http://twitter.github.com/bootstrap/</p>
+
+<p>How is this theme using Twitter Bootstrap?
+The theme uses &#8220;some&#8221; of the files provided in Bootstrap, to give the theme a structured set of SASS files, as a way to organize the theme&#8217;s styles. Bootstrap provided the best overall structure that could be generally used for most projects. There are some files removed from the structure, so do not count on this being a 100% working Bootstrap.</p>
+
+<h2 id="newadditions">New Additions</h2>
+
+<h3 id="panelsparrotstyles:">Panels Parrot Styles:</h3>
+
+<p>Using the Panels styles settings, you can access additional settings for each panel pane. You can choose widths, margins, and add additional classes, and even custom attributes to do things like parallax backgrounds. This feature allows you or your client to make quickly layout changes to your content in a responsive manner. All the grid widths are set in the _grid.scss, so you can customize them to fit your needs.</p>
+
+<p>To use Parrot Styles, change the theme name on line 16 of /plugins/styles/parrot_styles/parrot_styles.inc</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+<li>Drupal 7 website</li>
+<li>Mothership base theme http://drupal.org/project/mothership</li>
+<li>SASS installed. The theme uses SASS to build the css.</li>
+<li>Compass installed.</li>
+</ul>
+
+<h2 id="gridsystem">Grid System</h2>
+
+<p>Parrot includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks, and now the Singularity Grid System https://github.com/Team-Sass/Singularity/. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.</p>
+
+<p>Susy is enabled by default, to change that comment out the require &#8216;susy&#8217;, and uncomment the require &#8216;zen&#8217; or &#8216;singularitygs&#8217; from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.</p>
+
+<h2 id="csshelpers">CSS Helpers</h2>
+
+<p>Parrot comes with the CSS fixing toolkit called, well, Toolkit https://github.com/team-sass/toolkit, brought to you by the same people that made Singularity. This makes some of the common css trouble, a lot easier.</p>
+
+<p>This will need to be installed via the GEM file.</p>
+
+<h3 id="toolkit">Toolkit</h3>
+
+<p><code>gem install toolkit</code></p>
+
+<h2 id="mediaqueries">Media Queries</h2>
+
+<p>Parrot includes Breakpoint https://github.com/canarymason/breakpoint to help you build your media queries in SASS. If you are using Susy for your grids, you do not need to enable this. This is called in the <em>grid.scss to ensure media queries are used in the grids as well as the rest of the theme. If you are using Susy, comment out the import at the top of the </em>grid.scss.</p>
+
+<p>This will need to be installed via the GEM file.</p>
+
+<h3 id="breakpoint">Breakpoint</h3>
+
+<p><code>gem install breakpoint</code></p>
+
+<h2 id="howdoyouusethetheme">How do you use the theme?</h2>
+
+<p>The theme is not intended to be a <em>&#8220;base theme&#8221;</em>, it is meant to be a <em>&#8220;starter theme&#8221;</em> where you rename it and use it as your theme. The <em>&#8220;base theme&#8221;</em> that is to be used with this theme is the Drupal 7 version of Mothership (http://drupal.org/project/mothership).</p>
+
+<p>To install, copy the folder &#8220;parrot&#8221; from this repo into /sites/all/themes/ of your Drupal 7 site. Rename the folder to your desired theme name, as well, rename the &#8220;parrot.info&#8221; file to match the theme name. You will also have to search the &#8220;template.php&#8221; for &#8220;parrot&#8221; and replace the name with your new theme name. This name must be lowercase, with no spaces, as it is a machine name. You can then inside the .info file add your Fancy theme title. Renaming is not required for use.</p>
+
+<p>To use the Parrot Styles feature, you have to edit: /plugins/styles/parrot_styles/parrot_styles.inc and change Line 16 theme name to your theme&#8217;s name.</p>
+
+<pre><code class="php">Line 15: // Change theme name 'parrot' to match changed theme name.
+Line 16: 'path' =&gt; drupal_get_path('theme', 'parrot') . '/plugins/styles/parrot_styles',
+</code></pre>
+
+<p>If theme was called mythemename:</p>
+
+<pre><code class="php">Line 15: // Change theme name 'parrot' to match changed theme name.
+Line 16: 'path' =&gt; drupal_get_path('theme', 'mythemename') . '/plugins/styles/parrot_styles',
+</code></pre>
+
+<p>The theme uses SASS to build the CSS, then is compiled into the /css/style.css file. The SASS files are organized in a file structure that is based on overall site structure, not specific components. The structure is as follows in the /css/sass folder:</p>
+
+<ul>
+<li>/base</li>
+<li>/components</li>
+<li>/layout</li>
+</ul>
+
+<p>Let&#8217;s look at these folders, and how the SASS files inside each are intended to be used. The files included are based on the Twitter Bootstrap 2.1.1 files, and include <em>some</em> of the markup from Twitter Bootstrap. These files include common markup already, as well as SASS Mixins that can be used on your theme.</p>
+
+<h3 id="thefilesinbaseandtheirintendeduse:">The files in /base and their intended use:</h3>
+
+<ul>
+<li><strong>_code.scss</strong> - This contains the common CSS selectors used to display <em>Code</em> visually on your site. If you need to edit or add custom <em>Code</em> related CSS, it should be placed in this file.</li>
+<li><strong>_font-awesome.scss</strong> - This is a <code>@mixin</code> file containing icons that can be added to elements. To use this on any CSS selector, use the <code>@include icon-name;</code> on the selector, and the icon will be added, as a font based icon. To see the icons included, visit http://fortawesome.github.com/Font-Awesome/. The names are included beside the icon samples.</li>
+<li><strong>_forms.scss</strong> - This contains the common CSS selectors used to display Forms visually in html. If you need to edit or add custom <em>Form</em> related CSS, it should be placed in this file.</li>
+<li><strong>_mixins.scss</strong> - This is a <code>@mixin</code> file containing common and CSS3 styles that can be applied to your theme. To use this on any CSS selector, use the <code>@include mixin-name;</code> on the selector, and the <em>@mixin</em> will be added. For example <code>@include inline-block;</code> will add all the needed css for a IE7+ compatible <code>display: inline-block;</code> display. This is where you would add your own custom <em>@mixin</em> or find ones to use.</li>
+<li><strong>_tables.scss</strong> - This contains all common CSS selectors used to display <em>Tables</em> visually on you site. If you need to edit or add custom <em>Table</em> related CSS, it should be placed in this file.</li>
+<li><strong>_type.scss</strong> - This contains all <em>Typography</em> styles for your site, including base fonts, headings, and more. If you need to edit or add custom <em>Type</em> related CSS, it should be placed in this file.</li>
+<li><strong>_variables.scss</strong> - This contains the <em>Variables</em> used in the other CSS selectors, for example, theme specific colors. If you need to edit or add custom <em>Variables</em>, they should be placed in this file.</li>
+</ul>
+
+<h3 id="thefilesincomponentsandtheirintendeduse:">The files in /components and their intended use:</h3>
+
+<ul>
+<li><strong>_accordion.scss</strong> - This contains the common CSS selectors used to display <em>Accordions</em> visually on your site. If you need to edit or add custom <em>Accordion</em> related CSS, it should be placed in this file.</li>
+<li><strong>_alerts.scss</strong> - This contains the common CSS selectors used to display <em>Alerts</em> or <em>Messages</em> visually on your site. If you need to edit or add custom <em>Alert</em> related CSS, it should be placed in this file.</li>
+<li><strong>_breadcrumbs.scss</strong> - This contains the common CSS selectors used to display <em>Breadcrumbs</em> visually on your site. If you need to edit or add custom <em>Breadcrumbs</em> related CSS, it should be placed in this file.</li>
+<li><strong>_buttons.scss</strong> - This contains the common CSS selectors used to display <em>Buttons</em> visually on your site. If you need to edit or add custom <em>Button</em> related CSS, it should be placed in this file.</li>
+<li><strong>_media.scss</strong> - This contains the common CSS selectors used to display all <em>Media</em>, like images, videos, flash, audio, overlays, etc type components visually on your site. If you need to edit or add custom <em>Media</em> related CSS, it should be placed in this file.</li>
+<li><strong>_sprites.scss</strong> - This is where you should put the CSS related to <em>Sprite Images</em> used on your site.</li>
+<li><strong>_rotato.scss</strong> - This contains the common CSS selectors used to display <em>Rototo&#8217;s</em> or <em>Slideshows</em> visually on your site. If you need to edit or add custom <em>Rotato</em> or <em>Slideshow</em> related CSS, it should be placed in this file.</li>
+<li><strong>_labels-badges.scss</strong> - This contains the common CSS selectors used to display <em>Labels</em> visually on your site. If you need to edit or add custom <em>Lable</em> related CSS, it should be placed in this file.</li>
+<li><strong>_navs.scss</strong> - This contains the common CSS selectors used to display <em>Navigation</em> or <em>Menus</em> visually on your site. If you need to edit or add custom <em>Navigation</em> related CSS, it should be placed in this file.</li>
+<li><strong>_pager.scss</strong> - This contains the common CSS selectors used to display <em>Pager</em> visually on your site. If you need to edit or add custom <em>Pager</em> related CSS, it should be placed in this file.</li>
+<li><strong>_elements.scss</strong> - This is where you should put the CSS related to the custom <em>Elements</em> the do not fall into the files above, which are used on your site.</li>
+</ul>
+
+<h3 id="thefilesinlayoutandtheirintendeduse:">The files in /layout and their intended use:</h3>
+
+<ul>
+<li><strong>_grid.scss</strong> - This contains the <em>Grid</em> settings for your site, along with the <em>Media Queries</em> for the site. The <em>Grid</em> included with the theme by default is the Susy grid framework. You should use this file to layout the sites grid structure as well as block placement. It is recommended to keep the style and placement of block elements separated, allowing quick placement of blocks, and then style is based on the type of block is in the appropriate SASS file.</li>
+<li><strong>_scaffolding.scss</strong> - This contains the basic <em>Body</em> styles that the theme uses. This file is getting the styles from the <em>Variables</em> file, and is a great place to declare the base region specific styles, i.e. wrapper backgrounds for the header and footer.</li>
+</ul>
+
+<h2 id="pleasenote">Please Note</h2>
+
+<p>This project is on Drupal.org as well, but does not include some of the non-gpl libraries. This github project will remain, as it allows you to Fork it, and improve the theme by adding Pull Requests.</p>
+
+<p>Drupal.org Parrot Theme https://drupal.org/project/parrot</p>
+
+<p>The development of this theme is sponsored in part by ImageX Media.</p>
+
+</body>
+</html>

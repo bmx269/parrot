@@ -1,0 +1,74 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+
+.parrot-panels #two-80-20-top-wrapper .two-80-20-top {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+.parrot-panels #two-80-20-middle-wrapper .two-80-20-first {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-first {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 40.25em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-first {
+      float: left;
+      width: 76%;
+      float: left;
+      margin-right: 4%; } }
+  @media (min-width: 50.75em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-first {
+      float: left;
+      width: 76%;
+      float: left;
+      margin-right: 4%; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-first {
+      float: left;
+      width: 76%;
+      float: left;
+      margin-right: 4%; } }
+.parrot-panels #two-80-20-middle-wrapper .two-80-20-second {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }
+  @media (min-width: 26.25em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-second {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 40.25em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-second {
+      width: 20%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 50.75em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-second {
+      width: 20%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 56.875em) {
+    .parrot-panels #two-80-20-middle-wrapper .two-80-20-second {
+      width: 20%;
+      float: right;
+      margin-right: 0; } }
+.parrot-panels #two-80-20-bottom-wrapper .container {
+  padding-bottom: 20px; }
+  @media (min-width: 40.25em) {
+    .parrot-panels #two-80-20-bottom-wrapper .container {
+      padding-bottom: 40px; } }
+.parrot-panels #two-80-20-bottom-wrapper .two-80-20-bottom {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.5em;
+  display: inline; }

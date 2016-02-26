@@ -1,6 +1,6 @@
 # Require any additional compass plugins here.
 
-require 'susy'
+# require 'susy'
 # http://susy.oddbird.net/
 
 # require 'singularitygs'
@@ -33,3 +33,5 @@ line_comments = false
 color_output = false
 
 preferred_syntax = :sass
+sourcemap = true
+Encoding.default_external = "UTF-8"

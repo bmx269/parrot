@@ -46,4 +46,13 @@
       </div>
     </div>
   <?php endif; ?>
+  <?php if ($content['two_33_66_bottom_full']): ?>
+    <div id="two-33-66-bottom-full-wrapper" class="fullwidth">
+      <div class="region two-33-66-bottom-full region-conditional-stack">
+        <div class="region-inner clearfix">
+          <?php print $content['two_33_66_bottom_full']; ?>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
 </div>

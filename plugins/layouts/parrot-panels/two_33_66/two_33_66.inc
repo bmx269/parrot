@@ -11,5 +11,6 @@ $plugin = array(
     'two_33_66_first'  => t('Left'),
     'two_33_66_second' => t('Right'),
     'two_33_66_bottom' => t('Bottom (conditional)'),
+    'two_33_66_bottom_full' => t('Bottom Full Width (conditional)'),
   ),
 );

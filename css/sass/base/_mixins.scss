@@ -522,3 +522,94 @@
 .input-block-level {
   @include input-block-level;
 }
+
+
+// Panels common
+// --------------------------
+#panel-wrapper {
+  .panel-pane {
+
+    .pane-inner{
+      position: relative;
+    }
+
+    &.panel-pane-no-padding .pane-inner{
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    &.panel-pane-padding-sm .pane-inner{
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    &.panel-pane-padding-md .pane-inner{
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+    &.panel-pane-padding-lg .pane-inner{
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+    &.bg-white .pane-inner{
+      background: #fff;
+    }
+    &.bg-green .pane-inner{
+      background: $green;
+      color: #fff;
+    }
+    &.bg-blue .pane-inner{
+      background: $blue;
+      color: #fff;
+    }
+    &.bg-orange .pane-inner{
+      background: $orange;
+      color: #fff;
+    }
+    &.bg-yellow .pane-inner{
+      background: $yellow;
+      color: #fff;
+    }
+    &.bg-ltr-gray .pane-inner{
+      background: $grayLighter;
+    }
+    &.bg-lt-gray .pane-inner{
+      background: $grayLight;
+    }
+    &.bg-gray .pane-inner{
+      background: $gray;
+      color: #fff;
+    }
+    &.bg-dk-gray .pane-inner{
+      background: $grayDark;
+      color: #fff;
+    }
+    &.bg-dkr-gray .pane-inner{
+      background: $grayDarker;
+      color: #fff;
+    }
+  }
+} //#panel-wrapper
+
+// Make reuseable
+@mixin grid-container() {
+  @include container;
+  @include susy-grid-background;
+
+  @include at-breakpoint($narrow){
+    @include container;
+    @include susy-grid-background;
+  }
+  @include at-breakpoint($tablet){
+    @include container;
+    @include susy-grid-background;
+  }
+  @include at-breakpoint($computer){
+    @include container;
+    @include susy-grid-background;
+  }
+  @include at-breakpoint($wide){
+    @include container;
+    @include susy-grid-background;
+    //max-width: 1350px;
+  }
+}

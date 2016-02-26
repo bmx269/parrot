@@ -1,12 +1,8 @@
 // ---------------------------------------------------------------------------
 // Imports.
 
-// With Susy 1 installed...
-@import "susy"; // Susy Grids
-
-// With Susy 2 installed...
-//@import "susyone";
-
+// Susy Grids.
+@import "susy/_susyone"; // Susy Grids
 
 // @import "singularitygs"; // Singularity Grid System
 // @import "zen"; // Zen Grids
@@ -61,29 +57,11 @@ $wide: 80em;
 
 // ---------------------------------------------------------------------------
 // "Mobile First", grid styles.
-
-.container{
-  @include container;
-  @include susy-grid-background;
-
-  @include at-breakpoint($narrow){
-    @include container;
-    @include susy-grid-background;
-  }
-  @include at-breakpoint($tablet){
-    @include container;
-    @include susy-grid-background;
-  }
-  @include at-breakpoint($computer){
-    @include container;
-    @include susy-grid-background;
-  }
-  @include at-breakpoint($wide){
-    @include container;
-    @include susy-grid-background;
-  }
+.container-content .pane-content,
+.container {
+  display: block;
+  @include grid-container;
 } //.container
-
 
 
 // Panels Layouts
@@ -1763,7 +1741,5 @@ $wide: 80em;
     @include post(21, 24);
   }
 }
-
-
 
 // Default grid blocks here following the "Mobile First" strategy.

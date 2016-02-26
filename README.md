@@ -8,6 +8,16 @@ What is Bootstrap? http://twitter.github.com/bootstrap/
 How is this theme using Twitter Bootstrap?
 The theme uses "some" of the files provided in Bootstrap, to give the theme a structured set of SASS files, as a way to organize the theme's styles. Bootstrap provided the best overall structure that could be generally used for most projects. There are some files removed from the structure, so do not count on this being a 100% working Bootstrap.
 
+## New Additions ##
+
+### Panels Parrot Styles: ###
+
+Using the Panels styles settings, you can access additional settings for each panel pane. You can choose widths, margins, and add additional classes, and even custom attributes to do things like parallax backgrounds. This feature allows you or your client to make quickly layout changes to your content in a responsive manner. All the grid widths are set in the _grid.scss, so you can customize them to fit your needs.
+
+To use Parrot Styles, change the theme name on line 16 of /plugins/styles/parrot_styles/parrot_styles.inc
+
+
+
 ## Requirements
 
 * Drupal 7 website
@@ -20,22 +30,6 @@ The theme uses "some" of the files provided in Bootstrap, to give the theme a st
 Parrot includes Susy http://susy.oddbird.net/ as well as Zen Grids http://zengrids.com/ grid frameworks, and now the Singularity Grid System https://github.com/Team-Sass/Singularity/. These are both useful and approach the grid differently, depending on your needs, you may find one better then the other.
 
 Susy is enabled by default, to change that comment out the require 'susy', and uncomment the require 'zen' or 'singularitygs' from the config.rb and the _grid.scss. This is made this way so you can add you own grid framework if you like, while still following the structure of the css.
-
-The chosen grid framework will need to be installed via the GEM file.
-
-### Susy
-`gem install sass -v 3.3.13`
-
-`gem install susy -v 1.0.9`
-
-Check that the version used is at least 1.0.8, but not yet version 2+.
-
-### Zen Grids
-`gem install zen-grids`
-
-### Singularity Grid System
-`gem install singularitygs`
-
 
 ## CSS Helpers
 
@@ -116,13 +110,6 @@ Let's look at these folders, and how the SASS files inside each are intended to 
 
 * **_grid.scss** - This contains the *Grid* settings for your site, along with the *Media Queries* for the site. The *Grid* included with the theme by default is the Susy grid framework. You should use this file to layout the sites grid structure as well as block placement. It is recommended to keep the style and placement of block elements separated, allowing quick placement of blocks, and then style is based on the type of block is in the appropriate SASS file.
 * **_scaffolding.scss** - This contains the basic *Body* styles that the theme uses. This file is getting the styles from the *Variables* file, and is a great place to declare the base region specific styles, i.e. wrapper backgrounds for the header and footer.
-
-## New Addtions ##
-### Panels Parrot Styles: ###
-
-Using the Panels styles settings, you can access additional settings for each panel pane. You can choose widths, margins, and add additional classes, and even custom attributes to do things like parallax backgrounds. This feature allows you or your client to make quickly layout changes to your content in a responsive manner. All the grid widths are set in the _grid.scss, so you can customize them to fit your needs. 
-
-To use Parrot Styles, change the theme name on line 16 of /plugins/styles/parrot_styles/parrot_styles.inc
 
 ## Please Note ##
 
