@@ -23,18 +23,18 @@ $plugin = array(
   ),
 );
 
-function theme_parrot_styles_render_pane($vars) {
-  $content  = $vars['content'];
-  $settings = $vars['settings'];
-  // This renders the template file parrot_styles-pane.tpl.php
-  return theme(
-    'parrot_styles_theme_pane',
-    array(
-      'content'  => $content,
-      'settings' => $settings
-    )
-  );
-}
+// function theme_parrot_styles_render_pane($vars) {
+//   $content  = $vars['content'];
+//   $settings = $vars['settings'];
+//   // This renders the template file parrot_styles-pane.html.twig
+//   return theme(
+//     'parrot_styles_theme_pane',
+//     array(
+//       'content'  => $content,
+//       'settings' => $settings
+//     )
+//   );
+// }
 
 // Configuration form for the pane/region settings.
 function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_id = null, $type = null) {
